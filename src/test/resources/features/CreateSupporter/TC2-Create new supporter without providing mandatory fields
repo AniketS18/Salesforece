@@ -1,0 +1,10 @@
+1. Given I am logged in to valid Salesforce environment.
+2. When I click on "Contacts" tab.
+3. And I click on 'New' button.
+4. And I Provide the following details under  'New Contact' Page.
+First Name
+Last Name
+5. And I Keep following details empty under  'New Contact' Page.
+Phone no/email/Mobile.
+6. And I Click on 'Save' button.
+7. Then I verify whether the correct error message displayed or not

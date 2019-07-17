@@ -15,4 +15,3 @@ Feature: Set Supporter Level as High Value and verify the details
       | First Name | Last Name | Salutation | Phone      |
       | Oxfam      | Australia | Mr         | 0453613708 |
 
-

@@ -65,9 +65,19 @@ public class SalesforceStepDefinitions {
 
     @When("^I click on Contacts Page")
     public void i_click_on_contacts_page() throws Throwable {
-        navigateTo.clickNewContact(driver);
+        navigateTo.clickContact(driver);
         //   restapi.testRestApi();
 
+    }
+
+    @And("I click on New Contact under Contact Page")
+    public void i_click_on_new_contact() throws Throwable{
+        navigateTo.clickNewContact(driver);
+
+    }
+    @When("I click on Contact dropdown")
+    public void i_click_on_dropdown()throws Throwable{
+        navigateTo.clickOnDropdown(driver);
     }
 
 
@@ -95,6 +105,10 @@ public class SalesforceStepDefinitions {
     @And("^I click on Recently Viewed dropdown (.*)$")
     public void recently_viewed_dropdown(String filedDropdown) {
         navigateTo.recentlyViewedDropdown(driver,filedDropdown);
+    }
+    @And("^I click on the (.*) button$")
+    public void i_click_on_URM_button(String URMButton) {
+        navigateTo.clickOnURM(driver, URMButton);
     }
 
     @And("^I select \"(.*)\" from the list view$")
@@ -153,9 +167,14 @@ public class SalesforceStepDefinitions {
         navigateTo.scrollDown(driver);
     }
 
-    @And("I click on ENGAGEMENT PLAN NUMBER")
-    public void click_EPN() {
-        navigateTo.clickOnEpn(driver);
+    @And("I scroll up to page")
+    public void  scroll_up(){
+        navigateTo.scrollUP(driver);
+    }
+
+    @And("^I click on (.*) new$")
+    public void click_EPN(String EPN) {
+        navigateTo.clickOnEpn(driver,EPN);
     }
 
     @And("^I click \"(.*)\" button$")
@@ -177,15 +196,15 @@ public class SalesforceStepDefinitions {
 //        lastName = data.get(0).get("Last Name");
         navigateTo.clickOnRelationshipManager(driver,fieldName);
     }
-    @Then("^I verify the (.*)name is populated with previous value$")
-    public void  verify_Previous_Relationship_Manager(DataTable dataTable ){
+    @Then("^I verify the (.*) name is populated with previous value$")
+    public void  verify_Previous_Relationship_Manager(String filedPRManager,DataTable dataTable){
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        String PreviousManager = data.get(0).get("Manager Name");
-
+        String PreviousManager = data.get(0).get(filedPRManager);
+        System.out.println("Previous Manager "+PreviousManager);
         navigateTo.verifyPRM(driver,PreviousManager);
     }
     @Then("^I verify the (.*) is now updated with new manager name$")
-    public void verify_Updated_Relationship_Manager(DataTable dataTable,String filedManager) throws Throwable {
+    public void verify_Updated_Relationship_Manager(String filedManager,DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String NewManager = data.get(0).get("Manager Name");
@@ -199,6 +218,14 @@ public class SalesforceStepDefinitions {
     @And("^I \"(.*)\" the PopUp$")
     public void  PopUp_Close(String filedClose){
         navigateTo.ClosePopUp(driver,filedClose);
+    }
+    @Then("I verify following details under Contacts page")
+    public  void i_verify_details_under_contacts_page(DataTable dataTable) throws Throwable {
+
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedName = data.get(0).get("Name");
+        String filedPhone = data.get(0).get("Phone");
+        navigateTo.verifyDetailsUnderContact(driver,filedName,filedPhone);
     }
 }
 

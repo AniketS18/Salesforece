@@ -13,8 +13,8 @@ Feature:  Set Supporter Level as Key Supporter and verify the details
   Scenario Outline:  Assign Engagement Plan to Supporters
     Given I login to Salesforce URL
     When I click on Contacts Page
-    And I click on Recently Viewed dropdown
-    And I select All Contacts from the list view.
+    And I click on Recently Viewed dropdown "Select List View"
+    And I select "All Contacts" from the list view
 #   And I view list of all contacts under 'All Contacts' page
     And I type the contact "Adut Madut" in the Search box and press Enter to view the particular contact detail
     And I click on the searched contact name.

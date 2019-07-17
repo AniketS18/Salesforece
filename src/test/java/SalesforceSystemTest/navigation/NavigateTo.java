@@ -1,16 +1,15 @@
 
 package SalesforceSystemTest.navigation;
 
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.guice.Injectors;
 import net.thucydides.core.util.EnvironmentVariables;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -46,11 +45,18 @@ public class NavigateTo {
             e.printStackTrace();
         }
     }
-
-    public void clickNewContact(WebDriver driver) {
+    public void clickContact(WebDriver driver) {
+        waitfortheelement();
         waitfortheelement();
         driver.findElement(By.xpath("//*[@data-id='Contact']")).click();
-        //driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[2]")).click();
+        waitfortheelement();
+    }
+    public void clickNewContact(WebDriver driver) {
+        waitfortheelement();
+       // driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[2]")).click();
+       WebElement e= driver.findElement(By.xpath("//*[@class='slds-icon slds-icon-text-default slds-icon_x-small']"));
+        System.out.println(e);
+        e.click();
         waitfortheelement();
 //        Actions act1 = new Actions(driver);
 //        waitfortheelement();
@@ -58,6 +64,11 @@ public class NavigateTo {
 //        act1.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 //        waitfortheelement();
 
+    }
+    public void clickOnDropdown(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[2]")).click();
+        waitfortheelement();
     }
 
     public void clickNewOpportunity(WebDriver driver) {
@@ -83,8 +94,10 @@ public class NavigateTo {
     }
 
     public void scrollUP(WebDriver driver) {
+        waitfortheelement();
         Actions action = new Actions(driver);
         action.sendKeys(Keys.PAGE_UP).build().perform();
+        waitfortheelement();
 
     }
 
@@ -104,6 +117,7 @@ public class NavigateTo {
     public void clickOnSave(WebDriver driver,String buttonName) {
         waitfortheelement();
         driver.findElement(By.xpath("//button[@title='"+ buttonName +"']//span[@class=' label bBody']")).click();
+        waitfortheelement();
         waitfortheelement();
 
     }
@@ -199,10 +213,10 @@ public class NavigateTo {
           Assert.assertEquals(eptNum,ept);
          Assert.assertEquals(contactName,cName);
     }
-    public void clickOnEpn(WebDriver driver){
+    public void clickOnEpn(WebDriver driver,String filedEPN){
         waitfortheelement();
         waitfortheelement();
-        driver.findElement(By.xpath("//a[contains(@class,'textUnderline output')][@data-recordid ='a0k6D000000TH4YQAW']")).click();
+        driver.findElement(By.xpath("(//th[text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup'])[1]")).click();
         waitfortheelement();
     }
     public void clickOnERM(WebDriver driver,String ERMButton){
@@ -245,11 +259,49 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='container']//div//button[@title='"+ close +"']")).click();
         waitfortheelement();
     }
-    public void verifyPRM (WebDriver driver,String Manager){
+
+
+    public WebElement getVisibility(WebDriver driver,By locator, int timeout) {
+        WebElement element = null;
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
+        element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return element;
+    }
+    public void clickElementWhenClickable(WebDriver driver,By locator, int timeout) {
+        WebElement element = null;
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
+        element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        element.click();
+    }
+
+
+
+    public void verifyPRM (WebDriver driver,String previousManager){
         waitfortheelement();
         waitfortheelement();
-        String OldManager = driver.findElement(By.xpath("//span[text()='Previous Relationship Manager']/../..//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup']")).getText();
+        String xPath = "//span[text()='Previous Relationship Manager']/../..//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup']";
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,-250)");
+        String testname = driver.findElement(By.xpath(xPath)).getText();
+
+        Assert.assertEquals(previousManager,testname);
+
+    }
+    public void clickOnURM(WebDriver driver,String UndoRM){
         waitfortheelement();
-        Assert.assertEquals(OldManager,Manager);
+        waitfortheelement();
+        String OldManager = driver.findElement(By.xpath("//span[text()='"+ UndoRM +"']/../..//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup']")).getText();
+        System.out.println("Old Manager="+OldManager);
+        waitfortheelement();
+    }
+    public void verifyDetailsUnderContact(WebDriver driver,String filedName,String filedPhone){
+        waitfortheelement();
+        waitfortheelement();
+        String fullName = driver.findElement(By.xpath("//span[text()='Name']/../..//span[@class='uiOutputText']")).getText();
+        String PhoneNo = driver.findElement(By.xpath("//span[text()='Phone']/../..//span[@class='uiOutputPhone']")).getText();
+        waitfortheelement();
+
+        Assert.assertEquals(fullName,filedName);
+        Assert.assertEquals(PhoneNo,filedPhone);
     }
 }
