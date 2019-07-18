@@ -20,3 +20,6 @@
 [0517/200046.856:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0517/200046.856:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0517/200046.857:ERROR:exception_snapshot_win.cc(98)] thread ID 6488 not found in process
+[0718/170550.994:ERROR:file_io_win.cc(243)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+[0718/170555.699:ERROR:file_io_win.cc(243)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+[0718/170601.923:ERROR:file_io_win.cc(243)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)

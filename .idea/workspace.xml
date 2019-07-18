@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AssignEngagementPlantoSupporters" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Change of Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HighValue.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/HighValue.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/KeySupporterLevelA.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AssignEngagementPlantoSupporters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Change of Relationship Manager by HV Co-ordinator.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HighValue.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/KeySupporterLevelA.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Remove the Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Remove the Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC1 Create new supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC1 Create new supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Remove the Relationship Manager by HV Co-ordinator.feature" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,32 +41,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/KeySupporterLevelA.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="75" selection-end-line="2" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="213" column="48" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
+            <state relative-caret-position="135">
+              <caret line="75" column="120" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -74,45 +66,16 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4020#4021#0" expanded="true" />
-                <element signature="e#4367#4368#0" expanded="true" />
-                <element signature="e#4533#4534#0" expanded="true" />
-                <element signature="e#4752#4753#0" expanded="true" />
-                <element signature="e#5125#5126#0" expanded="true" />
-                <element signature="e#5427#5428#0" expanded="true" />
-                <element signature="e#5622#5623#0" expanded="true" />
-                <element signature="e#5843#5844#0" expanded="true" />
-                <element signature="e#6390#6391#0" expanded="true" />
-                <element signature="e#6313#6314#0" expanded="true" />
-                <element signature="e#6356#6357#0" expanded="true" />
-                <element signature="e#6620#6621#0" expanded="true" />
-                <element signature="e#6763#6764#0" expanded="true" />
-                <element signature="e#8472#8473#0" expanded="true" />
-                <element signature="e#8529#8530#0" expanded="true" />
-                <element signature="e#8613#8614#0" expanded="true" />
-                <element signature="e#8669#8670#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -120,8 +83,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="58">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3962#3963#0" expanded="true" />
+                <element signature="e#4020#4021#0" expanded="true" />
+                <element signature="e#4311#4312#0" expanded="true" />
+                <element signature="e#4367#4368#0" expanded="true" />
+                <element signature="e#4476#4477#0" expanded="true" />
+                <element signature="e#4533#4534#0" expanded="true" />
+                <element signature="e#4692#4693#0" expanded="true" />
+                <element signature="e#4752#4753#0" expanded="true" />
+                <element signature="e#5073#5074#0" expanded="true" />
+                <element signature="e#5125#5126#0" expanded="true" />
+                <element signature="e#5366#5367#0" expanded="true" />
+                <element signature="e#5427#5428#0" expanded="true" />
+                <element signature="e#5553#5554#0" expanded="true" />
+                <element signature="e#5622#5623#0" expanded="true" />
+                <element signature="e#5780#5781#0" expanded="true" />
+                <element signature="e#5843#5844#0" expanded="true" />
+                <element signature="e#6345#6346#0" expanded="true" />
+                <element signature="e#6390#6391#0" expanded="true" />
+                <element signature="e#6571#6572#0" expanded="true" />
+                <element signature="e#6620#6621#0" expanded="true" />
+                <element signature="e#6706#6707#0" expanded="true" />
+                <element signature="e#6763#6764#0" expanded="true" />
+                <element signature="e#8612#8613#0" expanded="true" />
+                <element signature="e#8669#8670#0" expanded="true" />
+                <element signature="e#9782#9783#0" expanded="true" />
+                <element signature="e#9844#9845#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -129,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/HighValue.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="119">
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="111" />
             </state>
           </provider>
@@ -138,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="102">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -165,6 +184,7 @@
       <find>sc</find>
       <find>previo</find>
       <find>Previous</find>
+      <find>epn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,11 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Salesforce/stepdefinitions/SalesforceStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Salesforce/navigation/NavigateTo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Salesforce/CucumberTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/search/SearchFor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/search/SearchForm.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/search/SearchResult.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/search/SearchResultList.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/config.properties" />
@@ -213,17 +228,22 @@
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/Testfile.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/CucumberTestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/Supporters.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/Supporters.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelA.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/HighValue.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Change of Relationship Manager by HV Co-ordinator.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/AssignEngagementPlantoSupporters" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature" />
       </list>
     </option>
   </component>
@@ -243,7 +263,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="788" />
@@ -254,7 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,37 +373,11 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="webdriver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="webdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,9 +390,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\HighValue" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\Feature" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\HighValue" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\webdriver\windows" />
@@ -425,33 +419,15 @@
     </option>
     <option name="contentProportion" value="0.17310664" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Login to Salesforce URL and Create new supporter">
-    <configuration name="Feature: Remove the Relationship Manager by HV Co-ordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Login to Salesforce URL and Remove Relationship Manager">
+    <configuration name="Feature: Change of Relationship Manager by HV Co-ordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Remove the Relationship Manager by HV Co-ordinator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: TC1 Create new supporter record" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="serenity-cucumber-starter" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC1 Create new supporter record" />
+      <option name="SUGGESTED_NAME" value="Feature: Change of Relationship Manager by HV Co-ordinator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -481,15 +457,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login to Salesforce URL and Create new supporter" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Login to Salesforce URL and Create new supporter$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login to Salesforce URL and Create new supporter$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login to Salesforce URL and Create new supporter" />
+      <option name="NAME_FILTER" value="^Change Relationship Manager by HV Co\-ordinator$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Change Relationship Manager by HV Co\-ordinator$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Change Relationship Manager by HV Co-ordinator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Create new supporter without mandatory fileds" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="serenity-cucumber-starter" />
+      <option name="NAME_FILTER" value="^Create new supporter without mandatory fileds$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create new supporter without mandatory fileds$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create new supporter without mandatory fileds" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -502,7 +497,7 @@
     </configuration>
     <configuration name="Scenario: Login to Salesforce URL and Remove Relationship Manager" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
@@ -521,11 +516,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Login to Salesforce URL and Create new supporter" />
-        <item itemvalue="Cucumber java.Scenario: Assigne Engagement Plans to Supporters" />
-        <item itemvalue="Cucumber java.Feature: TC1 Create new supporter record" />
         <item itemvalue="Cucumber java.Scenario: Login to Salesforce URL and Remove Relationship Manager" />
-        <item itemvalue="Cucumber java.Feature: Remove the Relationship Manager by HV Co-ordinator" />
+        <item itemvalue="Cucumber java.Scenario: Change Relationship Manager by HV Co-ordinator" />
+        <item itemvalue="Cucumber java.Feature: Change of Relationship Manager by HV Co-ordinator" />
+        <item itemvalue="Cucumber java.Scenario: Assigne Engagement Plans to Supporters" />
+        <item itemvalue="Cucumber java.Scenario: Create new supporter without mandatory fileds" />
       </list>
     </recent_temporary>
   </component>
@@ -543,42 +538,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.16 at 15h 54m 37s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 17h 45m 31s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.16 at 16h 30m 16s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 17h 48m 20s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.16 at 17h 07m 00s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 17h 50m 45s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.16 at 20h 10m 50s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 17h 52m 26s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.17 at 09h 54m 56s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 18h 00m 01s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.17 at 09h 57m 41s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Change_of_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 18h 03m 30s.xml">
+      <configuration name="Feature: Change of Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.17 at 10h 02m 57s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 18h 09m 07s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.17 at 10h 06m 19s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Change_Relationship_Manager_by_HV_Co-ordinator - 2019.07.18 at 18h 11m 48s.xml">
+      <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.17 at 10h 09m 23s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Remove_Relationship_Manager - 2019.07.18 at 18h 12m 56s.xml">
+      <configuration name="Scenario: Login to Salesforce URL and Remove Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.17 at 10h 14m 52s.xml">
-      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Remove_Relationship_Manager - 2019.07.18 at 18h 14m 57s.xml">
+      <configuration name="Scenario: Login to Salesforce URL and Remove Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.2427481" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.24770643" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,7 +591,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3282313" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.54761904" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.3811966" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -604,7 +599,7 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" visible="true" weight="0.022900764" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.022900764" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -615,9 +610,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/KeySupporterTest.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/KeySupporter.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Salesforcelogin.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/NotApplicable.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPITest/resources/HighValue.feature" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0.jar!/cucumber/runtime/FeatureBuilder.class">
@@ -735,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-model/2.0.46/serenity-model-2.0.46-sources.jar!/net/serenitybdd/core/environment/EnvironmentSpecificConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -766,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/ui/WebDriverWait.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-876">
@@ -784,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="75" selection-end-line="2" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/KeySupporterLevelA.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -798,71 +769,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Create new supporter without providing mandatory fields" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/HighValue.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="119">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/3/NavigateTo[253].java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4020#4021#0" expanded="true" />
-            <element signature="e#4367#4368#0" expanded="true" />
-            <element signature="e#4533#4534#0" expanded="true" />
-            <element signature="e#4752#4753#0" expanded="true" />
-            <element signature="e#5125#5126#0" expanded="true" />
-            <element signature="e#5427#5428#0" expanded="true" />
-            <element signature="e#5622#5623#0" expanded="true" />
-            <element signature="e#5843#5844#0" expanded="true" />
-            <element signature="e#6390#6391#0" expanded="true" />
-            <element signature="e#6313#6314#0" expanded="true" />
-            <element signature="e#6356#6357#0" expanded="true" />
-            <element signature="e#6620#6621#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#8472#8473#0" expanded="true" />
-            <element signature="e#8529#8530#0" expanded="true" />
-            <element signature="e#8613#8614#0" expanded="true" />
-            <element signature="e#8669#8670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Create new supporter without providing mandatory fields">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="213" column="48" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="138">
+          <caret line="192" column="117" selection-start-line="192" selection-start-column="99" selection-end-line="192" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="99">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3962#3963#0" expanded="true" />
+            <element signature="e#4020#4021#0" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#4367#4368#0" expanded="true" />
+            <element signature="e#4476#4477#0" expanded="true" />
+            <element signature="e#4533#4534#0" expanded="true" />
+            <element signature="e#4692#4693#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#5073#5074#0" expanded="true" />
+            <element signature="e#5125#5126#0" expanded="true" />
+            <element signature="e#5366#5367#0" expanded="true" />
+            <element signature="e#5427#5428#0" expanded="true" />
+            <element signature="e#5553#5554#0" expanded="true" />
+            <element signature="e#5622#5623#0" expanded="true" />
+            <element signature="e#5780#5781#0" expanded="true" />
+            <element signature="e#5843#5844#0" expanded="true" />
+            <element signature="e#6345#6346#0" expanded="true" />
+            <element signature="e#6390#6391#0" expanded="true" />
+            <element signature="e#6571#6572#0" expanded="true" />
+            <element signature="e#6620#6621#0" expanded="true" />
+            <element signature="e#6706#6707#0" expanded="true" />
+            <element signature="e#6763#6764#0" expanded="true" />
+            <element signature="e#8612#8613#0" expanded="true" />
+            <element signature="e#8669#8670#0" expanded="true" />
+            <element signature="e#9782#9783#0" expanded="true" />
+            <element signature="e#9844#9845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="75" column="120" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

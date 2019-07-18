@@ -63,14 +63,14 @@ public class SalesforceStepDefinitions {
     }
 
 
-    @When("^I click on Contacts Page")
-    public void i_click_on_contacts_page() throws Throwable {
-        navigateTo.clickContact(driver);
+    @When("^I click on (.*) tag")
+    public void i_click_on_contacts_page(String filedTagname) throws Throwable {
+        navigateTo.clickContacts(driver,filedTagname);
         //   restapi.testRestApi();
 
     }
 
-    @And("I click on New Contact under Contact Page")
+    @And("I click on the New Contact under Contact Page")
     public void i_click_on_new_contact() throws Throwable{
         navigateTo.clickNewContact(driver);
 
@@ -172,9 +172,9 @@ public class SalesforceStepDefinitions {
         navigateTo.scrollUP(driver);
     }
 
-    @And("^I click on (.*) new$")
-    public void click_EPN(String EPN) {
-        navigateTo.clickOnEpn(driver,EPN);
+    @And("^I click on (.*) new (.*)$")
+    public void click_EPN(String EPN,String Number) {
+        navigateTo.clickOnEpn(driver,EPN,Number);
     }
 
     @And("^I click \"(.*)\" button$")
@@ -226,6 +226,18 @@ public class SalesforceStepDefinitions {
         String filedName = data.get(0).get("Name");
         String filedPhone = data.get(0).get("Phone");
         navigateTo.verifyDetailsUnderContact(driver,filedName,filedPhone);
+    }
+    @Then("I verify whether the correct error \"(.*)\" message displayed or not")
+    public void i_verify_correct_error_message_displayed(String filedMessage) {
+        navigateTo.verifyCorrectErrorMessage(driver,filedMessage);
+    }
+    @Then("I verify whether the correct error \"(.*)\" message displayed")
+    public void i_verify_correct_error_message(String filedMessage){
+        navigateTo.verifyErrorMessage(driver,filedMessage);
+    }
+    @And("I click on \"(.*)\" check box")
+    public void i_click_check_box(String filedCheckBox){
+        navigateTo.clickCheckBox(driver,filedCheckBox);
     }
 }
 

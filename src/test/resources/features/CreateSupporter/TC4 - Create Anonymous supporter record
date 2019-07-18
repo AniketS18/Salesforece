@@ -2,23 +2,24 @@ Feature: To Create new supporter record and verify the details
   As a Salesforce user, login to Salesforce and create new Supporter and Verify
   the details
 
-  Scenario Outline: Create new supporter without mandatory fileds
+  Scenario Outline: Create new supporter with invalid data
 
 
     Given I login to Salesforce URL
     When I click on Contact dropdown
-    And I click on the New Contact under Contact Page
+    And I click on New Contact under Contact Page
 
     And I enter following details in Salutation, First Name, Last Name and Phone fields under New Contact Page:
       | First Name   | Last Name   | Salutation   | Phone   |
       | <First Name> | <Last Name> | <Salutation> | <Phone> |
-
+    And I click on "Is Anonymous" check box
     And I click on Save button
-#    5. And I Keep following details empty under  'New Contact' Page.
-#    Phone no/email/Mobile.
-
-    Then I verify whether the correct error "At least one contact method(Phone, Email, Mobile or Address) is mandatory" message displayed or not
+    And I click on Contacts Page
+    And I type the contact "Josh Kase" in the Search box and press Enter to view the particular contact detail
+    And I click on the searched contact name
+    And I click on "Details" Tab
+    And I scroll down to page
 
     Examples:
       | First Name | Last Name | Salutation | Phone |
-      | Josh      | Kase | Mr   |  |
+      | Josh      | Kase | Mr   | 98764429533 |

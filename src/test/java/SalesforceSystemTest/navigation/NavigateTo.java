@@ -45,18 +45,24 @@ public class NavigateTo {
             e.printStackTrace();
         }
     }
-    public void clickContact(WebDriver driver) {
+    public void clickContacts(WebDriver driver,String tagname) {
         waitfortheelement();
         waitfortheelement();
-        driver.findElement(By.xpath("//*[@data-id='Contact']")).click();
+        waitfortheelement();
+        waitfortheelement();
+        String e=driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).getText();
+
+        driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).click();
         waitfortheelement();
     }
     public void clickNewContact(WebDriver driver) {
         waitfortheelement();
        // driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[2]")).click();
-       WebElement e= driver.findElement(By.xpath("//*[@class='slds-icon slds-icon-text-default slds-icon_x-small']"));
+       String e= driver.findElement(By.xpath(".//one-app-nav-bar-menu-item[@class='slds-dropdown__item']//a//span[@class='slds-truncate']//span[text()='New Contact']")).getText();
+        System.out.println("------------------------------------");
         System.out.println(e);
-        e.click();
+        System.out.println("-----------------------------------");
+        driver.findElement(By.xpath(".//one-app-nav-bar-menu-item[@class='slds-dropdown__item']//a//span[@class='slds-truncate']//span[text()='New Contact']")).click();
         waitfortheelement();
 //        Actions act1 = new Actions(driver);
 //        waitfortheelement();
@@ -213,10 +219,15 @@ public class NavigateTo {
           Assert.assertEquals(eptNum,ept);
          Assert.assertEquals(contactName,cName);
     }
-    public void clickOnEpn(WebDriver driver,String filedEPN){
+    public void clickOnEpn(WebDriver driver,String filedEPN,String filedNumer){
         waitfortheelement();
         waitfortheelement();
-        driver.findElement(By.xpath("(//th[text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup'])[1]")).click();
+        String e= driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[text()='"+ filedNumer +"']")).getText();
+        System.out.println("----------------------------------------------");
+        System.out.println(e);
+        System.out.println("-----------------------------------------------");
+
+        driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[text()='"+ filedNumer +"']")).click();
         waitfortheelement();
     }
     public void clickOnERM(WebDriver driver,String ERMButton){
@@ -228,11 +239,15 @@ public class NavigateTo {
 
     public void clickOnRelationshipManager(WebDriver driver, String  Name){
         waitfortheelement();
-        driver.findElement(By.xpath("//div[@title ='"+ Name +"']")).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,50)");
+        driver.findElement(By.xpath(".//span[@class='pillText'][text()='"+ Name +"']")).click();
         waitfortheelement();
     }
     public void verifyURM(WebDriver driver,String ManagerName,String RnManager){
         waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,-250)");
         String Name = driver.findElement(By.xpath("//label[@class='label inputLabel uiLabel-left form-element__label uiLabel']//span[text()='"+ RnManager +"']/../..//span[@class='pillText']")).getText();
         waitfortheelement();
         System.out.println("-----------------------------------------------------");
@@ -297,11 +312,39 @@ public class NavigateTo {
     public void verifyDetailsUnderContact(WebDriver driver,String filedName,String filedPhone){
         waitfortheelement();
         waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,-250)");
         String fullName = driver.findElement(By.xpath("//span[text()='Name']/../..//span[@class='uiOutputText']")).getText();
         String PhoneNo = driver.findElement(By.xpath("//span[text()='Phone']/../..//span[@class='uiOutputPhone']")).getText();
+        System.out.println("-------------------Name-----------------------");
+        System.out.println(fullName);
+        System.out.println("--------------------Phone----------------------");
+        System.out.println(PhoneNo);
         waitfortheelement();
 
         Assert.assertEquals(fullName,filedName);
         Assert.assertEquals(PhoneNo,filedPhone);
+    }
+    public void verifyCorrectErrorMessage(WebDriver driver,String message){
+        waitfortheelement();
+        waitfortheelement();
+        String msg = driver.findElement(By.xpath("//li[text()='"+ message +"']")).getText();
+        waitfortheelement();
+
+        Assert.assertEquals(msg,message);
+    }
+    public void verifyErrorMessage(WebDriver driver,String message){
+        waitfortheelement();
+        waitfortheelement();
+        String msg = driver.findElement(By.xpath("//li[@class='form-element__help'][contains(text(),'"+ message +"')]")).getText();
+        waitfortheelement();
+
+        Assert.assertEquals(msg,message);
+    }
+    public void clickCheckBox(WebDriver driver,String checkbox){
+        waitfortheelement();
+        waitfortheelement();
+        driver.findElement(By.xpath("//label//span[text()='"+ checkbox +"']/../..//input[@type='checkbox']")).click();
+        waitfortheelement();
     }
 }
