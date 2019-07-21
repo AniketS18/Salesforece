@@ -30,6 +30,7 @@ public class SalesforceStepDefinitions {
     String firstName, lastName, Salutation, Phone, tagName;
     String expectedString;
     String enteredSupporterLevel, expectedSupporterLevel, expectedLevelOfService, expectedSelectService, expectedchoosedSupporter, enteredSelectService;
+    String opportunityName,primaryCampaignSource, closeDate, stage;
 
     public WebDriver initialize() {
         String saleforceNotifications = getConfigurationDetails("webdriver.base.disable_notifications");
@@ -227,7 +228,7 @@ public class SalesforceStepDefinitions {
         String filedPhone = data.get(0).get("Phone");
         navigateTo.verifyDetailsUnderContact(driver,filedName,filedPhone);
     }
-    @Then("I verify whether the correct error \"(.*)\" message displayed or not")
+    @Then("I verify whether correct error \"(.*)\" message displayed or not")
     public void i_verify_correct_error_message_displayed(String filedMessage) {
         navigateTo.verifyCorrectErrorMessage(driver,filedMessage);
     }
@@ -238,6 +239,35 @@ public class SalesforceStepDefinitions {
     @And("I click on \"(.*)\" check box")
     public void i_click_check_box(String filedCheckBox){
         navigateTo.clickCheckBox(driver,filedCheckBox);
+    }
+//    @When("I click on Opportunity tab")
+//    public void i_click_opportunities() {
+//        navigateTo.clickOpportunity(driver);
+//    }
+    @When("I click on Opportunities dropdown")
+    public void i_click_opportunities_dropdown() {
+        navigateTo.clickOpportunitydropdown(driver);
+    }
+    @When("I click New Opportunity button")
+    public void i_click_new_opportunity(){
+        navigateTo.clickNewOpportunity(driver);
+    }
+    @And("I select Donation button")
+    public void i_select_donation(){
+        navigateTo.selectDonation(driver);
+    }
+    @And("I click the Next button")
+    public void i_click_next(){
+        navigateTo.clickNext(driver);
+    }
+    @And("^I enter following details in (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
+    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage, DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        opportunityName = data.get(0).get("Opportunity Name");
+        primaryCampaignSource = data.get(0).get("Last Name");
+        closeDate = data.get(0).get("Salutation");
+        stage = data.get(0).get("Phone");
+        navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
     }
 }
 

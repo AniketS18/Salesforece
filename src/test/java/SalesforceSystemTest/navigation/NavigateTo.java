@@ -50,25 +50,19 @@ public class NavigateTo {
         waitfortheelement();
         waitfortheelement();
         waitfortheelement();
-        String e=driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).getText();
+        //String e=driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).getText();
 
-        driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).click();
+        driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[@class='slds-truncate'][text()='"+ tagname +"']]]")).click();
+       // driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none']//a//span[@class='slds-truncate'][text()='"+ tagname +"']")).click();
         waitfortheelement();
     }
     public void clickNewContact(WebDriver driver) {
         waitfortheelement();
-       // driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[2]")).click();
-       String e= driver.findElement(By.xpath(".//one-app-nav-bar-menu-item[@class='slds-dropdown__item']//a//span[@class='slds-truncate']//span[text()='New Contact']")).getText();
-        System.out.println("------------------------------------");
-        System.out.println(e);
-        System.out.println("-----------------------------------");
-        driver.findElement(By.xpath(".//one-app-nav-bar-menu-item[@class='slds-dropdown__item']//a//span[@class='slds-truncate']//span[text()='New Contact']")).click();
-        waitfortheelement();
-//        Actions act1 = new Actions(driver);
-//        waitfortheelement();
-//        waitfortheelement();
-//        act1.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
-//        waitfortheelement();
+        WebElement element1 = driver.findElement(By.xpath("//div[contains(@class,'menuItemsWrapper')]//span//span[contains(text(),'New Contact')]"));
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element1);
+
+
 
     }
     public void clickOnDropdown(WebDriver driver){
@@ -79,12 +73,19 @@ public class NavigateTo {
 
     public void clickNewOpportunity(WebDriver driver) {
         waitfortheelement();
-        driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[5]")).click();
+        WebElement element1 = driver.findElement(By.xpath("//div[contains(@class,'menuItemsWrapper')]//span//span[contains(text(),'New Opportunity')]"));
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element1);
         waitfortheelement();
 //        Actions act1 = new Actions(driver);
 //        act1.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 //        waitfortheelement();
 
+    }
+    public void clickOpportunitydropdown(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("(//lightning-icon[@class='slds-icon-utility-chevrondown slds-icon_container'])[5]")).click();
+        waitfortheelement();
     }
 
     public void enterAllDetails(WebDriver driver, String fieldName, String fieldValue) {
@@ -127,6 +128,12 @@ public class NavigateTo {
         waitfortheelement();
 
     }
+    public void clickNext(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//span[@class=' label bBody'][text()='Next']")).click();
+        waitfortheelement();
+    }
+
 
     public void recentlyViewedDropdown(WebDriver driver,String dropdown) {
         waitfortheelement();
@@ -336,7 +343,10 @@ public class NavigateTo {
     public void verifyErrorMessage(WebDriver driver,String message){
         waitfortheelement();
         waitfortheelement();
-        String msg = driver.findElement(By.xpath("//li[@class='form-element__help'][contains(text(),'"+ message +"')]")).getText();
+        String msg = driver.findElement(By.xpath("//li[@class='form-element__help']")).getText();
+//        System.out.println("=--------------------------------------------");
+//        System.out.println(msg);
+//        System.out.println("----------------------------------------------");
         waitfortheelement();
 
         Assert.assertEquals(msg,message);
@@ -346,5 +356,34 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("//label//span[text()='"+ checkbox +"']/../..//input[@type='checkbox']")).click();
         waitfortheelement();
+    }
+    public void selectDonation(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath(".//span[@class='slds-radio--faux']/../..//div[@class='changeRecordTypeOptionRightColumn']//span[contains(text(),'Donation')]")).click();
+        waitfortheelement();
+    }
+    public void insertdetails(WebDriver driver,String fieldOpportunityName,String fieldPrimaryCampaignSource,String filedCloseDate,String filedStage,String opportunityName,String primaryCampaignSource,String closeDate,String stage){
+        waitfortheelement();
+        enterAllDetails(driver, fieldOpportunityName, opportunityName);
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']")).click();
+
+
+        //        enterAllDetails(driver, fieldPrimaryCampaignSource, primaryCampaignSource);
+//        enterAllDetails(driver, filedCloseDate, closeDate);
+//        enterAllDetails(driver, filedStage, stage);
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')]")).click();
+        waitfortheelement();
+        WebElement element = driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']"));
+        waitfortheelement();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().build().perform();
+        waitfortheelement();
+        driver.findElement(By.xpath("//td[contains(@class,'uiDayInMonthCell')]//span[contains(@class,'slds-day weekday')][text()='24']")).click();
+        waitfortheelement();
+        String e =driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']")).getText();
+        System.out.println(e);
+
+        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']/../..//a[@class='select']")).click();
+        driver.findElement(By.xpath(".//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='Posted']")).click();
     }
 }

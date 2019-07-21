@@ -17,7 +17,7 @@ Feature: To Create new supporter record and verify the details
 #    5. And I Keep following details empty under  'New Contact' Page.
 #    Phone no/email/Mobile.
 
-    Then I verify whether the correct error "At least one contact method(Phone, Email, Mobile or Address) is mandatory" message displayed or not
+    Then I verify whether correct error "At least one contact method(Phone, Email, Mobile or Address) is mandatory" message displayed or not
 
     Examples:
       | First Name | Last Name | Salutation | Phone |

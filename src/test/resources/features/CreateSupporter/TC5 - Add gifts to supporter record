@@ -1,0 +1,16 @@
+Feature: To Create new supporter record and verify the details
+  As a Salesforce user, login to Salesforce and create new Supporter and Verify
+  the details
+
+  Scenario Outline: Add gift to supporter record
+    Given I login to Salesforce URL
+    When I click on Opportunities dropdown
+    And I click New Opportunity button
+    And I select Donation button
+    And I click the Next button
+    And I enter following details in Opportunity Name, Primary Campaign Source, Close Date and Stage fields under New Opportunity: Donation
+      | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
+      | <Opportunity Name> | <Primary Campaign Source> | <Close Date> | <Stage> |
+    Examples:
+      | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
+      | Flode Relif | Primary Campaign Source | 24/07/2019 | Posted |
