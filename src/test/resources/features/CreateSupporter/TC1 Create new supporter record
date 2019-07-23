@@ -20,8 +20,6 @@ Feature: To Create new supporter record and verify the details
     Then I verify following details under Contacts page
       |  Name   | Phone   |
       | <Name> | <Phone> |
-
-
     Examples:
       | First Name | Last Name | Salutation | Phone |
       | Josh      | Kase | Mr   | 934723017 |

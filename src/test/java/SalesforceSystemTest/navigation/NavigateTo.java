@@ -201,11 +201,19 @@ public class NavigateTo {
         driver.findElement(By.xpath("(//li[@class='slds-button slds-button--neutral slds-truncate']//a[contains(@title,'"+ buttonName +"')])[4]")).click();
         waitfortheelement();
     }
-
+    public void clickNewEngagementPlansTemplet(WebDriver driver) {
+        waitfortheelement();
+        waitfortheelement();
+        driver.findElement(By.xpath("(//li[@class='slds-button slds-button--neutral slds-truncate']//a[contains(@title,'New')])[10]")).click();
+        waitfortheelement();
+//    (//li[@class='slds-button slds-button--neutral slds-truncate']//a[contains(@title,'New')])[10]
+    }
     public void clickTextboxOfEngagementPlan(WebDriver driver) {
         waitfortheelement();
-        driver.findElement(By.xpath("//div[@class='primaryLabel slds-truncate slds-lookup__result-text']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'createNew itemContainer')]")).click();
         waitfortheelement();
+        waitfortheelement();
+
     }
     public void verifyDetails(WebDriver driver,String ept,String contactName){
         waitfortheelement();
@@ -226,22 +234,37 @@ public class NavigateTo {
           Assert.assertEquals(eptNum,ept);
          Assert.assertEquals(contactName,cName);
     }
-    public void clickOnEpn(WebDriver driver,String filedEPN,String filedNumer){
+    public void clickOnEpn(WebDriver driver,String filedEPN){
         waitfortheelement();
         waitfortheelement();
-        String e= driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[text()='"+ filedNumer +"']")).getText();
-        System.out.println("----------------------------------------------");
-        System.out.println(e);
-        System.out.println("-----------------------------------------------");
-
-        driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[text()='"+ filedNumer +"']")).click();
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("scrollBy(0,50)");
+//        driver.findElement(By.tagName("table"));
+//        String el =driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a")).getText();
+//        WebElement e= driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a"));
+//        System.out.println("----------------------------------------------");
+//        System.out.println(el);
+//        System.out.println("-----------------------------------------------");
+//        List<WebElement> rows = e.findElements(By.tagName("tr"));
+//        WebElement firstRecordFound = rows.get(0);
+//
+//        firstRecordFound.findElement(By.tagName("th")).findElement(By.tagName("a")).click();
+//        //driver.findElement(By.xpath("//th[@class='initialSortAsc '][text()='"+ filedEPN +"']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a[text()='"+ filedNumer +"']")).click();
+//        String e =driver.findElement(By.xpath("(//table[contains(@class,'forceRecordLayout slds-table')])[1]")).getText();
+//        System.out.println("----------------------------------------------");
+//        System.out.println(e);
+//        System.out.println("----------------------------------------------");
+//        System.out.println(driver.findElement(By.xpath("(//table[contains(@class,'forceRecordLayout slds-table')])[1]")).findElements(By.tagName("tr")));
+//
+//        System.out.println("-----------------------------------------------");
+          driver.findElement(By.xpath("(//tr//th[@class='initialSortAsc ']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a)[1]")).click();
         waitfortheelement();
     }
     public void clickOnERM(WebDriver driver,String ERMButton){
         waitfortheelement();
         waitfortheelement();
-        driver.findElement(By.xpath("//button[@title='"+ ERMButton +"']")).click();
-        waitfortheelement();
+         driver.findElement(By.xpath("//button[@title='"+ ERMButton +"']")).click();
+          waitfortheelement();
     }
 
     public void clickOnRelationshipManager(WebDriver driver, String  Name){
@@ -386,4 +409,41 @@ public class NavigateTo {
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']/../..//a[@class='select']")).click();
         driver.findElement(By.xpath(".//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='Posted']")).click();
     }
+    public void provideEngagementPlanName(WebDriver driver){
+        waitfortheelement();
+        waitfortheelement();
+        waitfortheelement();
+//        int size =driver.findElements(By.tagName("iframe")).size();
+//        System.out.println("------------------------------");
+//        System.out.println(size);
+//        System.out.println("=======------------------------");
+//        for(int i=0; i<=size; i++){
+//            driver.switchTo().frame(i);
+//            int total=driver.findElements(By.xpath("html/body/a/img")).size();
+//            System.out.println(total);
+//            driver.switchTo().defaultContent();}
+        driver.switchTo().frame(0);
+        waitfortheelement();
+        driver.findElement(By.xpath("//label[@class='slds-form-element__label']//abbr/../..//input[@class='slds-input']")).sendKeys("High Value Prospect Journey");
+
+    }
+    public void MEPTSave(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//input[@class='btn slds-button slds-button_brand']")).click();
+        driver.switchTo().defaultContent();
+    }
+    public void selectRelated(WebDriver driver){
+        driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='Related']//span[@class ='title'][text()='Related'])[2]")).click();
+    }
+    public void  selectAccount(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Accounts']")).click();
+        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Accounts']/..//div//div[@title='Jain Household']")).click();
+    }
+    public void selectEngagementPlan(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='primaryLabel slds-truncate slds-lookup__result-text']")).click();
+        waitfortheelement();
+    }
+
 }

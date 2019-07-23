@@ -11,7 +11,7 @@ Feature: Change of Relationship Manager by HV Co-ordinator.
     And I click on "Details" Tab
     And I scroll down to page
     And I click "Edit Relationship Manager" button
-    And I enter "Test User" in Relationship Manager filed
+    And I enter "Bheem Kattikar" in Relationship Manager filed
     And I click on Save button
     Then I verify the Relationship Manager is now updated with new manager name
        | Manager Name |

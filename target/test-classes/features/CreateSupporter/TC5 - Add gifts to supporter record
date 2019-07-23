@@ -11,6 +11,13 @@ Feature: To Create new supporter record and verify the details
     And I enter following details in Opportunity Name, Primary Campaign Source, Close Date and Stage fields under New Opportunity: Donation
       | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
       | <Opportunity Name> | <Primary Campaign Source> | <Close Date> | <Stage> |
+    And I click on Save button
+    Then I verify following details under Opportunity page
+      | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
+      | <Opportunity Name> | <Primary Campaign Source> | <Close Date> | <Stage> |
     Examples:
       | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
-      | Flode Relif | Primary Campaign Source | 24/07/2019 | Posted |
+      | flood Relief | Primary Campaign Source | 24/07/2019 | Posted |
+    Examples:
+      | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
+      | flood Relief | Primary Campaign Source | 24/07/2019 | Posted |

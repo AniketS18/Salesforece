@@ -147,9 +147,13 @@ public class SalesforceStepDefinitions {
     public void Engagement_Plans_new(String newButton) {
         navigateTo.clickNewEngagementPlans(driver, newButton);
     }
+    @And("I click the New button in the Engagement Plans section")
+    public void Engagement_Plans_new() {
+        navigateTo.clickNewEngagementPlansTemplet(driver);
+    }
 
     @And("I click on Engagement Plan Template textbox and select a plan under New Engagement Plan page")
-    public void select_Engagement_Plan_Template() {
+    public void click_Engagement_Plan_Template() {
         navigateTo.clickTextboxOfEngagementPlan(driver);
     }
 
@@ -173,9 +177,13 @@ public class SalesforceStepDefinitions {
         navigateTo.scrollUP(driver);
     }
 
-    @And("^I click on (.*) new (.*)$")
-    public void click_EPN(String EPN,String Number) {
-        navigateTo.clickOnEpn(driver,EPN,Number);
+//    @And("^I click on (.*) new (.*)$")
+//    public void click_EPN(String EPN,String Number) {
+//        navigateTo.clickOnEpn(driver,EPN,Number);
+//    }
+    @And("^I click on (.*) new$")
+    public void click_EPN(String EPN) {
+        navigateTo.clickOnEpn(driver,EPN);
     }
 
     @And("^I click \"(.*)\" button$")
@@ -268,6 +276,28 @@ public class SalesforceStepDefinitions {
         closeDate = data.get(0).get("Salutation");
         stage = data.get(0).get("Phone");
         navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
+    }
+//    @Then("^Then I verify following details under Opportunity page$")
+//    public void i_verify_opportunity_details()
+      @And("^I provide Engagement Plan Template Name$")
+      public void i_provide_engagement_plan_template_name(){
+        navigateTo.provideEngagementPlanName(driver);
+      }
+      @And("I click Save button on MANAGE ENGAGEMENT PLAN TEMPLATE")
+      public  void  i__click_Save_button_on_MANAGE_ENGAGEMENT_PLAN_TEMPLATE(){
+        navigateTo.MEPTSave(driver);
+      }
+      @And("I select on Related Tab")
+      public void i_select_related(){
+        navigateTo.selectRelated(driver);
+      }
+      @And("I select on Account tab")
+      public void i_select_account(){
+        navigateTo.selectAccount(driver);
+      }
+    @And("I select Engagement Plan Template")
+    public void i_select_Engagement_Plan_Template() {
+        navigateTo.selectEngagementPlan(driver);
     }
 }
 
