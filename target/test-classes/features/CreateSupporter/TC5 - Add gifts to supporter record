@@ -17,7 +17,4 @@ Feature: To Create new supporter record and verify the details
       | <Opportunity Name> | <Primary Campaign Source> | <Close Date> | <Stage> |
     Examples:
       | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
-      | flood Relief | Primary Campaign Source | 24/07/2019 | Posted |
-    Examples:
-      | Opportunity Name   | Primary Campaign Source  | Close Date   | Stage   |
-      | flood Relief | Primary Campaign Source | 24/07/2019 | Posted |
+      | flood Relief1 | Primary Campaign Source | 24/07/2019 | Posted |

@@ -21,4 +21,4 @@ Feature: To Create new supporter record and verify the details
 
     Examples:
       | First Name | Last Name | Salutation | Phone |
-      | Josh      | Kase | Mr   |  |
+      | Josh      | Kase | Captain   |  |

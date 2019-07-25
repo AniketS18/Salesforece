@@ -31,6 +31,7 @@ public class SalesforceStepDefinitions {
     String expectedString;
     String enteredSupporterLevel, expectedSupporterLevel, expectedLevelOfService, expectedSelectService, expectedchoosedSupporter, enteredSelectService;
     String opportunityName,primaryCampaignSource, closeDate, stage;
+    String Assignedto,Subject, Status, Priorty;
 
     public WebDriver initialize() {
         String saleforceNotifications = getConfigurationDetails("webdriver.base.disable_notifications");
@@ -232,9 +233,10 @@ public class SalesforceStepDefinitions {
     public  void i_verify_details_under_contacts_page(DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        String filedName = data.get(0).get("Name");
+       // String filedName = data.get(0).get("f");
         String filedPhone = data.get(0).get("Phone");
-        navigateTo.verifyDetailsUnderContact(driver,filedName,filedPhone);
+        String fullName =Salutation+" "+firstName+" "+lastName;
+        navigateTo.verifyDetailsUnderContact(driver,fullName,filedPhone);
     }
     @Then("I verify whether correct error \"(.*)\" message displayed or not")
     public void i_verify_correct_error_message_displayed(String filedMessage) {
@@ -277,8 +279,21 @@ public class SalesforceStepDefinitions {
         stage = data.get(0).get("Phone");
         navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
     }
-//    @Then("^Then I verify following details under Opportunity page$")
-//    public void i_verify_opportunity_details()
+    @Then("^I verify following details under Opportunity page$")
+    public void i_verify_opportunity_details(DataTable dataTable) throws Throwable {
+
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+       // String filedOpportunityName  = data.get(0).get("Opportunity Name");
+//        String filedPrimaryCampaignSource = data.get(0).get("Primary Campaign Source");
+//        String filedCloseDate  = data.get(0).get("Close Date ");
+//        String filedStage = data.get(0).get("Stage");
+
+        String filedOpportunityName = opportunityName;
+        String filedPrimaryCampaignSource = primaryCampaignSource;
+        String filedCloseDate = closeDate;
+        String filedStage= stage;
+        navigateTo.verfyopportunitydetails(driver,filedOpportunityName,filedPrimaryCampaignSource,filedCloseDate,filedStage);
+    }
       @And("^I provide Engagement Plan Template Name$")
       public void i_provide_engagement_plan_template_name(){
         navigateTo.provideEngagementPlanName(driver);
@@ -298,6 +313,31 @@ public class SalesforceStepDefinitions {
     @And("I select Engagement Plan Template")
     public void i_select_Engagement_Plan_Template() {
         navigateTo.selectEngagementPlan(driver);
+    }
+    @Then("^I verify Anonymous supporter record created$")
+    public void i_verify_anonymous_supporter_record_created(DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedPhone = data.get(0).get("Phone");
+        String fullName =Salutation+" "+firstName+" "+lastName;
+        navigateTo.verifyAnonymousSupporter(driver,filedPhone,fullName);
+    }
+    @And("^I click on (.*) tab$")
+    public void i_click_newTask(String filedTask){
+        navigateTo.clickNewTask(driver,filedTask);
+    }
+    @And("^I Provide the following details under New Task Page$")
+    public void i_provide_under_new_task(String fieldAssignedto, String fieldSubject, String filedStatus, String filedPriorty, DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        Assignedto = data.get(0).get("Assigned to");
+        Subject = data.get(0).get("Subject");
+        Status = data.get(0).get("Status");
+        Priorty = data.get(0).get("Priorty");
+        navigateTo.newTaskDetails(driver, fieldAssignedto, fieldSubject,filedStatus,filedPriorty,Assignedto,Subject,Status,Priorty);
+        //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
+    }
+    @Then("^I verify whether the warning message \"(.*)\" is displayed$")
+        public void i_verify_warning_message(String filedMessage){
+            navigateTo.verifywarningMessage(driver,filedMessage);
     }
 }
 

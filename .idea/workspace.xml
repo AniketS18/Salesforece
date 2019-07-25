@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" line="187" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" line="188" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC1 Create new supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC1 Create new supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC4 - Create Anonymous supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC4 - Create Anonymous supporter record" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC5 - Add gifts to supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC5 - Add gifts to supporter record" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HighValue/AssignEngagementPlantoSupporters" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/HighValue/AssignEngagementPlantoSupporters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/serenity.conf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="442" column="16" selection-start-line="442" selection-start-column="16" selection-end-line="442" selection-end-column="16" />
+            <state relative-caret-position="130">
+              <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,19 +54,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="196">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="11" column="23" selection-start-line="11" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -73,26 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="58" />
+            <state relative-caret-position="94">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="117">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -100,17 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -118,45 +128,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="299" column="25" selection-start-line="299" selection-start-column="25" selection-end-line="299" selection-end-column="25" />
+            <state relative-caret-position="113">
+              <caret line="339" column="33" lean-forward="true" selection-start-line="339" selection-start-column="33" selection-end-line="339" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4062#4063#0" expanded="true" />
+                <element signature="e#4120#4121#0" expanded="true" />
                 <element signature="e#5466#5467#0" expanded="true" />
                 <element signature="e#5527#5528#0" expanded="true" />
                 <element signature="e#5653#5654#0" expanded="true" />
                 <element signature="e#5722#5723#0" expanded="true" />
                 <element signature="e#5830#5831#0" expanded="true" />
                 <element signature="e#5895#5896#0" expanded="true" />
+                <element signature="e#6052#6053#0" expanded="true" />
                 <element signature="e#6115#6116#0" expanded="true" />
+                <element signature="e#6617#6618#0" expanded="true" />
                 <element signature="e#6662#6663#0" expanded="true" />
-                <element signature="e#6726#6727#0" expanded="true" />
-                <element signature="e#6769#6770#0" expanded="true" />
+                <element signature="e#7000#7001#0" expanded="true" />
                 <element signature="e#7049#7050#0" expanded="true" />
+                <element signature="e#7135#7136#0" expanded="true" />
                 <element signature="e#7192#7193#0" expanded="true" />
-                <element signature="e#9042#9043#0" expanded="true" />
-                <element signature="e#9099#9100#0" expanded="true" />
-                <element signature="e#9183#9184#0" expanded="true" />
-                <element signature="e#9239#9240#0" expanded="true" />
-                <element signature="e#10208#10209#0" expanded="true" />
-                <element signature="e#10270#10271#0" expanded="true" />
-                <element signature="e#10567#10568#0" expanded="true" />
-                <element signature="e#10655#10656#0" expanded="true" />
-                <element signature="e#10709#10710#0" expanded="true" />
-                <element signature="e#10783#10784#0" expanded="true" />
-                <element signature="e#10832#10833#0" expanded="true" />
-                <element signature="e#10900#10901#0" expanded="true" />
-                <element signature="e#10944#10945#0" expanded="true" />
-                <element signature="e#11969#11970#0" expanded="true" />
-                <element signature="e#12031#12032#0" expanded="true" />
-                <element signature="e#12179#12180#0" expanded="true" />
-                <element signature="e#12224#12225#0" expanded="true" />
-                <element signature="e#12300#12301#0" expanded="true" />
-                <element signature="e#12350#12351#0" expanded="true" />
-                <element signature="e#12426#12427#0" expanded="true" />
-                <element signature="e#12453#12454#0" expanded="true" />
-                <element signature="e#12595#12596#0" expanded="true" />
-                <element signature="e#12650#12651#0" expanded="true" />
+                <element signature="e#10570#10571#0" expanded="true" />
+                <element signature="e#10629#10630#0" expanded="true" />
+                <element signature="e#13169#13170#0" expanded="true" />
+                <element signature="e#13224#13225#0" expanded="true" />
+                <element signature="e#13926#13927#0" expanded="true" />
+                <element signature="e#13951#13952#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,6 +186,7 @@
       <find>And I click on Engagement Plan Template textbox and select a plan under New Engagement Plan page</find>
       <find>clickTextboxOfEngagementPlan</find>
       <find>//span[@class ='title'][text()='&quot;+ tagName +&quot;']</find>
+      <find>javasc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,11 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/search/SearchResultList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/org/testing/automation/pages/CreateDriverInstance.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/org/testing/automation/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/org/testing/automation/base/CreateDriverInstance.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/org/testing/automation/StepDefinitions/Steps.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/SalesforceHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/BB1.feature" />
@@ -238,15 +231,20 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/AssignEngagementPlantoSupporters" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
         <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
         <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC_3" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
       </list>
     </option>
@@ -267,7 +265,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -278,6 +276,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -357,7 +357,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="HighValue" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateSupporter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Manage Duplicates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -371,8 +380,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,15 +421,15 @@
     </option>
     <option name="contentProportion" value="0.17310664" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: AssignEngagementPlantoSupporters">
-    <configuration name="Feature: AssignEngagementPlantoSupporters" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: TC3-Create duplicate record based upon combinations of attributes">
+    <configuration name="Feature: TC2- Create new supporter with same attributes(duplicate)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: AssignEngagementPlantoSupporters" />
+      <option name="SUGGESTED_NAME" value="Feature: TC2- Create new supporter with same attributes(duplicate)" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -433,14 +440,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: Change of Relationship Manager by HV Co-ordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC3-Create duplicate record based upon combinations of attributes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Change of Relationship Manager by HV Co-ordinator" />
+      <option name="SUGGESTED_NAME" value="Feature: TC3-Create duplicate record based upon combinations of attributes" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -451,15 +458,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add gift to supporter record" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add feedback and complaints against a supporter record" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Add gift to supporter record$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add gift to supporter record$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add gift to supporter record" />
+      <option name="NAME_FILTER" value="^Add feedback and complaints against a supporter record$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add feedback and complaints against a supporter record$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add feedback and complaints against a supporter record" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -470,15 +477,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Assigne Engagement Plans to Supporters" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create a new supporter record with the same attributes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Assigne Engagement Plans to Supporters$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Assigne Engagement Plans to Supporters$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Assigne Engagement Plans to Supporters" />
+      <option name="NAME_FILTER" value="^Create a new supporter record with the same attributes$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create a new supporter record with the same attributes$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a new supporter record with the same attributes" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -489,15 +496,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Change Relationship Manager by HV Co-ordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login to Salesforce URL and Create new supporter" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Change Relationship Manager by HV Co\-ordinator$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Change Relationship Manager by HV Co\-ordinator$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Change Relationship Manager by HV Co-ordinator" />
+      <option name="NAME_FILTER" value="^Login to Salesforce URL and Create new supporter$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login to Salesforce URL and Create new supporter$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to Salesforce URL and Create new supporter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -510,11 +517,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: AssignEngagementPlantoSupporters" />
-        <item itemvalue="Cucumber java.Scenario: Assigne Engagement Plans to Supporters" />
-        <item itemvalue="Cucumber java.Scenario: Change Relationship Manager by HV Co-ordinator" />
-        <item itemvalue="Cucumber java.Feature: Change of Relationship Manager by HV Co-ordinator" />
-        <item itemvalue="Cucumber java.Scenario: Add gift to supporter record" />
+        <item itemvalue="Cucumber java.Feature: TC3-Create duplicate record based upon combinations of attributes" />
+        <item itemvalue="Cucumber java.Scenario: Login to Salesforce URL and Create new supporter" />
+        <item itemvalue="Cucumber java.Scenario: Create a new supporter record with the same attributes" />
+        <item itemvalue="Cucumber java.Feature: TC2- Create new supporter with same attributes(duplicate)" />
+        <item itemvalue="Cucumber java.Scenario: Add feedback and complaints against a supporter record" />
       </list>
     </recent_temporary>
   </component>
@@ -532,42 +539,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__AssignEngagementPlantoSupporters - 2019.07.23 at 15h 18m 20s.xml">
-      <configuration name="Feature: AssignEngagementPlantoSupporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC2-_Create_new_supporter_with_same_attributes(duplicate) - 2019.07.25 at 18h 28m 09s.xml">
+      <configuration name="Feature: TC2- Create new supporter with same attributes(duplicate)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignEngagementPlantoSupporters - 2019.07.23 at 15h 20m 25s.xml">
-      <configuration name="Feature: AssignEngagementPlantoSupporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.07.25 at 18h 30m 08s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.23 at 15h 25m 01s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.07.25 at 18h 31m 54s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.23 at 15h 27m 04s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC2-_Create_new_supporter_with_same_attributes(duplicate) - 2019.07.25 at 18h 33m 40s.xml">
+      <configuration name="Feature: TC2- Create new supporter with same attributes(duplicate)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.23 at 15h 29m 24s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC2-_Create_new_supporter_with_same_attributes(duplicate) - 2019.07.25 at 18h 41m 02s.xml">
+      <configuration name="Feature: TC2- Create new supporter with same attributes(duplicate)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.23 at 16h 07m 43s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.07.25 at 18h 45m 17s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assigne_Engagement_Plans_to_Supporters - 2019.07.23 at 17h 05m 22s.xml">
-      <configuration name="Scenario: Assigne Engagement Plans to Supporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_to_Salesforce_URL_and_Create_new_supporter - 2019.07.25 at 18h 53m 39s.xml">
+      <configuration name="Scenario: Login to Salesforce URL and Create new supporter" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignEngagementPlantoSupporters - 2019.07.23 at 22h 28m 00s.xml">
-      <configuration name="Feature: AssignEngagementPlantoSupporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC3-Create_duplicate_record_based_upon_combinations_of_attributes - 2019.07.25 at 18h 55m 14s.xml">
+      <configuration name="Feature: TC3-Create duplicate record based upon combinations of attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignEngagementPlantoSupporters - 2019.07.23 at 22h 33m 06s.xml">
-      <configuration name="Feature: AssignEngagementPlantoSupporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC3-Create_duplicate_record_based_upon_combinations_of_attributes - 2019.07.25 at 18h 58m 00s.xml">
+      <configuration name="Feature: TC3-Create duplicate record based upon combinations of attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignEngagementPlantoSupporters - 2019.07.23 at 22h 37m 09s.xml">
-      <configuration name="Feature: AssignEngagementPlantoSupporters" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC3-Create_duplicate_record_based_upon_combinations_of_attributes - 2019.07.25 at 19h 03m 06s.xml">
+      <configuration name="Feature: TC3-Create duplicate record based upon combinations of attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.21636085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.22094801" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -585,7 +591,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.41880342" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.4068376" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,37 +599,8 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.022900764" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.029051987" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.21636085" />
-      <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.44353518" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17264958" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.41880342" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.022900764" />
-    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="substepsFeature" />
@@ -633,17 +610,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0.jar!/cucumber/runtime/model/CucumberFeature.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelB.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelC.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/congaComposer.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelD.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPITest/MuleSoft.json" />
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPITest/restAPI.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAPITest/resources/Mulesoft.conf" />
@@ -794,52 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -858,69 +782,133 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC3- Create supporter with invalid data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC_3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="299" column="25" selection-start-line="299" selection-start-column="25" selection-end-line="299" selection-end-column="25" />
+        <state relative-caret-position="113">
+          <caret line="339" column="33" lean-forward="true" selection-start-line="339" selection-start-column="33" selection-end-line="339" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4062#4063#0" expanded="true" />
+            <element signature="e#4120#4121#0" expanded="true" />
             <element signature="e#5466#5467#0" expanded="true" />
             <element signature="e#5527#5528#0" expanded="true" />
             <element signature="e#5653#5654#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
             <element signature="e#5830#5831#0" expanded="true" />
             <element signature="e#5895#5896#0" expanded="true" />
+            <element signature="e#6052#6053#0" expanded="true" />
             <element signature="e#6115#6116#0" expanded="true" />
+            <element signature="e#6617#6618#0" expanded="true" />
             <element signature="e#6662#6663#0" expanded="true" />
-            <element signature="e#6726#6727#0" expanded="true" />
-            <element signature="e#6769#6770#0" expanded="true" />
+            <element signature="e#7000#7001#0" expanded="true" />
             <element signature="e#7049#7050#0" expanded="true" />
+            <element signature="e#7135#7136#0" expanded="true" />
             <element signature="e#7192#7193#0" expanded="true" />
-            <element signature="e#9042#9043#0" expanded="true" />
-            <element signature="e#9099#9100#0" expanded="true" />
-            <element signature="e#9183#9184#0" expanded="true" />
-            <element signature="e#9239#9240#0" expanded="true" />
-            <element signature="e#10208#10209#0" expanded="true" />
-            <element signature="e#10270#10271#0" expanded="true" />
-            <element signature="e#10567#10568#0" expanded="true" />
-            <element signature="e#10655#10656#0" expanded="true" />
-            <element signature="e#10709#10710#0" expanded="true" />
-            <element signature="e#10783#10784#0" expanded="true" />
-            <element signature="e#10832#10833#0" expanded="true" />
-            <element signature="e#10900#10901#0" expanded="true" />
-            <element signature="e#10944#10945#0" expanded="true" />
-            <element signature="e#11969#11970#0" expanded="true" />
-            <element signature="e#12031#12032#0" expanded="true" />
-            <element signature="e#12179#12180#0" expanded="true" />
-            <element signature="e#12224#12225#0" expanded="true" />
-            <element signature="e#12300#12301#0" expanded="true" />
-            <element signature="e#12350#12351#0" expanded="true" />
-            <element signature="e#12426#12427#0" expanded="true" />
-            <element signature="e#12453#12454#0" expanded="true" />
-            <element signature="e#12595#12596#0" expanded="true" />
-            <element signature="e#12650#12651#0" expanded="true" />
+            <element signature="e#10570#10571#0" expanded="true" />
+            <element signature="e#10629#10630#0" expanded="true" />
+            <element signature="e#13169#13170#0" expanded="true" />
+            <element signature="e#13224#13225#0" expanded="true" />
+            <element signature="e#13926#13927#0" expanded="true" />
+            <element signature="e#13951#13952#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="442" column="16" selection-start-line="442" selection-start-column="16" selection-end-line="442" selection-end-column="16" />
+        <state relative-caret-position="130">
+          <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>

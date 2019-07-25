@@ -14,12 +14,11 @@ Feature: To Create new supporter record and verify the details
       | <First Name> | <Last Name> | <Salutation> | <Phone> |
     And I click on "Is Anonymous" check box
     And I click on Save button
-    And I click on Contacts tag
-    And I type the contact "Josh Kase" in the Search box and press Enter to view the particular contact detail
-    And I click on the searched contact name
     And I click on "Details" Tab
     And I scroll down to page
-
+    Then I verify Anonymous supporter record created
+      |  Name   | Phone   |
+      | <Name> | <Phone> |
     Examples:
       | First Name | Last Name | Salutation | Phone |
-      | Josh      | Kase | Mr   | 98764429533 |
+      | Jonh      | Kaste | Captain   | 98764429533 |
