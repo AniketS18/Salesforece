@@ -123,19 +123,18 @@ public class NavigateTo {
     }
 
     public void clickOnSave(WebDriver driver,String buttonName) {
-        waitfortheelement();
-        //driver.findElement(By.xpath("//button[@title='"+ buttonName +"']//span[@class=' label bBody']")).click();
-        waitfortheelement();
-        WebElement duplicateMessage =driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']"));
+        //waitfortheelement();
+        driver.findElement(By.xpath("//button[@title='"+ buttonName +"']//span[@class=' label bBody']")).click();
 
-        if(duplicateMessage!=null && duplicateMessage.getText().contains("duplicate")){
-            driver.findElement(By.xpath("//button[@title='"+ buttonName +"']//span[@class=' label bBody']")).click();
-        }
-        else {
-            driver.findElement(By.xpath("//button[@title='"+ buttonName +"']//span[@class=' label bBody']")).click();
-        }
-        waitfortheelement();
+        try {
+            String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
 
+            if (duplicateMessage != null && duplicateMessage.contains("duplicate")) {
+                driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+            }
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            System.out.println("Second Save Button Doesn't Exist");
+        }
     }
     public void clickNext(WebDriver driver){
         waitfortheelement();
@@ -269,7 +268,7 @@ public class NavigateTo {
           driver.findElement(By.xpath("(//tr//th[@class='initialSortAsc ']/../../..//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a)[1]")).click();
         waitfortheelement();
     }
-    public void clickOnERM(WebDriver driver,String ERMButton){
+    public void clickOnEditButton(WebDriver driver,String ERMButton){
         waitfortheelement();
         waitfortheelement();
          driver.findElement(By.xpath("//button[@title='"+ ERMButton +"']")).click();
@@ -398,10 +397,6 @@ public class NavigateTo {
         enterAllDetails(driver, fieldOpportunityName, opportunityName);
         driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']")).click();
 
-
-        //        enterAllDetails(driver, fieldPrimaryCampaignSource, primaryCampaignSource);
-//        enterAllDetails(driver, filedCloseDate, closeDate);
-//        enterAllDetails(driver, filedStage, stage);
         driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')]")).click();
         waitfortheelement();
         WebElement element = driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']"));
@@ -409,7 +404,7 @@ public class NavigateTo {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
         waitfortheelement();
-        driver.findElement(By.xpath("//td[contains(@class,'uiDayInMonthCell')]//span[contains(@class,'slds-day weekday')][text()='24']")).click();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
         waitfortheelement();
         String e =driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']")).getText();
         System.out.println(e);
@@ -456,14 +451,27 @@ public class NavigateTo {
     public void verfyopportunitydetails(WebDriver driver,String filedOpportunityName,String filedPrimaryCampaignSource,String filedCloseDate,String filedStage){
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,150)");
+        js.executeScript("scrollBy(0,250)");
         String Opprtunity = driver.findElement(By.xpath("//div//span//span[@class='uiOutputText']")).getText();
         waitfortheelement();
         System.out.println("----------------------------------------");
         System.out.println(Opprtunity);
         System.out.println("-----------------------------------------");
+        String PrimaryCampaignSource = driver.findElement(By.xpath("//div[contains(@class,'test-id__field-label')]//span[text()='Primary Campaign Source']/../..//div//a[contains(@class,'textUnderline outputLookup')]")).getText();
+        System.out.println("----------------------------------------");
+        System.out.println(PrimaryCampaignSource);
+        System.out.println("----------------------------------------");
+        String Date = driver.findElement(By.xpath("//div//span//span[@class='uiOutputDate']")).getText();
+        System.out.println("----------------------------------------");
+        System.out.println(filedCloseDate);
+        System.out.println("----------------------------------------");
+        String Stage = driver.findElement(By.xpath("//div//span[@class='test-id__field-label'][text()='Stage']/../..//span[contains(@class,'test-id__field-value slds-form-element__static slds-grow')]//span")).getText();
+
 
         Assert.assertEquals(Opprtunity,filedOpportunityName);
+        Assert.assertEquals(PrimaryCampaignSource,filedPrimaryCampaignSource);
+        Assert.assertEquals(Date,filedCloseDate);
+        Assert.assertEquals(Stage,filedStage);
     }
     public void verifyAnonymousSupporter(WebDriver driver,String filedPhone,String fullName){
         waitfortheelement();
@@ -483,13 +491,13 @@ public class NavigateTo {
         driver.findElement(By.xpath("//a//div[@title='"+ task +"']")).click();
         waitfortheelement();
     }
-    public void newTaskDetails(WebDriver driver,String fieldAssignedto,String fieldSubject,String filedStatus,String filedPriorty,String Assignedto,String Subject,String Status,String Priorty){
+    public void newTaskDetails(WebDriver driver,String Assignedto,String Subject,String Status,String Priorty){
         driver.findElement(By.xpath("//div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']")).click();
         waitfortheelement();
         //WebElement element =
-        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']")).sendKeys(fieldSubject);
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']")).sendKeys(Subject);
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']/")).click();
-        driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(fieldSubject);
+        driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(Subject);
         waitfortheelement();
     }
     public void verifywarningMessage (WebDriver driver,String filedMessage){
@@ -499,6 +507,48 @@ public class NavigateTo {
         System.out.println(msg);
         System.out.println("----------------------------------");
         Assert.assertEquals(msg,filedMessage);
+    }
+    public  void  enterphone(WebDriver driver,String filedPhone){
+        waitfortheelement();
+        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,150)");
+        driver.findElement(By.xpath("//label//span[text()='Phone']/../..//input[contains(@class,'input')]")).clear();
+        waitfortheelement();
+        driver.findElement(By.xpath("//label//span[text()='Phone']/../..//input[contains(@class,'input')]")).sendKeys(filedPhone);
+
+    }
+    public void verifyDetailsContactPage(WebDriver driver,String name, String phoneNo){
+        waitfortheelement();
+        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,-250)");
+        String fullName1 = driver.findElement(By.xpath("//span[text()='Name']/../..//span[@class='uiOutputText']")).getText();
+        String PhoneNo = driver.findElement(By.xpath("//span[text()='Phone']/../..//span[@class='uiOutputPhone']")).getText();
+
+        waitfortheelement();
+        Assert.assertEquals(fullName1,name);
+        Assert.assertEquals(PhoneNo,phoneNo);
+    }
+
+    public void verifyBequestorStatusDropdown(WebDriver driver,String Status){
+        waitfortheelement();
+        driver.findElement(By.xpath("//span[text()='Bequestor Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[@title='"+ Status +"']")).click();
+        waitfortheelement();
+    }
+    public void verifyBequestorStatus(WebDriver driver,String filedStatus){
+        waitfortheelement();
+        waitfortheelement();
+//        String status = driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[@title='"+ filedStatus +"']")).getText();
+        String status = driver.findElement(By.xpath("//div//span//span[text()='"+ filedStatus +"']")).getText();
+        waitfortheelement();
+        System.out.println("*********************");
+        System.out.println(status);
+        System.out.println("**********************");
+
+        Assert.assertEquals(filedStatus,status);
     }
 
 }

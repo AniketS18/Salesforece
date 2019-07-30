@@ -188,8 +188,8 @@ public class SalesforceStepDefinitions {
     }
 
     @And("^I click \"(.*)\" button$")
-    public void click_ERM(String editButton) {
-        navigateTo.clickOnERM(driver, editButton);
+    public void click_EButton(String editButton) {
+        navigateTo.clickOnEditButton(driver, editButton);
     }
 //    @And("^I enter \"(.*)\" and \"(.*)\" in Relationship Manager filed$")
 //    public  void enter_Relationship_Manager(String fieldFirstName,String filedLastName,DataTable dataTable){
@@ -275,23 +275,31 @@ public class SalesforceStepDefinitions {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         opportunityName = data.get(0).get("Opportunity Name");
         primaryCampaignSource = data.get(0).get("Last Name");
-        closeDate = data.get(0).get("Salutation");
-        stage = data.get(0).get("Phone");
+        closeDate = data.get(0).get("Close Date");
+        stage = data.get(0).get("Stage");
         navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
     }
     @Then("^I verify following details under Opportunity page$")
     public void i_verify_opportunity_details(DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-       // String filedOpportunityName  = data.get(0).get("Opportunity Name");
-//        String filedPrimaryCampaignSource = data.get(0).get("Primary Campaign Source");
-//        String filedCloseDate  = data.get(0).get("Close Date ");
-//        String filedStage = data.get(0).get("Stage");
+        String filedOpportunityName  = data.get(0).get("Opportunity Name");
+        String filedPrimaryCampaignSource = data.get(0).get("Primary Campaign Source");
+        String filedCloseDate  = data.get(0).get("Close Date");
+        String filedStage = data.get(0).get("Stage");
 
-        String filedOpportunityName = opportunityName;
-        String filedPrimaryCampaignSource = primaryCampaignSource;
-        String filedCloseDate = closeDate;
-        String filedStage= stage;
+        System.out.println("*************************************");
+        System.out.println(filedOpportunityName);
+        System.out.println(filedPrimaryCampaignSource);
+        System.out.println(filedCloseDate);
+        System.out.println(filedStage);
+        System.out.println("*************************************");
+
+
+//        String filedOpportunityName = opportunityName;
+//        String filedPrimaryCampaignSource = primaryCampaignSource;
+//        String filedCloseDate = closeDate;
+//        String filedStage= stage;
         navigateTo.verfyopportunitydetails(driver,filedOpportunityName,filedPrimaryCampaignSource,filedCloseDate,filedStage);
     }
       @And("^I provide Engagement Plan Template Name$")
@@ -326,18 +334,47 @@ public class SalesforceStepDefinitions {
         navigateTo.clickNewTask(driver,filedTask);
     }
     @And("^I Provide the following details under New Task Page$")
-    public void i_provide_under_new_task(String fieldAssignedto, String fieldSubject, String filedStatus, String filedPriorty, DataTable dataTable) throws Throwable {
+    public void i_provide_under_new_task(DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        Assignedto = data.get(0).get("Assigned to");
-        Subject = data.get(0).get("Subject");
+       Assignedto = data.get(0).get("Assigned to");
+       Subject = data.get(0).get("Subject");
         Status = data.get(0).get("Status");
         Priorty = data.get(0).get("Priorty");
-        navigateTo.newTaskDetails(driver, fieldAssignedto, fieldSubject,filedStatus,filedPriorty,Assignedto,Subject,Status,Priorty);
+        System.out.println("****************************************");
+
+       navigateTo.newTaskDetails(driver,Assignedto,Subject,Status,Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
     @Then("^I verify whether the warning message \"(.*)\" is displayed$")
         public void i_verify_warning_message(String filedMessage){
             navigateTo.verifywarningMessage(driver,filedMessage);
+    }
+    @And("^I Enter \"(.*)\" in phone filed$")
+    public  void  i_enter_phone_filed(String filedPhone){
+        navigateTo.enterphone(driver,filedPhone);
+    }
+    @Then("I verify details under Contacts page")
+    public  void i_verify_details_contacts_page(DataTable dataTable) throws Throwable {
+
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+         String filedName = data.get(0).get("Name");
+        String filedPhone = data.get(0).get("Phone");
+        //String fullName =data.get(0).get("Ph");
+        navigateTo.verifyDetailsContactPage(driver,filedName,filedPhone);
+    }
+    @And("^I click on Bequestor Status dropdown and select (.*) as status$")
+    public void i_click_bequestor_status_dropdown(String filedStatus) throws Throwable {
+        navigateTo.verifyBequestorStatusDropdown(driver,filedStatus);
+    }
+    @Then("^I verify the Bequestor Status is set for the supporter record$")
+    public void i_verify_Bequestor_status(DataTable dataTable) throws Throwable {
+
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedStatus = data.get(0).get("Bequestor Status");
+        System.out.println("*********************");
+        System.out.println(filedStatus);
+        System.out.println("**********************");
+        navigateTo.verifyBequestorStatus(driver, filedStatus);
     }
 }
 

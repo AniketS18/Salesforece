@@ -18,6 +18,4 @@ Feature: To Create new supporter record and verify the details
     Examples:
       | First Name | Last Name | Salutation | Phone |
       | Joshua      | Kasees | Captain   | 934723017 |
-#    Examples:
-#      |  Name   | Phone   |
-#      | Hon Mr Josh Kase | 934723017 |
+
