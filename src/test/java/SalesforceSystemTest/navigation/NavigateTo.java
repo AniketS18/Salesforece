@@ -492,10 +492,16 @@ public class NavigateTo {
         waitfortheelement();
     }
     public void newTaskDetails(WebDriver driver,String Assignedto,String Subject,String Status,String Priorty){
-        driver.findElement(By.xpath("//div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']")).click();
         waitfortheelement();
+        //driver.findElement(By.xpath("//lightning-icon[contains(@class,'lightning-primitive-icon')]")).click();
+        //driver.findElement(By.xpath("//div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
         //WebElement element =
-        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']")).sendKeys(Subject);
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
+
+        Actions action = new Actions(driver);
+        action.sendKeys(Keys.PAGE_DOWN).build().perform();
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']/")).click();
         driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(Subject);
         waitfortheelement();
