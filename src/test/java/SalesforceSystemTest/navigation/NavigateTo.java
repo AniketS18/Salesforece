@@ -499,9 +499,10 @@ public class NavigateTo {
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
         //WebElement element =
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
-
-        Actions action = new Actions(driver);
-        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,600)");
+        waitfortheelement();
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']/")).click();
         driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(Subject);
         waitfortheelement();
