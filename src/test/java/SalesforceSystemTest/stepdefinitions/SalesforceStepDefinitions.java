@@ -314,9 +314,9 @@ public class SalesforceStepDefinitions {
       public void i_select_related(){
         navigateTo.selectRelated(driver);
       }
-      @And("I select on Account tab")
-      public void i_select_account(){
-        navigateTo.selectAccount(driver);
+      @And("I select (.*) in Account tab")
+      public void i_select_account(String filedAccount){
+        navigateTo.selectAccount(driver,filedAccount);
       }
     @And("I select Engagement Plan Template")
     public void i_select_Engagement_Plan_Template() {
@@ -389,6 +389,32 @@ public class SalesforceStepDefinitions {
     public void i_verify_Advised_Amount(){
 
     }
+    @And("^I click Opportunities button$")
+    public void i_click_opportunities(){
+        navigateTo.clickOpportunitybutton(driver);
+    }
+    @And("^I click on OPPORTUNITY NAME (.*)$")
+    public void i_click_opportunity_name(String opportunityName){
+        navigateTo.clickopportunityname(driver,opportunityName);
+    }
+    @And("^I click on Payment$")
+    public void i_click_on_Payment(){
+        navigateTo.clickOnPayment(driver);
+    }
+    @Then("^I verify Payment Status and Record Type$")
+    public void i_verify_Payment_Status_and_Record_Type(DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedPS = data.get(0).get("Payment Status");
+        String filedRT = data.get(0).get("Record Type");
+
+        System.out.println("--------------------------");
+        System.out.println(filedPS);
+        System.out.println("--------------------------");
+        System.out.println(filedRT);
+        System.out.println("---------------------------");
+        navigateTo.verifyPSandRT(driver,filedPS,filedRT);
+    }
+
     }
 
 

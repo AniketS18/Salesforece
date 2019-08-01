@@ -13,3 +13,6 @@ Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
     And I click on "Deceased" check box
     And I click on Save button
     And I click on Details tab under contact record page
+    Examples:
+      | Bequest Relationship Manager |
+      | Suchi Nayak |

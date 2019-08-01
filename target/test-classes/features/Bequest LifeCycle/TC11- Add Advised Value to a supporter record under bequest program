@@ -10,6 +10,9 @@ Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
     And I scroll down to page
     And I scroll down to page
     And I click "'Edit Advised Value" button
-    And I enter the amount in the 'Advised Value' textbox
+    And I enter the amount in the Advised Value textbox
     And I click on Save button
-    Then I verify the Advised Amount now is displaying the amount entered.
+    Then I verify the Advised Amount now is displaying the amount entered
+    Examples:
+      | Bequest Relationship Manager |
+      | Suchi Nayak |

@@ -197,7 +197,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName){
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("//span[@class ='title'][text()='"+ tagName +"']"));
+        WebElement elem = driver.findElement(By.xpath("(//span[@class ='title'][text()='"+ tagName +"'])[2]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -404,8 +404,8 @@ public class NavigateTo {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
         waitfortheelement();
-        //driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
-        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell']//span[text()='"+ closeDate +"']")).click();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
+       // driver.findElement(By.xpath("//td[@class='uiDayInMonthCell']//span[text()='"+ closeDate +"']")).click();
         waitfortheelement();
         String e =driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']")).getText();
         System.out.println(e);
@@ -439,10 +439,10 @@ public class NavigateTo {
     public void selectRelated(WebDriver driver){
         driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='Related']//span[@class ='title'][text()='Related'])[2]")).click();
     }
-    public void  selectAccount(WebDriver driver){
+    public void  selectAccount(WebDriver driver,String filedAccount){
         waitfortheelement();
         driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Accounts']")).click();
-        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Accounts']/..//div//div[@title='Jain Household']")).click();
+        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Accounts']/..//div//div[@title='"+ filedAccount +"']")).click();
     }
     public void selectEngagementPlan(WebDriver driver){
         waitfortheelement();
@@ -468,10 +468,16 @@ public class NavigateTo {
         System.out.println("----------------------------------------");
         String Stage = driver.findElement(By.xpath("//div//span[@class='test-id__field-label'][text()='Stage']/../..//span[contains(@class,'test-id__field-value slds-form-element__static slds-grow')]//span")).getText();
 
+//        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+//        String strDate= formatter.format(filedCloseDate);
+//        System.out.println("-------------------------------");
+//        System.out.println(strDate);
+//        System.out.println("--------------------------------");
+
 
         Assert.assertEquals(Opprtunity,filedOpportunityName);
         Assert.assertEquals(PrimaryCampaignSource,filedPrimaryCampaignSource);
-        Assert.assertEquals(Date,filedCloseDate);
+        Assert.assertEquals(filedCloseDate,Date);
         Assert.assertEquals(Stage,filedStage);
     }
     public void verifyAnonymousSupporter(WebDriver driver,String filedPhone,String fullName){
@@ -501,20 +507,19 @@ public class NavigateTo {
         //WebElement element =
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
         waitfortheelement();
-        WebElement webElement = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']"));
-        System.out.println("----------------------------------------------------");
-        System.out.println(webElement);
-        System.out.println(webElement.toString());
-
-        System.out.println("----------------------------------------------------");
-
-//       ((JavascriptExecutor)NavigateTo.getDriver()).executeScript("arguments[0].scrollIntoView();", webElement);
-
-
+        WebElement element = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']"));
+         JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
         waitfortheelement();
-        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']/")).click();
-        driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(Subject);
+        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
+
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='Completed']")).click();
+        ////div//ul[@class='scrollable']//li//a[@title='In Progress']
+        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Priority']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='High']")).click();
     }
     public void verifywarningMessage (WebDriver driver,String filedMessage){
         String msg =driver.findElement(By.xpath("//div//div[@class ='slds-col slds-align-middle']")).getText();
@@ -570,12 +575,41 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[contains(@class,' default input uiInpu')][@title='Search Accounts']")).click();
         waitfortheelement();
-        String e =driver.findElement(By.xpath("//a//div//div[contains(@class,'primaryLabel slds')][text()='Suchi Nayak']")).getText();
+        String e =driver.findElement(By.xpath("//div[contains(@class,'undefined lookup__menu uiAbstractList')]//div//div[contains(@class,'primaryLabel slds')][text()='Suma Srinivasaiah']")).getText();
 
         System.out.println("----------------------------");
         System.out.println(e);
         System.out.println("----------------------------");
+        driver.findElement(By.xpath("//div[contains(@class,'undefined lookup__menu uiAbstractList')]//div//div[contains(@class,'primaryLabel slds')][text()='Suma Srinivasaiah']")).click();
     }
+    public void clickOpportunitybutton(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div//a[@class='rlql-relatedListLink']//span[@title='Opportunities']")).click();
+        waitfortheelement();
+    }
+    public void clickopportunityname (WebDriver driver,String OppName){
+        waitfortheelement();
+        driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='"+ OppName +"']")).click();
+        waitfortheelement();
+    }
+    public void clickOnPayment(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//th//div//a[@class='textUnderline outputLookupLink slds-truncate forceOutputLookup']")).click();
+        waitfortheelement();
+    }
+    public void verifyPSandRT(WebDriver driver,String filedPS, String filedRT){
+        waitfortheelement();
+        String PaymentStatus =driver.findElement(By.xpath("//div//span//span[@class='uiOutputTextArea'][text()='"+ filedPS +"']")).getText();
+        String RecordType= driver.findElement(By.xpath("(//div[@class='recordTypeName slds-grow slds-truncate']//span)[3]")).getText();
+        waitfortheelement();
+        System.out.println("*************************");
+        System.out.println(PaymentStatus);
+        System.out.println("**************************");
+        System.out.println(RecordType);
+        System.out.println("*********");
 
+        Assert.assertEquals(filedPS,PaymentStatus);
+        Assert.assertEquals(filedRT,RecordType);
+    }
 
 }

@@ -17,7 +17,7 @@ Feature: Set Supporter Level as High Value and verify the details
     And I click Save button on MANAGE ENGAGEMENT PLAN TEMPLATE
     And I select on Related Tab
     And I click the New button in the Engagement Plans section
-    And I select on Account tab
+    And I select Warner Household in Account tab
     And I click on Save button
     When I click on Contacts tag
     And I click on Recently Viewed dropdown Select List View
@@ -29,7 +29,7 @@ Feature: Set Supporter Level as High Value and verify the details
     And I click "New" button in the Engagement Plans section
     And I select Engagement Plan Template
     And I click on Save button
-    And I scroll down to page
+#    And I scroll down to page
     And I click on Engagement Plan Number new
 #    And I click on Engagement Plan Number new
 #    And I select on Account tab
