@@ -10,10 +10,13 @@ Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
     And I scroll down to page
     And I scroll down to page
     And I click "Edit Bequest Relationship Manager" button
+    And I select Bequest Relationship Manager
+      | Bequest Relationship Manager |
+      | <Bequest Relationship Manager> |
     And I click on Save button
     Then I verify the Bequestor Status is set for the supporter record
-      | Bequestor Status |
-      | <Bequestor Status> |
+      | Bequest Relationship Manager |
+      | <Bequest Relationship Manager> |
     Examples:
-      | Bequestor Status |
-      | Declined |
+      | Bequest Relationship Manager |
+      | Suchi Nayak |

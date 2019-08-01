@@ -404,7 +404,8 @@ public class NavigateTo {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
         waitfortheelement();
-        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
+        //driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell']//span[text()='"+ closeDate +"']")).click();
         waitfortheelement();
         String e =driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Stage']")).getText();
         System.out.println(e);
@@ -500,8 +501,16 @@ public class NavigateTo {
         //WebElement element =
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
         waitfortheelement();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,600)");
+        WebElement webElement = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']"));
+        System.out.println("----------------------------------------------------");
+        System.out.println(webElement);
+        System.out.println(webElement.toString());
+
+        System.out.println("----------------------------------------------------");
+
+//       ((JavascriptExecutor)NavigateTo.getDriver()).executeScript("arguments[0].scrollIntoView();", webElement);
+
+
         waitfortheelement();
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']/")).click();
         driver.findElement(By.xpath("//div//ul//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='In Progress']")).sendKeys(Subject);
@@ -557,5 +566,16 @@ public class NavigateTo {
 
         Assert.assertEquals(filedStatus,status);
     }
+    public void selectBequestManager(WebDriver driver,String filedManager){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[contains(@class,' default input uiInpu')][@title='Search Accounts']")).click();
+        waitfortheelement();
+        String e =driver.findElement(By.xpath("//a//div//div[contains(@class,'primaryLabel slds')][text()='Suchi Nayak']")).getText();
+
+        System.out.println("----------------------------");
+        System.out.println(e);
+        System.out.println("----------------------------");
+    }
+
 
 }

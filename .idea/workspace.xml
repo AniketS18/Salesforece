@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC10- Change a Bequest Relationship Manager for a supporter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC11- Add Advised Value to a supporter record under bequest program" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC5- Assign a supporter with Bequestor Status as Confirmed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC9- Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC5 - Add gifts to supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC5 - Add gifts to supporter record" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="493" column="19" selection-start-line="493" selection-start-column="19" selection-end-line="493" selection-end-column="19" />
+            <state relative-caret-position="154">
+              <caret line="572" column="120" selection-start-line="572" selection-start-column="120" selection-end-line="572" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,46 +53,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="116">
+              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC7- Assign a supporter with Bequestor Status as 'Declined'">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC9- Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="114">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC10- Change a Bequest Relationship Manager for a supporter">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC11- Add Advised Value to a supporter record under bequest program">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -89,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="336" column="24" selection-start-line="336" selection-start-column="24" selection-end-line="336" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="389" selection-start-line="389" selection-end-line="389" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4110#4111#0" expanded="true" />
@@ -101,8 +112,6 @@
                 <element signature="e#7251#7252#0" expanded="true" />
                 <element signature="e#10629#10630#0" expanded="true" />
                 <element signature="e#10688#10689#0" expanded="true" />
-                <element signature="e#15108#15109#0" expanded="true" />
-                <element signature="e#15164#15165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,26 +120,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="112">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Change of Relationship Manager by HV Co-ordinator.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="121">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="93">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -172,12 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterTest.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporter.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelB.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelC.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelD.feature" />
-        <option value="$PROJECT_DIR$/serenity.properties" />
         <option value="$PROJECT_DIR$/src/test/java/RestAPITest/MuleSoft.json" />
         <option value="$PROJECT_DIR$/src/test/java/RestAPITest/restAPI.feature" />
         <option value="$PROJECT_DIR$/src/test/java/RestAPITest/StepDefinitions/SalesforceStepDefinitions.java" />
@@ -213,16 +216,22 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC1-Generate a task Send Welcome pack for existing supporter" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC1- Assign a supporter with Bequestor status as 'Prospect'" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC4- Assign a supporter with Bequestor Status as Considerer" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC3- Assign a supporter with Bequestor Status as Intender" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC2- Assign a supporter with Bequestor Status as Requestor" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC6- Assign a supporter with Bequestor Status as Re-confirmed" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest/TC7- Assign a supporter with Bequestor Status as 'Declined'" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC5- Assign a supporter with Bequestor Status as Confirmed" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC9- Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC10- Change a Bequest Relationship Manager for a supporter" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/CRM TESTCTEST-281 ST - Manual - Bequest Life cycleCTEST-310 TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC11- Add Advised Value to a supporter record under bequest program" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'" />
       </list>
     </option>
   </component>
@@ -253,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -342,12 +350,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateSupporter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,8 +506,8 @@
         <item itemvalue="Cucumber java.Scenario: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" />
         <item itemvalue="Cucumber java.Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" />
         <item itemvalue="Cucumber java.Scenario: Add feedback and complaints against a supporter record" />
-        <item itemvalue="Cucumber java.Feature: TC6 - Add feedback and complaints against a supporter record" />
         <item itemvalue="Cucumber java.Scenario: Add gift to supporter record" />
+        <item itemvalue="Cucumber java.Feature: TC6 - Add feedback and complaints against a supporter record" />
       </list>
     </recent_temporary>
   </component>
@@ -507,42 +525,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 11h 13m 48s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 11h 27m 59s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 19h 22m 53s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 19h 25m 41s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 19h 44m 41s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC6_-_Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 19h 57m 40s.xml">
-      <configuration name="Feature: TC6 - Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Add_feedback_and_complaints_against_a_supporter_record - 2019.07.30 at 20h 21m 29s.xml">
-      <configuration name="Scenario: Add feedback and complaints against a supporter record" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.30 at 20h 49m 08s.xml">
-      <configuration name="Scenario: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.30 at 22h 50m 33s.xml">
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 15h 36m 08s.xml">
       <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.30 at 22h 54m 30s.xml">
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 15h 42m 42s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 15h 45m 18s.xml">
+      <configuration name="Scenario: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 15h 51m 51s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 16h 03m 07s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 16h 07m 22s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 16h 11m 16s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC8-_Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 18h 32m 09s.xml">
+      <configuration name="Feature: TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 18h 45m 57s.xml">
+      <configuration name="Scenario: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Assign_a_Bequest_Relationship_Manager_for_a_supporter_with_an_existing_Relationship_Manager - 2019.07.31 at 22h 39m 28s.xml">
       <configuration name="Scenario: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.26681957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.27217126" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -560,8 +578,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.45982906" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295107" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.4272" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -569,37 +586,9 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.029051987" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3295107" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.029051987" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.29281345" />
-      <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.44353518" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17264958" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" weight="0.32136753" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.029051987" />
-    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.configurationType" implementationName="substepsFeature" />
@@ -614,36 +603,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/RestAPITest/JSONfiles/MuleSoft_negative.json" />
-    <entry file="file://$PROJECT_DIR$/serenity.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Salesforce.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/Testfile.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/3/SalesforceStepDefinitions[189].java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Change of Relationship Manager by HV Co-ordinator" />
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/3/NavigateTo[187].java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59-sources.jar!/org/openqa/selenium/chrome/ChromeOptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -752,20 +711,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC_3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC1-Generate a task Send Welcome pack for existing supporter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC_3" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC1-Generate a task Send Welcome pack for existing supporter" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -777,13 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -822,9 +762,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC1- Assign a supporter with Bequestor status as 'Prospect'" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC3- Assign a supporter with Bequestor Status as Intender" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC2- Assign a supporter with Bequestor Status as Requestor" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC4- Assign a supporter with Bequestor Status as Considerer" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC6- Assign a supporter with Bequestor Status as Re-confirmed" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC7- Assign a supporter with Bequestor Status as 'Declined'" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC7- Assign a supporter with Bequestor Status as 'Declined'">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="18" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC4- Assign a supporter with Bequestor Status as Considerer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC5- Assign a supporter with Bequestor Status as Confirmed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
+        <state relative-caret-position="221">
           <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
@@ -836,97 +838,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC1- Assign a supporter with Bequestor status as 'Prospect'">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="93">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC3- Assign a supporter with Bequestor Status as Intender">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC2- Assign a supporter with Bequestor Status as Requestor">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC4- Assign a supporter with Bequestor Status as Considerer">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" column="65" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC6- Assign a supporter with Bequestor Status as Re-confirmed">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="20" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC7- Assign a supporter with Bequestor Status as 'Declined'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/CRM TESTCTEST-281 ST - Manual - Bequest Life cycleCTEST-310 TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="112">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC2-Create new supporter without providing mandatory fields">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC9- Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="114">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="493" column="19" selection-start-line="493" selection-start-column="19" selection-end-line="493" selection-end-column="19" />
+        <state relative-caret-position="154">
+          <caret line="572" column="120" selection-start-line="572" selection-start-column="120" selection-end-line="572" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="336" column="24" selection-start-line="336" selection-start-column="24" selection-end-line="336" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="389" selection-start-line="389" selection-end-line="389" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4110#4111#0" expanded="true" />
@@ -937,30 +893,28 @@
             <element signature="e#7251#7252#0" expanded="true" />
             <element signature="e#10629#10630#0" expanded="true" />
             <element signature="e#10688#10689#0" expanded="true" />
-            <element signature="e#15108#15109#0" expanded="true" />
-            <element signature="e#15164#15165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC10- Change a Bequest Relationship Manager for a supporter">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="166">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC7- Assign a supporter with Bequestor Status as 'Declined'">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC11- Add Advised Value to a supporter record under bequest program">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="252">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
 
-  Scenario Outline: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager
+  Scenario Outline: Assign a supporter with Bequestor Status as Confirmed
     Given I login to Salesforce URL
     When I click on Contacts tag
     And I click on Recently Viewed dropdown Select List View
@@ -9,14 +9,14 @@ Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
     And I click on the searched contact name
     And I scroll down to page
     And I scroll down to page
-    And I click "Edit Bequest Relationship Manager" button
-    And I select Bequest Relationship Manager
-      | Bequest Relationship Manager |
-      | <Bequest Relationship Manager> |
+    And I click "Edit Bequestor Status" button
+    And I click on Bequestor Status dropdown and select Confirmed as status
     And I click on Save button
+    And I scroll down to page
+    And I scroll down to page
     Then I verify the Bequestor Status is set for the supporter record
-      | Bequest Relationship Manager |
-      | <Bequest Relationship Manager> |
+      | Bequestor Status |
+      | <Bequestor Status> |
     Examples:
-      | Bequest Relationship Manager |
-      | Suchi Nayak |
+      | Bequestor Status |
+      | Confirmed |

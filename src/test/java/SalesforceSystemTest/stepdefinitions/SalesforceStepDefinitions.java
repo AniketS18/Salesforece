@@ -340,8 +340,6 @@ public class SalesforceStepDefinitions {
        Subject = data.get(0).get("Subject");
         Status = data.get(0).get("Status");
         Priorty = data.get(0).get("Priorty");
-        System.out.println("****************************************");
-
        navigateTo.newTaskDetails(driver,Assignedto,Subject,Status,Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
@@ -376,6 +374,21 @@ public class SalesforceStepDefinitions {
         System.out.println("**********************");
         navigateTo.verifyBequestorStatus(driver, filedStatus);
     }
-}
+    @And("^I select Bequest Relationship Manager$")
+    public void i_select_Bequest_Relationship_Manager(DataTable dataTable) throws Throwable{
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedManager = data.get(0).get("Bequest Relationship Manager");
+
+        navigateTo.selectBequestManager(driver,filedManager);
+    }
+    @And("^I enter the amount in the Advised Value textbox$")
+    public void i_enter_the_amount(){
+
+    }
+    @Then("^I verify the Advised Amount now is displaying the amount entered$")
+    public void i_verify_Advised_Amount(){
+
+    }
+    }
 
 

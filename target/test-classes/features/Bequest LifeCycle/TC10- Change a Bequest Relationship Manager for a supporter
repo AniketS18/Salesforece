@@ -1,6 +1,6 @@
 Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
 
-  Scenario Outline: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager
+  Scenario Outline: Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager
     Given I login to Salesforce URL
     When I click on Contacts tag
     And I click on Recently Viewed dropdown Select List View
@@ -10,6 +10,7 @@ Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
     And I scroll down to page
     And I scroll down to page
     And I click "Edit Bequest Relationship Manager" button
+    And I click on the cross mark against the Bequest Relationship Manager name and remove it
     And I select Bequest Relationship Manager
       | Bequest Relationship Manager |
       | <Bequest Relationship Manager> |

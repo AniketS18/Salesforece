@@ -1,6 +1,6 @@
 Feature: As a Bequest manager, I need to manage the whole bequest lifecycle
 
-  Scenario Outline: Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager
+  Scenario Outline: Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager
     Given I login to Salesforce URL
     When I click on Contacts tag
     And I click on Recently Viewed dropdown Select List View
