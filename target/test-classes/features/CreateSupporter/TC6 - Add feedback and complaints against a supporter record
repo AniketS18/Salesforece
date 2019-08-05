@@ -15,8 +15,10 @@ Feature: To Create new supporter record and verify the details
     And I Provide the following details under New Task Page
      | Assigned to | Subject| Status| Priority |
      | <Assigned to> | <Subject> | <Status> | <Priority> |
-#  Scrollinto
-
+    And I click on Save button
+#    Then I verify following details under Contacts page
+#      | Assigned to | Subject| Status| Priority |
+#      | <Assigned to> | <Subject> | <Status> | <Priority>
     Examples:
       | Assigned to | Subject | Status | Priority |
-      | Suma      | Call | In Progress   | Normal |
+      | Suma      | Call | In Progress | Normal |

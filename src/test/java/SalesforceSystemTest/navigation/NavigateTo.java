@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -47,12 +48,12 @@ public class NavigateTo {
     }
     public void clickContacts(WebDriver driver,String tagname) {
         waitfortheelement();
-        waitfortheelement();
-        waitfortheelement();
-        waitfortheelement();
-        //String e=driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[text()='"+ tagname +"']]]")).getText();
+       // String e=driver.findElement(By.xpath("//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[@class='slds-truncate'][text()='"+ tagname +"']]]")).getText();
+
 
         driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[span[@class='slds-truncate'][text()='"+ tagname +"']]]")).click();
+//       // driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none'][a[@title='Once Off']]//span")).click();
+//        driver.findElement(By.xpath("//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none']//a[@class='slds-context-bar__label-action dndItem']//span[text()='Once Off']")).click();
        // driver.findElement(By.xpath(".//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none']//a//span[@class='slds-truncate'][text()='"+ tagname +"']")).click();
         waitfortheelement();
     }
@@ -197,7 +198,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName){
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("(//span[@class ='title'][text()='"+ tagName +"'])[2]"));
+        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader']//span[@class='title'][text()='"+ tagName +"'])[2]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -397,7 +398,8 @@ public class NavigateTo {
         enterAllDetails(driver, fieldOpportunityName, opportunityName);
         driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']")).click();
 
-        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')]")).click();
+        //driver.findElement(By.xpath("//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')]")).sendKeys(fieldPrimaryCampaignSource);
+        driver.findElement(By.xpath("//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')][@title='"+ primaryCampaignSource +"']")).click();
         waitfortheelement();
         WebElement element = driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Close Date']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']"));
         waitfortheelement();
@@ -507,12 +509,14 @@ public class NavigateTo {
         //WebElement element =
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
         waitfortheelement();
-        WebElement element = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']"));
+        WebElement element = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']"));
          JavascriptExecutor je = (JavascriptExecutor) driver;
         je.executeScript("arguments[0].scrollIntoView(true);",element);
         element.click();
+        element.click();
         waitfortheelement();
-        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
+//        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']))")).click();
+//        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
 
         driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='Completed']")).click();
@@ -600,7 +604,7 @@ public class NavigateTo {
     public void verifyPSandRT(WebDriver driver,String filedPS, String filedRT){
         waitfortheelement();
         String PaymentStatus =driver.findElement(By.xpath("//div//span//span[@class='uiOutputTextArea'][text()='"+ filedPS +"']")).getText();
-        String RecordType= driver.findElement(By.xpath("(//div[@class='recordTypeName slds-grow slds-truncate']//span)[3]")).getText();
+        String RecordType= driver.findElement(By.xpath("//span[text()='Record Type']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
         waitfortheelement();
         System.out.println("*************************");
         System.out.println(PaymentStatus);
@@ -611,5 +615,102 @@ public class NavigateTo {
         Assert.assertEquals(filedPS,PaymentStatus);
         Assert.assertEquals(filedRT,RecordType);
     }
+    public void searchPaymentId(WebDriver driver,String filedPUID){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='uiInput uiAutocomplete uiInput--default']//input")).sendKeys(filedPUID);
+        waitfortheelement();
+        Actions act1 = new Actions(driver);
+        waitfortheelement();
+        act1.sendKeys(Keys.ENTER).build().perform();
+    }
+    public void searchSalesforceTextbox(WebDriver driver){
+        driver.findElement(By.xpath("//div[@class='uiInput uiAutocomplete uiInput--default']//input")).click();
+        waitfortheelement();
+    }
+    public void clickPaymentNumber(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//th//span//a[@class='slds-truncate outputLookupLink slds-truncate forceOutputLookup']")).click();
+        waitfortheelement();
+    }
+    public void verifyPaymentRecord(WebDriver driver ,String filedPaymentID,String filedrecordType){
+        waitfortheelement();
+        String PaymentId =driver.findElement(By.xpath("//span[text()='Payment Unique Id']/../..//span[@class='uiOutputText']")).getText();
+        String RecordType= driver.findElement(By.xpath("//span[text()='Record Type']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
+        waitfortheelement();
+        System.out.println("*************************");
+        System.out.println(PaymentId);
+        System.out.println("**************************");
+        System.out.println(RecordType);
+        System.out.println("*********");
 
+        Assert.assertEquals(filedPaymentID,PaymentId);
+        Assert.assertEquals(filedrecordType,RecordType);
+    }
+    public void provideDetails(WebDriver driver,String fieldOpportunityName,String fieldPrimaryCampaignSource,String filedCloseDate,String filedStage,String filedPrimaryContact,String filedAmount,String opportunityName,String primaryCampaignSource,String closeDate,String stage,String primaryContact,String amount){
+        waitfortheelement();
+        enterAllDetails(driver, fieldOpportunityName, opportunityName);
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel uiLabel-left form-element__label uiLabel')]//span[text()='Primary Campaign Source']")).click();
+
+        driver.findElement(By.xpath("//span[text()='Primary Campaign Source']/../..//div[contains(@class,'primaryLabel slds')][@title='"+ primaryCampaignSource +"']")).click();
+        waitfortheelement();
+        WebElement element = driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='"+ filedCloseDate +"']/../..//a[contains(@class, 'datePicker-openIcon')]//span[@class='assistiveText']"));
+        waitfortheelement();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().build().perform();
+        waitfortheelement();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ closeDate +"']")).click();
+        waitfortheelement();
+        String e =driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='"+ filedStage +"']")).getText();
+        System.out.println(e);
+
+        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='"+ filedStage +"']/../..//a[@class='select']")).click();
+        driver.findElement(By.xpath(".//li[@class='uiMenuItem uiRadioMenuItem']//a[@title='"+ stage +"']")).click();
+        driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[@title='Search Contacts']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-m-left--smalllabels slds-truncate slds-media__body']//div[@title='"+ primaryContact +"']")).click();
+        driver.findElement(By.xpath("//div//input[@class='input uiInput uiInput--default uiInput--input']")).sendKeys(amount);
+    }
+    public void selectCheckbox(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//label//span[text()='Do Not Automatically Create Payment']/../..//input")).click();
+    }
+    public void provideContactName(WebDriver driver,String filedName){
+        waitfortheelement();
+        driver.findElement(By.xpath("//label[text()='Contact Name']/..//input[contains(@class,'slds-lookup__search-input')]")).click();
+        driver.findElement(By.xpath("//label[text()='Contact Name']/..//input[contains(@class,'slds-lookup__search-input')]")).sendKeys(filedName);
+        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']//span[text()='"+ filedName +"']")).click();
+        waitfortheelement();
+    }
+    public void provideDetailsOnce(WebDriver driver,String fieldCampaignAppealName,String fieldBatchId,String filedChannel,String filedReceipting,String filedDonationAmount,String filedPayment,String campaignAppealName,String batchId,String channel,String receipting,String donationAmount,String payment){
+
+        driver.findElement(By.xpath("//label[text()='Campaign/Appeal Name']/..//input[contains(@class,'slds-lookup__search-input slds')]")).click();
+        driver.findElement(By.xpath("//li//span[@class='slds-media__body']//span[text()='"+ campaignAppealName +"']")).click();
+
+        driver.findElement(By.xpath("//label[text()='Batch Id']/..//input[contains(@class,'slds-lookup__search-input slds')]")).click();
+        driver.findElement(By.xpath("//span[@class='slds-media__body']//span[text()='"+ batchId +"']")).click();
+
+        driver.findElement(By.xpath("//label//span[text()='Channel']/../..//div[@class='slds-select_container']")).click();
+        WebElement testDropDown = driver.findElement(By.xpath("//label//span[text()='Channel']/../..//select[@class='slds-select']"));
+        Select dropdown = new Select(testDropDown);
+        dropdown.selectByVisibleText(channel);
+
+        driver.findElement(By.xpath("//label//span[text()='Receipting']/../..//div[@class='slds-select_container']")).click();
+        WebElement testDropDown2 = driver.findElement(By.xpath("//label//span[text()='Receipting']/../..//select[@class='slds-select']"));
+        Select dropdown2 = new Select(testDropDown2);
+        dropdown2.selectByVisibleText(receipting);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,1500)");
+        driver.findElement(By.xpath("//label[text()='Donation Amount']/..//input[@name='expenseclient']")).click();
+        driver.findElement(By.xpath("//label[text()='Donation Amount']/..//input[@name='expenseclient']")).sendKeys(donationAmount);
+
+        driver.findElement(By.xpath("//label//span[text()='Payment Method']/../..//div[@class='slds-select_container']")).click();
+        WebElement testDropDown3 =driver.findElement(By.xpath("//label//span[text()='Payment Method']/../..//select[@class='slds-select']"));
+        Select dropdown3 = new Select(testDropDown3);
+        dropdown3.selectByVisibleText(payment);
+        waitfortheelement();
+    }
+    public void clickCreatePayment(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand slds-m-top--medium']")).click();
+    }
 }

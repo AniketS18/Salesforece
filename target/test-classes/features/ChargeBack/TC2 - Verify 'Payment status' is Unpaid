@@ -1,6 +1,5 @@
-Feature: To Create new supporter record and verify the details
-  As a Salesforce user, login to Salesforce and create new Supporter and Verify
-  the details
+Feature: Refunds & Adjustments - Searching Payment Records with Chargeback Request
+  As a Salesforce user, login to Salesforce and Searching Payment Records with Chargeback Request
 
 
   Scenario Outline: Verify Payment status is Unpaid

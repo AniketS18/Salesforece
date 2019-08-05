@@ -270,14 +270,16 @@ public class SalesforceStepDefinitions {
     public void i_click_next(){
         navigateTo.clickNext(driver);
     }
-    @And("^I enter following details in (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
-    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage, DataTable dataTable) throws Throwable {
+    @And("^I enter details in (.*), (.*), (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
+    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage,String filedPrimaryContact,String filedAmount, DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         opportunityName = data.get(0).get("Opportunity Name");
-        primaryCampaignSource = data.get(0).get("Last Name");
+        primaryCampaignSource = data.get(0).get("Primary Campaign Source");
         closeDate = data.get(0).get("Close Date");
         stage = data.get(0).get("Stage");
-        navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
+        String primaryContact = data.get(0).get("Primary Contact");
+        String amount =data.get(0).get("Amount");
+        navigateTo.provideDetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage,filedPrimaryContact,filedAmount, opportunityName, primaryCampaignSource, closeDate, stage,primaryContact,amount);
     }
     @Then("^I verify following details under Opportunity page$")
     public void i_verify_opportunity_details(DataTable dataTable) throws Throwable {
@@ -414,7 +416,64 @@ public class SalesforceStepDefinitions {
         System.out.println("---------------------------");
         navigateTo.verifyPSandRT(driver,filedPS,filedRT);
     }
-
+    @And("^I search for Payment Unique Id of an Chargeback record$")
+    public void i_search_for_Payment_Unique_Id(DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedPUID = data.get(0).get("Payment Unique Id");
+        navigateTo.searchPaymentId(driver,filedPUID);
     }
+    @And("^I click on the searched salesforce textbox$")
+    public void i_click_on_search_salesforce(){
+        navigateTo.searchSalesforceTextbox(driver);
+    }
+    @And("^I click on Payment Number on the searched record$")
+    public void i_click_on_payment_number(){
+        navigateTo.clickPaymentNumber(driver);
+    }
+    @Then("^I verify the payment for Chargeback record$")
+    public void i_verify_payment_chargeback_record(DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String filedPID = data.get(0).get("Payment Unique Id");
+        String filedRT = data.get(0).get("Record Type");
+        navigateTo.verifyPaymentRecord(driver,filedPID,filedRT);
+    }
+    @And("^I enter following details in (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
+    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage, DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        opportunityName = data.get(0).get("Opportunity Name");
+        primaryCampaignSource = data.get(0).get("Primary Campaign Source");
+        closeDate = data.get(0).get("Close Date");
+        stage = data.get(0).get("Stage");
+        navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
+    }
+    @And("^I select Payment Information checkbox$")
+    public void i_select_payment_checkbox(){
+        navigateTo.selectCheckbox(driver);
+    }
+    @And("^I provide (.*) Contact Name under Once Off page$")
+    public void i_provide_contact_name(String filedName){
+        navigateTo.provideContactName(driver,filedName);
+    }
+    @And("^I provide the details (.*),(.*),(.*),(.*),(.*) and (.*) under Once Off page$")
+    public void i_provide_details_onceOff(String fieldCampaignAppealName, String fieldBatchId, String filedChannel, String filedReceipting,String filedDonationAmount,String filedPayment, DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String campaignAppealName = data.get(0).get("Campaign/Appeal Name");
+        String batchId = data.get(0).get("Batch Id");
+        String channel = data.get(0).get("Channel");
+        String receipting = data.get(0).get("Receipting");
+        String donationAmount = data.get(0).get("Donation Amount");
+        String payment = data.get(0).get("Payment Method");
+
+        System.out.println("---------------------");
+        System.out.println(payment);
+        System.out.println("-----------------------");
+
+        navigateTo.provideDetailsOnce(driver, fieldCampaignAppealName, fieldBatchId, filedChannel, filedReceipting,filedDonationAmount,filedPayment, campaignAppealName, batchId, channel, receipting,donationAmount,payment);
+    }
+    @Then("^I click Create Payment button$")
+    public void i_click_create_payment_button(){
+        navigateTo.clickCreatePayment(driver);
+    }
+}
 
 
