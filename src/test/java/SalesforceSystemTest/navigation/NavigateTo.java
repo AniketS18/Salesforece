@@ -198,7 +198,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName){
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader']//span[@class='title'][text()='"+ tagName +"'])[2]"));
+        WebElement elem = driver.findElement(By.xpath("//a[@class='tabHeader']//span[@class='title'][text()='"+ tagName +"']"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -677,8 +677,8 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("//label[text()='Contact Name']/..//input[contains(@class,'slds-lookup__search-input')]")).click();
         driver.findElement(By.xpath("//label[text()='Contact Name']/..//input[contains(@class,'slds-lookup__search-input')]")).sendKeys(filedName);
-        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']//span[text()='"+ filedName +"']")).click();
-        waitfortheelement();
+//        driver.findElement(By.xpath("//span[@class='slds-media__body']//span[@class='slds-listbox__option-text slds-listbox__option-text_entity'][text()='"+ filedName +"']")).click();
+//        waitfortheelement();
     }
     public void provideDetailsOnce(WebDriver driver,String fieldCampaignAppealName,String fieldBatchId,String filedChannel,String filedReceipting,String filedDonationAmount,String filedPayment,String campaignAppealName,String batchId,String channel,String receipting,String donationAmount,String payment){
 
@@ -712,5 +712,19 @@ public class NavigateTo {
     public void clickCreatePayment(WebDriver driver){
         waitfortheelement();
         driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand slds-m-top--medium']")).click();
+    }
+    public void selectRadioButton(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//label[@class='slds-radio__label']//span[contains(text(),'Stark opp - 50.00')]")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][@title='Donation Selected']")).click();
+    }
+    public void clickDonationLink(WebDriver driver){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='slds-modal__content slds-p-around_medium']//a")).click();
+    }
+    public void clickOnCheckbox(WebDriver driver ,String filedCheckbox){
+        waitfortheelement();
+        driver.findElement(By.xpath("//span[text()='"+ filedCheckbox +"']/../..//input[@type='checkbox']")).click();
     }
 }

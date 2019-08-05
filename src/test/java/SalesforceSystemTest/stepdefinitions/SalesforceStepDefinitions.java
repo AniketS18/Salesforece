@@ -450,7 +450,7 @@ public class SalesforceStepDefinitions {
     public void i_select_payment_checkbox(){
         navigateTo.selectCheckbox(driver);
     }
-    @And("^I provide (.*) Contact Name under Once Off page$")
+    @And("^I provide \"(.*)\" Contact Name under Once Off page$")
     public void i_provide_contact_name(String filedName){
         navigateTo.provideContactName(driver,filedName);
     }
@@ -474,6 +474,19 @@ public class SalesforceStepDefinitions {
     public void i_click_create_payment_button(){
         navigateTo.clickCreatePayment(driver);
     }
+    @And("^I select Donation Supporter radio button$")
+    public void i_select_radio_button(){
+        navigateTo.selectRadioButton(driver);
+    }
+    @And("^I click on Donation Link$")
+    public void i_click_donation_link(){
+        navigateTo.clickDonationLink(driver);
+    }
+    @And("^I click on (.*) CheckBox$")
+    public void i_click_on_checkbox(String filedCheckbox){
+        navigateTo.clickOnCheckbox(driver,filedCheckbox);
+    }
+
 }
 
 
