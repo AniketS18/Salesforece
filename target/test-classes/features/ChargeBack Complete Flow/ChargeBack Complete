@@ -26,12 +26,29 @@ Feature: ChargeBack Complete flow
     And I click on Opportunities tag
     And I click on OPPORTUNITY NAME Stark opp
     And I click on "Related" Tab
-#    And I click on "Related" Tab
+#  (//span[@title='Payments']/../../../../../..//table[contains(@class,'forceRecordLayout slds-table')]//tr//a)[1]
+    And I click on Payment
+#    And I click on Paid CheckBox
+#    And I select Payment Date
+#    And I click on Save button
+    And I click Chargeback radio button
+    And I provide values in Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
+      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
+      | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
+
+#  =driver.findElement(By.xpath("//div//span//span[@class='uiOutputTextArea'][text()='"+ filedPS +"']")).getText();
+#  String RecordType= driver.findElement(By.xpath("//span[text()='Record Type']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
+#  waitfortheelement();
+
+    #    And I click on "Related" Tab
 
 
 #    Examples:
 #      | Opportunity Name | Primary Campaign Source | Close Date | Stage  | Primary Contact | Amount |
 #      | flood Relief1    | Flood Relief            | 2019-08-27 | Posted | Miara Josh      | 100    |
+#    Examples:
+#      | Campaign/Appeal Name | Batch Id     | Channel | Receipting | Donation Amount | Payment Method |
+#      | Campaign Finish Line | Batch Test 5 | Phone   | Emailed    | 50              | Cash           |
     Examples:
-      | Campaign/Appeal Name | Batch Id     | Channel | Receipting | Donation Amount | Payment Method |
-      | Campaign Finish Line | Batch Test 5 | Phone   | Emailed    | 50              | Cash           |
+      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
+      | Chargeback initiated | 2019-08-27 | CN100102 |

@@ -30,8 +30,8 @@ public class SalesforceStepDefinitions {
     String firstName, lastName, Salutation, Phone, tagName;
     String expectedString;
     String enteredSupporterLevel, expectedSupporterLevel, expectedLevelOfService, expectedSelectService, expectedchoosedSupporter, enteredSelectService;
-    String opportunityName,primaryCampaignSource, closeDate, stage;
-    String Assignedto,Subject, Status, Priorty;
+    String opportunityName, primaryCampaignSource, closeDate, stage;
+    String Assignedto, Subject, Status, Priorty;
 
     public WebDriver initialize() {
         String saleforceNotifications = getConfigurationDetails("webdriver.base.disable_notifications");
@@ -67,18 +67,19 @@ public class SalesforceStepDefinitions {
 
     @When("^I click on (.*) tag")
     public void i_click_on_contacts_page(String filedTagname) throws Throwable {
-        navigateTo.clickContacts(driver,filedTagname);
+        navigateTo.clickContacts(driver, filedTagname);
         //   restapi.testRestApi();
 
     }
 
     @And("I click on the New Contact under Contact Page")
-    public void i_click_on_new_contact() throws Throwable{
+    public void i_click_on_new_contact() throws Throwable {
         navigateTo.clickNewContact(driver);
 
     }
+
     @When("I click on Contact dropdown")
-    public void i_click_on_dropdown()throws Throwable{
+    public void i_click_on_dropdown() throws Throwable {
         navigateTo.clickOnDropdown(driver);
     }
 
@@ -106,8 +107,9 @@ public class SalesforceStepDefinitions {
 
     @And("^I click on Recently Viewed dropdown (.*)$")
     public void recently_viewed_dropdown(String filedDropdown) {
-        navigateTo.recentlyViewedDropdown(driver,filedDropdown);
+        navigateTo.recentlyViewedDropdown(driver, filedDropdown);
     }
+
     @And("^I click on the (.*) button$")
     public void i_click_on_URM_button(String URMButton) {
         navigateTo.clickOnURM(driver, URMButton);
@@ -115,7 +117,7 @@ public class SalesforceStepDefinitions {
 
     @And("^I select \"(.*)\" from the list view$")
     public void select_all_contacts(String allContact) {
-        navigateTo.allContacts(driver,allContact);
+        navigateTo.allContacts(driver, allContact);
     }
 
     @And("^I type the contact \"(.*)\" in the Search box and press Enter to view the particular contact detail$")
@@ -148,6 +150,7 @@ public class SalesforceStepDefinitions {
     public void Engagement_Plans_new(String newButton) {
         navigateTo.clickNewEngagementPlans(driver, newButton);
     }
+
     @And("I click the New button in the Engagement Plans section")
     public void Engagement_Plans_new() {
         navigateTo.clickNewEngagementPlansTemplet(driver);
@@ -174,17 +177,17 @@ public class SalesforceStepDefinitions {
     }
 
     @And("I scroll up to page")
-    public void  scroll_up(){
+    public void scroll_up() {
         navigateTo.scrollUP(driver);
     }
 
-//    @And("^I click on (.*) new (.*)$")
+    //    @And("^I click on (.*) new (.*)$")
 //    public void click_EPN(String EPN,String Number) {
 //        navigateTo.clickOnEpn(driver,EPN,Number);
 //    }
     @And("^I click on (.*) new$")
     public void click_EPN(String EPN) {
-        navigateTo.clickOnEpn(driver,EPN);
+        navigateTo.clickOnEpn(driver, EPN);
     }
 
     @And("^I click \"(.*)\" button$")
@@ -200,57 +203,66 @@ public class SalesforceStepDefinitions {
 //        }
 
     @And("^I enter \"(.*)\" in Relationship Manager filed$")
-    public  void  click_Relationship_Manager(String fieldName){
+    public void click_Relationship_Manager(String fieldName) {
 //        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
 //        firstName = data.get(0).get("First Name");
 //        lastName = data.get(0).get("Last Name");
-        navigateTo.clickOnRelationshipManager(driver,fieldName);
+        navigateTo.clickOnRelationshipManager(driver, fieldName);
     }
+
     @Then("^I verify the (.*) name is populated with previous value$")
-    public void  verify_Previous_Relationship_Manager(String filedPRManager,DataTable dataTable){
+    public void verify_Previous_Relationship_Manager(String filedPRManager, DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String PreviousManager = data.get(0).get(filedPRManager);
-        System.out.println("Previous Manager "+PreviousManager);
-        navigateTo.verifyPRM(driver,PreviousManager);
+        System.out.println("Previous Manager " + PreviousManager);
+        navigateTo.verifyPRM(driver, PreviousManager);
     }
+
     @Then("^I verify the (.*) is now updated with new manager name$")
-    public void verify_Updated_Relationship_Manager(String filedManager,DataTable dataTable) throws Throwable {
+    public void verify_Updated_Relationship_Manager(String filedManager, DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String NewManager = data.get(0).get("Manager Name");
-        navigateTo.verifyURM(driver,NewManager,filedManager);
+        navigateTo.verifyURM(driver, NewManager, filedManager);
 
     }
+
     @And("^I click on the cross mark against the (.*) name and remove it$")
-    public void cross_Mark_Relationship_Manager(String filedManager){
-        navigateTo.crossMark(driver,filedManager);
+    public void cross_Mark_Relationship_Manager(String filedManager) {
+        navigateTo.crossMark(driver, filedManager);
     }
+
     @And("^I \"(.*)\" the PopUp$")
-    public void  PopUp_Close(String filedClose){
-        navigateTo.ClosePopUp(driver,filedClose);
+    public void PopUp_Close(String filedClose) {
+        navigateTo.ClosePopUp(driver, filedClose);
     }
+
     @Then("I verify following details under Contacts page")
-    public  void i_verify_details_under_contacts_page(DataTable dataTable) throws Throwable {
+    public void i_verify_details_under_contacts_page(DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-       // String filedName = data.get(0).get("f");
+        // String filedName = data.get(0).get("f");
         String filedPhone = data.get(0).get("Phone");
-        String fullName =Salutation+" "+firstName+" "+lastName;
-        navigateTo.verifyDetailsUnderContact(driver,fullName,filedPhone);
+        String fullName = Salutation + " " + firstName + " " + lastName;
+        navigateTo.verifyDetailsUnderContact(driver, fullName, filedPhone);
     }
+
     @Then("I verify whether correct error \"(.*)\" message displayed or not")
     public void i_verify_correct_error_message_displayed(String filedMessage) {
-        navigateTo.verifyCorrectErrorMessage(driver,filedMessage);
+        navigateTo.verifyCorrectErrorMessage(driver, filedMessage);
     }
+
     @Then("I verify whether the correct error \"(.*)\" message displayed")
-    public void i_verify_correct_error_message(String filedMessage){
-        navigateTo.verifyErrorMessage(driver,filedMessage);
+    public void i_verify_correct_error_message(String filedMessage) {
+        navigateTo.verifyErrorMessage(driver, filedMessage);
     }
+
     @And("I click on \"(.*)\" check box")
-    public void i_click_check_box(String filedCheckBox){
-        navigateTo.clickCheckBox(driver,filedCheckBox);
+    public void i_click_check_box(String filedCheckBox) {
+        navigateTo.clickCheckBox(driver, filedCheckBox);
     }
-//    @When("I click on Opportunity tab")
+
+    //    @When("I click on Opportunity tab")
 //    public void i_click_opportunities() {
 //        navigateTo.clickOpportunity(driver);
 //    }
@@ -258,36 +270,41 @@ public class SalesforceStepDefinitions {
     public void i_click_opportunities_dropdown() {
         navigateTo.clickOpportunitydropdown(driver);
     }
+
     @When("I click New Opportunity button")
-    public void i_click_new_opportunity(){
+    public void i_click_new_opportunity() {
         navigateTo.clickNewOpportunity(driver);
     }
+
     @And("I select Donation button")
-    public void i_select_donation(){
+    public void i_select_donation() {
         navigateTo.selectDonation(driver);
     }
+
     @And("I click the Next button")
-    public void i_click_next(){
+    public void i_click_next() {
         navigateTo.clickNext(driver);
     }
+
     @And("^I enter details in (.*), (.*), (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
-    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage,String filedPrimaryContact,String filedAmount, DataTable dataTable) throws Throwable {
+    public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage, String filedPrimaryContact, String filedAmount, DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         opportunityName = data.get(0).get("Opportunity Name");
         primaryCampaignSource = data.get(0).get("Primary Campaign Source");
         closeDate = data.get(0).get("Close Date");
         stage = data.get(0).get("Stage");
         String primaryContact = data.get(0).get("Primary Contact");
-        String amount =data.get(0).get("Amount");
-        navigateTo.provideDetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage,filedPrimaryContact,filedAmount, opportunityName, primaryCampaignSource, closeDate, stage,primaryContact,amount);
+        String amount = data.get(0).get("Amount");
+        navigateTo.provideDetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, filedPrimaryContact, filedAmount, opportunityName, primaryCampaignSource, closeDate, stage, primaryContact, amount);
     }
+
     @Then("^I verify following details under Opportunity page$")
     public void i_verify_opportunity_details(DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        String filedOpportunityName  = data.get(0).get("Opportunity Name");
+        String filedOpportunityName = data.get(0).get("Opportunity Name");
         String filedPrimaryCampaignSource = data.get(0).get("Primary Campaign Source");
-        String filedCloseDate  = data.get(0).get("Close Date");
+        String filedCloseDate = data.get(0).get("Close Date");
         String filedStage = data.get(0).get("Stage");
 
         System.out.println("*************************************");
@@ -302,70 +319,83 @@ public class SalesforceStepDefinitions {
 //        String filedPrimaryCampaignSource = primaryCampaignSource;
 //        String filedCloseDate = closeDate;
 //        String filedStage= stage;
-        navigateTo.verfyopportunitydetails(driver,filedOpportunityName,filedPrimaryCampaignSource,filedCloseDate,filedStage);
+        navigateTo.verfyopportunitydetails(driver, filedOpportunityName, filedPrimaryCampaignSource, filedCloseDate, filedStage);
     }
-      @And("^I provide Engagement Plan Template Name$")
-      public void i_provide_engagement_plan_template_name(){
+
+    @And("^I provide Engagement Plan Template Name$")
+    public void i_provide_engagement_plan_template_name() {
         navigateTo.provideEngagementPlanName(driver);
-      }
-      @And("I click Save button on MANAGE ENGAGEMENT PLAN TEMPLATE")
-      public  void  i__click_Save_button_on_MANAGE_ENGAGEMENT_PLAN_TEMPLATE(){
+    }
+
+    @And("I click Save button on MANAGE ENGAGEMENT PLAN TEMPLATE")
+    public void i__click_Save_button_on_MANAGE_ENGAGEMENT_PLAN_TEMPLATE() {
         navigateTo.MEPTSave(driver);
-      }
-      @And("I select on Related Tab")
-      public void i_select_related(){
+    }
+
+    @And("I select on Related Tab")
+    public void i_select_related() {
         navigateTo.selectRelated(driver);
-      }
-      @And("I select (.*) in Account tab")
-      public void i_select_account(String filedAccount){
-        navigateTo.selectAccount(driver,filedAccount);
-      }
+    }
+
+    @And("I select (.*) in Account tab")
+    public void i_select_account(String filedAccount) {
+        navigateTo.selectAccount(driver, filedAccount);
+    }
+
     @And("I select Engagement Plan Template")
     public void i_select_Engagement_Plan_Template() {
         navigateTo.selectEngagementPlan(driver);
     }
+
     @Then("^I verify Anonymous supporter record created$")
-    public void i_verify_anonymous_supporter_record_created(DataTable dataTable){
+    public void i_verify_anonymous_supporter_record_created(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String filedPhone = data.get(0).get("Phone");
-        String fullName =Salutation+" "+firstName+" "+lastName;
-        navigateTo.verifyAnonymousSupporter(driver,filedPhone,fullName);
+        String fullName = Salutation + " " + firstName + " " + lastName;
+        navigateTo.verifyAnonymousSupporter(driver, filedPhone, fullName);
     }
+
     @And("^I click on (.*) tab$")
-    public void i_click_newTask(String filedTask){
-        navigateTo.clickNewTask(driver,filedTask);
+    public void i_click_newTask(String filedTask) {
+        navigateTo.clickNewTask(driver, filedTask);
     }
+
     @And("^I Provide the following details under New Task Page$")
     public void i_provide_under_new_task(DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-       Assignedto = data.get(0).get("Assigned to");
-       Subject = data.get(0).get("Subject");
+        Assignedto = data.get(0).get("Assigned to");
+        Subject = data.get(0).get("Subject");
         Status = data.get(0).get("Status");
         Priorty = data.get(0).get("Priorty");
-       navigateTo.newTaskDetails(driver,Assignedto,Subject,Status,Priorty);
+        navigateTo.newTaskDetails(driver, Assignedto, Subject, Status, Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
+
     @Then("^I verify whether the warning message \"(.*)\" is displayed$")
-        public void i_verify_warning_message(String filedMessage){
-            navigateTo.verifywarningMessage(driver,filedMessage);
+    public void i_verify_warning_message(String filedMessage) {
+        navigateTo.verifywarningMessage(driver, filedMessage);
     }
+
     @And("^I Enter \"(.*)\" in phone filed$")
-    public  void  i_enter_phone_filed(String filedPhone){
-        navigateTo.enterphone(driver,filedPhone);
+    public void i_enter_phone_filed(String filedPhone) {
+        navigateTo.enterphone(driver, filedPhone);
     }
+
     @Then("I verify details under Contacts page")
-    public  void i_verify_details_contacts_page(DataTable dataTable) throws Throwable {
+    public void i_verify_details_contacts_page(DataTable dataTable) throws Throwable {
 
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-         String filedName = data.get(0).get("Name");
+        String filedName = data.get(0).get("Name");
         String filedPhone = data.get(0).get("Phone");
         //String fullName =data.get(0).get("Ph");
-        navigateTo.verifyDetailsContactPage(driver,filedName,filedPhone);
+        navigateTo.verifyDetailsContactPage(driver, filedName, filedPhone);
     }
+
     @And("^I click on Bequestor Status dropdown and select (.*) as status$")
     public void i_click_bequestor_status_dropdown(String filedStatus) throws Throwable {
-        navigateTo.verifyBequestorStatusDropdown(driver,filedStatus);
+        navigateTo.verifyBequestorStatusDropdown(driver, filedStatus);
     }
+
     @Then("^I verify the Bequestor Status is set for the supporter record$")
     public void i_verify_Bequestor_status(DataTable dataTable) throws Throwable {
 
@@ -376,35 +406,42 @@ public class SalesforceStepDefinitions {
         System.out.println("**********************");
         navigateTo.verifyBequestorStatus(driver, filedStatus);
     }
+
     @And("^I select Bequest Relationship Manager$")
-    public void i_select_Bequest_Relationship_Manager(DataTable dataTable) throws Throwable{
+    public void i_select_Bequest_Relationship_Manager(DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String filedManager = data.get(0).get("Bequest Relationship Manager");
 
-        navigateTo.selectBequestManager(driver,filedManager);
+        navigateTo.selectBequestManager(driver, filedManager);
     }
+
     @And("^I enter the amount in the Advised Value textbox$")
-    public void i_enter_the_amount(){
+    public void i_enter_the_amount() {
 
     }
+
     @Then("^I verify the Advised Amount now is displaying the amount entered$")
-    public void i_verify_Advised_Amount(){
+    public void i_verify_Advised_Amount() {
 
     }
+
     @And("^I click Opportunities button$")
-    public void i_click_opportunities(){
+    public void i_click_opportunities() {
         navigateTo.clickOpportunitybutton(driver);
     }
+
     @And("^I click on OPPORTUNITY NAME (.*)$")
-    public void i_click_opportunity_name(String opportunityName){
-        navigateTo.clickopportunityname(driver,opportunityName);
+    public void i_click_opportunity_name(String opportunityName) {
+        navigateTo.clickopportunityname(driver, opportunityName);
     }
+
     @And("^I click on Payment$")
-    public void i_click_on_Payment(){
+    public void i_click_on_Payment() {
         navigateTo.clickOnPayment(driver);
     }
+
     @Then("^I verify Payment Status and Record Type$")
-    public void i_verify_Payment_Status_and_Record_Type(DataTable dataTable){
+    public void i_verify_Payment_Status_and_Record_Type(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String filedPS = data.get(0).get("Payment Status");
         String filedRT = data.get(0).get("Record Type");
@@ -414,29 +451,34 @@ public class SalesforceStepDefinitions {
         System.out.println("--------------------------");
         System.out.println(filedRT);
         System.out.println("---------------------------");
-        navigateTo.verifyPSandRT(driver,filedPS,filedRT);
+        navigateTo.verifyPSandRT(driver, filedPS, filedRT);
     }
+
     @And("^I search for Payment Unique Id of an Chargeback record$")
-    public void i_search_for_Payment_Unique_Id(DataTable dataTable){
+    public void i_search_for_Payment_Unique_Id(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String filedPUID = data.get(0).get("Payment Unique Id");
-        navigateTo.searchPaymentId(driver,filedPUID);
+        navigateTo.searchPaymentId(driver, filedPUID);
     }
+
     @And("^I click on the searched salesforce textbox$")
-    public void i_click_on_search_salesforce(){
+    public void i_click_on_search_salesforce() {
         navigateTo.searchSalesforceTextbox(driver);
     }
+
     @And("^I click on Payment Number on the searched record$")
-    public void i_click_on_payment_number(){
+    public void i_click_on_payment_number() {
         navigateTo.clickPaymentNumber(driver);
     }
+
     @Then("^I verify the payment for Chargeback record$")
-    public void i_verify_payment_chargeback_record(DataTable dataTable){
+    public void i_verify_payment_chargeback_record(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String filedPID = data.get(0).get("Payment Unique Id");
         String filedRT = data.get(0).get("Record Type");
-        navigateTo.verifyPaymentRecord(driver,filedPID,filedRT);
+        navigateTo.verifyPaymentRecord(driver, filedPID, filedRT);
     }
+
     @And("^I enter following details in (.*), (.*), (.*) and (.*) fields under New Opportunity: Donation$")
     public void i_enter_opportunity_details(String fieldOpportunityName, String fieldPrimaryCampaignSource, String filedCloseDate, String filedStage, DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
@@ -446,16 +488,19 @@ public class SalesforceStepDefinitions {
         stage = data.get(0).get("Stage");
         navigateTo.insertdetails(driver, fieldOpportunityName, fieldPrimaryCampaignSource, filedCloseDate, filedStage, opportunityName, primaryCampaignSource, closeDate, stage);
     }
+
     @And("^I select Payment Information checkbox$")
-    public void i_select_payment_checkbox(){
+    public void i_select_payment_checkbox() {
         navigateTo.selectCheckbox(driver);
     }
+
     @And("^I provide \"(.*)\" Contact Name under Once Off page$")
-    public void i_provide_contact_name(String filedName){
-        navigateTo.provideContactName(driver,filedName);
+    public void i_provide_contact_name(String filedName) {
+        navigateTo.provideContactName(driver, filedName);
     }
+
     @And("^I provide the details (.*),(.*),(.*),(.*),(.*) and (.*) under Once Off page$")
-    public void i_provide_details_onceOff(String fieldCampaignAppealName, String fieldBatchId, String filedChannel, String filedReceipting,String filedDonationAmount,String filedPayment, DataTable dataTable) throws Throwable {
+    public void i_provide_details_onceOff(String fieldCampaignAppealName, String fieldBatchId, String filedChannel, String filedReceipting, String filedDonationAmount, String filedPayment, DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String campaignAppealName = data.get(0).get("Campaign/Appeal Name");
         String batchId = data.get(0).get("Batch Id");
@@ -468,25 +513,56 @@ public class SalesforceStepDefinitions {
         System.out.println(payment);
         System.out.println("-----------------------");
 
-        navigateTo.provideDetailsOnce(driver, fieldCampaignAppealName, fieldBatchId, filedChannel, filedReceipting,filedDonationAmount,filedPayment, campaignAppealName, batchId, channel, receipting,donationAmount,payment);
-    }
-    @Then("^I click Create Payment button$")
-    public void i_click_create_payment_button(){
-        navigateTo.clickCreatePayment(driver);
-    }
-    @And("^I select Donation Supporter radio button$")
-    public void i_select_radio_button(){
-        navigateTo.selectRadioButton(driver);
-    }
-    @And("^I click on Donation Link$")
-    public void i_click_donation_link(){
-        navigateTo.clickDonationLink(driver);
-    }
-    @And("^I click on (.*) CheckBox$")
-    public void i_click_on_checkbox(String filedCheckbox){
-        navigateTo.clickOnCheckbox(driver,filedCheckbox);
+        navigateTo.provideDetailsOnce(driver, fieldCampaignAppealName, fieldBatchId, filedChannel, filedReceipting, filedDonationAmount, filedPayment, campaignAppealName, batchId, channel, receipting, donationAmount, payment);
     }
 
+    @Then("^I click Create Payment button$")
+    public void i_click_create_payment_button() {
+        navigateTo.clickCreatePayment(driver);
+    }
+
+    @And("^I select Donation Supporter radio button$")
+    public void i_select_radio_button() {
+        navigateTo.selectRadioButton(driver);
+    }
+
+    @And("^I click on Donation Link$")
+    public void i_click_donation_link() {
+        navigateTo.clickDonationLink(driver);
+    }
+
+    @And("^I click on (.*) CheckBox$")
+    public void i_click_on_checkbox(String filedCheckbox) {
+        navigateTo.clickOnCheckbox(driver, filedCheckbox);
+    }
+
+    @And("^I select (.*)$")
+    public void i_select_payment_date(String filedPaymentDate) {
+        navigateTo.selectPaymentDate(driver, filedPaymentDate);
+    }
+
+    @And("^I click (.*) radio button$")
+    public void i_click_radio_button(String filedName) {
+        navigateTo.clickRadioButton(driver, filedName);
+    }
+
+    @And("^I provide values in (.*),(.*) and (.*)$")
+    public void i_provide_values(String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber, DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String chargebackBankAction = data.get(0).get("Chargeback Bank Action");
+        String chargebackReceivedOn = data.get(0).get("Chargeback Received On");
+        String chargebackReferenceNumber = data.get(0).get("Chargeback Reference Number");
+
+        navigateTo.chargebackValues(driver,fieldChargebackBankAction,fieldChargebackReceivedOn,filedChargebackReferenceNumber,chargebackBankAction,chargebackReceivedOn,chargebackReferenceNumber);
+    }
+    @Then("^I verify Success message \"(.*)\" ganerated$")
+    public void i_verify_success_message(String filedMassage){
+        navigateTo.verifySuccessMessage(driver,filedMassage);
+    }
+    @Then("^I Verify Related Payment Record generated$")
+    public void i_verify_record(){
+        navigateTo.verifyRecord(driver);
+    }
 }
 
 
