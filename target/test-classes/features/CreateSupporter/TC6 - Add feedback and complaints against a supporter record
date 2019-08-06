@@ -16,9 +16,11 @@ Feature: To Create new supporter record and verify the details
      | Assigned to | Subject| Status| Priority |
      | <Assigned to> | <Subject> | <Status> | <Priority> |
     And I click on Save button
-#    Then I verify following details under Contacts page
-#      | Assigned to | Subject| Status| Priority |
-#      | <Assigned to> | <Subject> | <Status> | <Priority>
+    And I click on Activity History subject
+
+    Then I verify following details under Task
+      | Assigned to | Subject| Status| Priority |
+      | <Assigned to> | <Subject> | <Status> | <Priority> |
     Examples:
       | Assigned to | Subject | Status | Priority |
-      | Suma      | Call | In Progress | Normal |
+      | Suchi Nayak | Call | Completed | High |

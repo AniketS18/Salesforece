@@ -366,11 +366,23 @@ public class SalesforceStepDefinitions {
         Assignedto = data.get(0).get("Assigned to");
         Subject = data.get(0).get("Subject");
         Status = data.get(0).get("Status");
-        Priorty = data.get(0).get("Priorty");
+        Priorty = data.get(0).get("Priority");
         navigateTo.newTaskDetails(driver, Assignedto, Subject, Status, Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
-
+    @And("^I click on Activity History subject$")
+    public void i_click_on_activity_history(){
+        navigateTo.clickActivityHistory(driver);
+    }
+    @Then("^I verify following details under Task$")
+     public void i_verify_details_under_task(DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String assignedto = data.get(0).get("Assigned to");
+        String subject = data.get(0).get("Subject");
+        String status = data.get(0).get("Status");
+        String priority = data.get(0).get("Priority");
+        navigateTo.verifyTaskDetails(driver,assignedto,subject,status,priority);
+    }
     @Then("^I verify whether the warning message \"(.*)\" is displayed$")
     public void i_verify_warning_message(String filedMessage) {
         navigateTo.verifywarningMessage(driver, filedMessage);
@@ -536,7 +548,7 @@ public class SalesforceStepDefinitions {
         navigateTo.clickOnCheckbox(driver, filedCheckbox);
     }
 
-    @And("^I select (.*)$")
+    @And("^I select (.*) from payment date$")
     public void i_select_payment_date(String filedPaymentDate) {
         navigateTo.selectPaymentDate(driver, filedPaymentDate);
     }

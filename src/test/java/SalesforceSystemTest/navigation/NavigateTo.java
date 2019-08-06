@@ -205,7 +205,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName) {
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("//a[@class='tabHeader']//span[@class='title'][text()='" + tagName + "']"));
+        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='Related']//span[@class='title'][text()='"+ tagName +"'])[2]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -533,12 +533,12 @@ public class NavigateTo {
 
     public void newTaskDetails(WebDriver driver, String Assignedto, String Subject, String Status, String Priorty) {
         waitfortheelement();
-        //driver.findElement(By.xpath("//lightning-icon[contains(@class,'lightning-primitive-icon')]")).click();
-        //driver.findElement(By.xpath("//div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']")).click();
+//        driver.findElement(By.xpath("//lightning-icon[contains(@class,'lightning-primitive-icon')]")).click();
+        driver.findElement(By.xpath("//li[@class='pillContainerListItem']//a//span[@class='pillText']")).click();
         waitfortheelement();
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
         //WebElement element =
-        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='Send Letter']")).click();
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='"+ Subject +"']")).click();
         waitfortheelement();
         WebElement element = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']"));
         JavascriptExecutor je = (JavascriptExecutor) driver;
@@ -546,15 +546,23 @@ public class NavigateTo {
         element.click();
         element.click();
         waitfortheelement();
-//        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']))")).click();
+        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//a")).click();
 //        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
 
-        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='Completed']")).click();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='"+ Status +"']")).click();
         ////div//ul[@class='scrollable']//li//a[@title='In Progress']
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Priority']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
-        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='High']")).click();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='"+ Priorty +"']")).click();
+    }
+    public void clickActivityHistory(WebDriver driver){
+        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,150)");
+       // driver.findElement(By.xpath("//table[contains(@class,'forceRecordLayout slds-table')]//tr//th//div//a[@class='textUnderline outputLookupLink slds-truncate forceOutputLookup']")).click();
+        driver.findElement(By.xpath("(//tr//th//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a)[1]")).click();
+
     }
 
     public void verifywarningMessage(WebDriver driver, String filedMessage) {
@@ -749,7 +757,7 @@ public class NavigateTo {
         dropdown2.selectByVisibleText(receipting);
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,1500)");
+        js.executeScript("scrollBy(0,150)");
         driver.findElement(By.xpath("//label[text()='Donation Amount']/..//input[@name='expenseclient']")).click();
         driver.findElement(By.xpath("//label[text()='Donation Amount']/..//input[@name='expenseclient']")).sendKeys(donationAmount);
 
@@ -823,5 +831,19 @@ public class NavigateTo {
         String record = driver.findElement(By.xpath("//span[@class='test-id__field-label'][text()='Related Payment Record']/../..//a")).getText();
 
         System.out.println(record);
+    }
+    public void verifyTaskDetails(WebDriver driver,String assignedto,String subject,String status,String priority){
+        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,150)");
+        String Assigned_To = driver.findElement(By.xpath("//div//span[text()='Assigned To']/../..//div[@class='ownerName']//a")).getText();
+        String Sub = driver.findElement(By.xpath("//div//span[text()='Subject']/../..//span[@class='uiOutputText']")).getText();
+        String Stat = driver.findElement(By.xpath("//div//span[text()='Status']/../..//span[text()='"+ status +"']")).getText();
+        String Prio = driver.findElement(By.xpath("//div//span[text()='Priority']/../..//span[text()='"+ priority +"']")).getText();
+
+        Assert.assertEquals(assignedto,Assigned_To);
+        Assert.assertEquals(subject,Sub);
+        Assert.assertEquals(status,Stat);
+        Assert.assertEquals(priority,Prio);
     }
 }
