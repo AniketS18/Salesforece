@@ -810,7 +810,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']")).click();
         driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 
-        driver.findElement(By.xpath("//label[text()='Chargeback Received On']/..//input")).click();
+        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackReceivedOn +"']/..//input")).click();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         String strDate =dateFormat.format(date);
@@ -818,6 +818,25 @@ public class NavigateTo {
         driver.findElement(By.xpath("//td[@data-value='" + strDate + "']")).click();
 
         driver.findElement(By.xpath("//label[text()='"+ filedChargebackReferenceNumber +"']/..//input")).sendKeys(chargebackReferenceNumber);
+
+        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
+
+        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackReceivedOn +"']/..//input")).click();
+        DateFormat dateFormat1 = new SimpleDateFormat("yyyy-MM-dd");
+        Date date1 = new Date();
+        String strDate1 =dateFormat.format(date);
+
+        driver.findElement(By.xpath("//td[@data-value='" + strDate1 + "']")).click();
+
+        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
+
+        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackReceivedOn +"']/..//input")).click();
+        DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd");
+        Date date2 = new Date();
+        String strDate2 =dateFormat.format(date);
+
+        driver.findElement(By.xpath("//td[@data-value='" + strDate2 + "']")).click();
+
 
     }
     public void verifySuccessMessage(WebDriver driver,String message){

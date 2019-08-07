@@ -9,12 +9,12 @@ Feature: ChargeBack Complete flow
     And I type the contact "Samaira" in the Search box and press Enter to view the particular contact detail
     And I click on the searched contact name
     And I click Opportunities button
-    And I click on OPPORTUNITY NAME Lancy Swag FR00009 Donation
+    And I click on OPPORTUNITY NAME Samaira Malhotra CAMP00001 Donation
     And I click on "Related" Tab
     And I click on Payment
-    And I click on Paid CheckBox
-    And I select Payment Date from payment date
-    And I click on Save button
+#    And I click on Paid CheckBox
+#    And I select Payment Date from payment date
+#    And I click on Save button
     And I click Chargeback radio button
     And I provide values in Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
