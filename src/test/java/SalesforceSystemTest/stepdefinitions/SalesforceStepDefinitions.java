@@ -442,8 +442,10 @@ public class SalesforceStepDefinitions {
         navigateTo.clickOpportunitybutton(driver);
     }
 
-    @And("^I click on OPPORTUNITY NAME (.*)$")
-    public void i_click_opportunity_name(String opportunityName) {
+    @And("^I click on Opportunities name (.*) link$")
+    public void i_click_opportunity_name(String opportunityName){
+
+    System.out.println(opportunityName);
         navigateTo.clickopportunityname(driver, opportunityName);
     }
 

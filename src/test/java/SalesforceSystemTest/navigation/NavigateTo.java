@@ -131,17 +131,18 @@ public class NavigateTo {
 
     public void clickOnSave(WebDriver driver, String buttonName) {
         //waitfortheelement();
-        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
-
-        try {
-            String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
-
-            if (duplicateMessage != null && duplicateMessage.contains("duplicate")) {
-                driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
-            }
-        } catch (org.openqa.selenium.NoSuchElementException e) {
-            System.out.println("Second Save Button Doesn't Exist");
-        }
+        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
+//        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+//
+//        try {
+//            String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
+//
+//            if (duplicateMessage != null && duplicateMessage.contains("duplicate")) {
+//                driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+//            }
+//        } catch (org.openqa.selenium.NoSuchElementException e) {
+//            System.out.println("Second Save Button Doesn't Exist");
+//        }
     }
 
     public void clickNext(WebDriver driver) {
@@ -637,17 +638,22 @@ public class NavigateTo {
         waitfortheelement();
     }
 
-    public void clickopportunityname(WebDriver driver, String OppName) {
+    public void clickopportunityname(WebDriver driver, String opportunityName) {
         waitfortheelement();
-        driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='" + OppName + "']")).click();
+        String e = driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='"+ opportunityName +"']")).getText();
+        driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='"+ opportunityName +"']")).click();
         waitfortheelement();
+
+        System.out.println("----------------------------");
+        System.out.println(e);
+        System.out.println("----------------------------");
     }
 
     public void clickOnPayment(WebDriver driver) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,50)");
-        driver.findElement(By.xpath("//th//div//a[@class=' textUnderline outputLookupLink slds-truncate forceOutputLookup']")).click();
+        driver.findElement(By.xpath("//th//div//a[contains(@class,'textUnderline outputLookupLink')]")).click();
         waitfortheelement();
     }
 
@@ -787,18 +793,20 @@ public class NavigateTo {
 
     public void clickOnCheckbox(WebDriver driver, String filedCheckbox) {
         waitfortheelement();
-        driver.findElement(By.xpath("//button[contains(@class,'slds-button test-id')][@title='Edit Paid']")).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,150)");
+        driver.findElement(By.xpath(".//span[text()='Paid']/../..//button[contains(@class,'slds-button test-id')][@title='Edit Paid']")).click();
         driver.findElement(By.xpath("//label//span[text()='" + filedCheckbox + "']/../..//input[@type='checkbox']")).click();
     }
 
     public void selectPaymentDate(WebDriver driver, String filedPaymentDate) {
-        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='" + filedPaymentDate + "']/../..//a[contains(@class, 'datePicker-openIcon')]")).click();
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='Payment Date']/../..//a[contains(@class, 'datePicker-openIcon')]")).click();
         waitfortheelement();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         String strDate =dateFormat.format(date);
 
-        driver.findElement(By.xpath("//td[@class='slds-is-today uiDayInMonthCell'][@data-datevalue='"+ strDate +"']")).click();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ strDate +"']")).click();
 
     }
     public void clickRadioButton(WebDriver driver, String filedName){
@@ -836,7 +844,8 @@ public class NavigateTo {
         String strDate2 =dateFormat.format(date);
 
         driver.findElement(By.xpath("//td[@data-value='" + strDate2 + "']")).click();
-
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,300)");
 
     }
     public void verifySuccessMessage(WebDriver driver,String message){

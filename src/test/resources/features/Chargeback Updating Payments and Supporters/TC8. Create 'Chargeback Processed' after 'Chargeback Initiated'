@@ -9,8 +9,8 @@ Feature: ChargeBack Complete flow
     And I type the contact "Samaira" in the Search box and press Enter to view the particular contact detail
     And I click on the searched contact name
     And I click Opportunities button
-    And I click on OPPORTUNITY NAME Lancy Swag FR00009 Donation
-    And I click on "Re  lated" Tab
+    And I click on Opportunities name test active opportunity link
+    And I click on "Related" Tab
     And I click on Payment
     And I click on Paid CheckBox
     And I select Payment Date from payment date
@@ -22,4 +22,4 @@ Feature: ChargeBack Complete flow
     And I click on Save button
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
-      | Chargeback initiated | 2019-08-27 | CN100102 | 2019-08-27 | 2019-08-27 |  Evidence provided | 2019-08-27 |
+      | Chargeback cancelled | 2019-08-27 | CN100102 | 2019-08-27 | 2019-08-27 |  Evidence provided | 2019-08-27 |

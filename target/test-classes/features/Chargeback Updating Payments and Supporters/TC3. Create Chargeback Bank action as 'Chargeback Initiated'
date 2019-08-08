@@ -9,7 +9,7 @@ Feature: ChargeBack Complete flow
     And I type the contact "Samaira" in the Search box and press Enter to view the particular contact detail
     And I click on the searched contact name
     And I click Opportunities button
-    And I click on OPPORTUNITY NAME Samaira Malhotra CAMP00001 Donation
+    And I click on Opportunities name link Samaira Malhotra FR00009 Donation link
     And I click on "Related" Tab
     And I click on Payment
 #    And I click on Paid CheckBox
@@ -20,8 +20,8 @@ Feature: ChargeBack Complete flow
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
     And I click on Save button
-   Then I verify Success message "Chargeback has been initiated and is in progress." ganerated
-   Then I Verify Related Payment Record generated
+    Then I verify Success message "Success Chargeback has been initiated and is in progress." ganerated
+    Then I Verify Related Payment Record generated
 
   Examples:
     | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
