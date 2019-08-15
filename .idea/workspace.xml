@@ -5,6 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
@@ -13,11 +25,13 @@
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/webdriver/windows/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/webdriver/windows/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiate'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/webdriver/windows/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/webdriver/windows/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,10 +53,103 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="81" />
+            <state relative-caret-position="118">
+              <caret line="610" column="37" selection-start-line="610" selection-start-column="37" selection-end-line="610" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4117#4118#0" expanded="true" />
+                <element signature="e#4175#4176#0" expanded="true" />
+                <element signature="e#4633#4634#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4850#4851#0" expanded="true" />
+                <element signature="e#4910#4911#0" expanded="true" />
+                <element signature="e#5231#5232#0" expanded="true" />
+                <element signature="e#5283#5284#0" expanded="true" />
+                <element signature="e#5524#5525#0" expanded="true" />
+                <element signature="e#5585#5586#0" expanded="true" />
+                <element signature="e#7203#7204#0" expanded="true" />
+                <element signature="e#7267#7268#0" expanded="true" />
+                <element signature="e#10377#10378#0" expanded="true" />
+                <element signature="e#10440#10441#0" expanded="true" />
+                <element signature="e#16200#16201#0" expanded="true" />
+                <element signature="e#16269#16270#0" expanded="true" />
+                <element signature="e#16373#16374#0" expanded="true" />
+                <element signature="e#16430#16431#0" expanded="true" />
+                <element signature="e#18391#18392#0" expanded="true" />
+                <element signature="e#18459#18460#0" expanded="true" />
+                <element signature="e#18767#18768#0" expanded="true" />
+                <element signature="e#18816#18817#0" expanded="true" />
+                <element signature="e#18921#18922#0" expanded="true" />
+                <element signature="e#18984#18985#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="20" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="959" column="1" lean-forward="true" selection-start-line="959" selection-start-column="1" selection-end-line="959" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+            <state relative-caret-position="231">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -59,82 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="569" column="29" selection-start-line="569" selection-start-column="29" selection-end-line="569" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4117#4118#0" expanded="true" />
-                <element signature="e#4175#4176#0" expanded="true" />
-                <element signature="e#5524#5525#0" expanded="true" />
-                <element signature="e#5585#5586#0" expanded="true" />
-                <element signature="e#10377#10378#0" expanded="true" />
-                <element signature="e#10440#10441#0" expanded="true" />
-                <element signature="e#16200#16201#0" expanded="true" />
-                <element signature="e#16269#16270#0" expanded="true" />
-                <element signature="e#16373#16374#0" expanded="true" />
-                <element signature="e#16430#16431#0" expanded="true" />
-                <element signature="e#18379#18380#0" expanded="true" />
-                <element signature="e#18436#18437#0" expanded="true" />
-                <element signature="e#18696#18697#0" expanded="true" />
-                <element signature="e#18745#18746#0" expanded="true" />
-                <element signature="e#19860#19861#0" expanded="true" />
-                <element signature="e#19918#19919#0" expanded="true" />
-                <element signature="e#20028#20029#0" expanded="true" />
-                <element signature="e#20081#20082#0" expanded="true" />
-                <element signature="e#21396#21397#0" expanded="true" />
-                <element signature="e#21445#21446#0" expanded="true" />
-                <element signature="e#21571#21572#0" expanded="true" />
-                <element signature="e#21635#21636#0" expanded="true" />
-                <element signature="e#22889#22890#0" expanded="true" />
-                <element signature="e#22942#22943#0" expanded="true" />
-                <element signature="e#23040#23041#0" expanded="true" />
-                <element signature="e#23092#23093#0" expanded="true" />
-                <element signature="e#23174#23175#0" expanded="true" />
-                <element signature="e#23226#23227#0" expanded="true" />
-                <element signature="e#23326#23327#0" expanded="true" />
-                <element signature="e#23391#23392#0" expanded="true" />
-                <element signature="e#23671#23672#0" expanded="true" />
-                <element signature="e#23733#23734#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="846" column="4" lean-forward="true" selection-start-line="846" selection-start-column="4" selection-end-line="846" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -157,7 +190,6 @@
       <find>webdriver.chrome.driver</find>
       <find>verify</find>
       <find>scr</find>
-      <find>sc</find>
       <find>previo</find>
       <find>Previous</find>
       <find>epn</find>
@@ -168,8 +200,10 @@
       <find>javasc</find>
       <find>js.executeScript</find>
       <find>Enter</find>
-      <find>javas</find>
       <find>@When</find>
+      <find>sc</find>
+      <find>radio button</find>
+      <find>javas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,13 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/RestAPITest/StepDefinitions/RestAPIStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/Testfile.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/CucumberTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/Supporters.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/KeySupporterLevelA.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/HighValue.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Change of Relationship Manager by HV Co-ordinator.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/AssignEngagementPlantoSupporters" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Remove the Relationship Manager by HV Co-ordinator.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/Remove the Relationship Manager by HV Co-ordinator.feature" />
@@ -222,13 +249,20 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiate'" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/Supporters.java" />
         <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date." />
         <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" />
       </list>
     </option>
   </component>
@@ -260,7 +294,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,46 +310,7 @@
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
               <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SalesforceSystemTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SalesforceSystemTest" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SalesforceSystemTest" type="462c0819:PsiDirectoryNode" />
-              <item name="stepdefinitions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -349,6 +343,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Chargeback - Validations on payment record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="ChargeBack Complete Flow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -366,21 +369,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateSupporter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,15 +417,15 @@
     </option>
     <option name="contentProportion" value="0.17310664" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)">
-    <configuration name="Feature: TC3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible">
+    <configuration name="Feature: TC1 - Chargeback cant go from processed to cancelled" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC3" />
+      <option name="SUGGESTED_NAME" value="Feature: TC1 - Chargeback cant go from processed to cancelled" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -441,14 +436,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: TC8" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC2 - Chargeback cant go from cancelled to processed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC8" />
+      <option name="SUGGESTED_NAME" value="Feature: TC2 - Chargeback cant go from cancelled to processed" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -459,15 +454,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -480,7 +474,7 @@
     </configuration>
     <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
@@ -499,7 +493,7 @@
     </configuration>
     <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
@@ -518,11 +512,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" />
-        <item itemvalue="Cucumber java.Feature: TC8" />
-        <item itemvalue="Cucumber java.Feature: TC3" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" />
         <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
+        <item itemvalue="Cucumber java.Feature: TC1 - Chargeback cant go from processed to cancelled" />
+        <item itemvalue="Cucumber java.Feature: TC2 - Chargeback cant go from cancelled to processed" />
+        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" />
+        <item itemvalue="Cucumber java.Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" />
       </list>
     </recent_temporary>
   </component>
@@ -540,42 +534,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__TC3 - 2019.08.08 at 17h 01m 54s.xml">
-      <configuration name="Feature: TC3" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC7_-_Negative_-_Verify_Chargeback_Received_On_Date_cannot_be_less_than_Payment_Date - 2019.08.13 at 23h 17m 41s.xml">
+      <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC3 - 2019.08.08 at 17h 05m 56s.xml">
-      <configuration name="Feature: TC3" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC7_-_Negative_-_Verify_Chargeback_Received_On_Date_cannot_be_less_than_Payment_Date - 2019.08.13 at 23h 21m 39s.xml">
+      <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC3 - 2019.08.08 at 17h 12m 37s.xml">
-      <configuration name="Feature: TC3" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC7_-_Negative_-_Verify_Chargeback_Received_On_Date_cannot_be_less_than_Payment_Date - 2019.08.13 at 23h 24m 41s.xml">
+      <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.08.08 at 17h 16m 36s.xml">
+    <history-entry file="Feature__TC7_-_Negative_-_Verify_Chargeback_Received_On_Date_cannot_be_less_than_Payment_Date - 2019.08.13 at 23h 37m 16s.xml">
+      <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC7_-_Negative_-_Verify_Chargeback_Received_On_Date_cannot_be_less_than_Payment_Date - 2019.08.14 at 13h 14m 30s.xml">
+      <configuration name="Feature: TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.08.14 at 15h 35m 04s.xml">
       <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.08.08 at 17h 18m 59s.xml">
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.08.14 at 15h 54m 57s.xml">
       <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC8 - 2019.08.08 at 17h 23m 15s.xml">
-      <configuration name="Feature: TC8" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC2_-_Chargeback_cant_go_from_cancelled_to_processed - 2019.08.14 at 16h 00m 06s.xml">
+      <configuration name="Feature: TC2 - Chargeback cant go from cancelled to processed" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC8 - 2019.08.08 at 17h 26m 11s.xml">
-      <configuration name="Feature: TC8" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible - 2019.08.14 at 16h 02m 26s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC8 - 2019.08.08 at 17h 28m 26s.xml">
-      <configuration name="Feature: TC8" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC8 - 2019.08.08 at 17h 42m 12s.xml">
-      <configuration name="Feature: TC8" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.08.08 at 18h 11m 38s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible - 2019.08.15 at 21h 55m 58s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.2584098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.26911315" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -593,7 +587,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.36752138" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.37606838" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -618,33 +612,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC1- Assign a supporter with Bequestor status as 'Prospect'" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC3- Assign a supporter with Bequestor Status as Intender" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC2- Assign a supporter with Bequestor Status as Requestor" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC4- Assign a supporter with Bequestor Status as Considerer" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC6- Assign a supporter with Bequestor Status as Re-confirmed" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest/TC7- Assign a supporter with Bequestor Status as 'Declined'" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC4- Assign a supporter with Bequestor Status as Considerer">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -723,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC1 Create new supporter record">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -758,31 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -796,31 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack Complete Flow/ChargeBack Complete">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack/TC5 - Successful search of a Chargeback payment record on Payment Unique Id">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -862,90 +780,188 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date." />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="81" />
+        <state relative-caret-position="229">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+        <state relative-caret-position="101">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/2.0.46/serenity-core-2.0.46-sources.jar!/net/thucydides/core/steps/NormalMethodRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/2.0.46/serenity-core-2.0.46-sources.jar!/net/thucydides/core/steps/StepInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="389" column="17" selection-start-line="389" selection-start-column="17" selection-end-line="389" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack Complete Flow/ChargeBack Complete">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="569" column="29" selection-start-line="569" selection-start-column="29" selection-end-line="569" selection-end-column="29" />
+        <state relative-caret-position="118">
+          <caret line="610" column="37" selection-start-line="610" selection-start-column="37" selection-end-line="610" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4117#4118#0" expanded="true" />
             <element signature="e#4175#4176#0" expanded="true" />
+            <element signature="e#4633#4634#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4850#4851#0" expanded="true" />
+            <element signature="e#4910#4911#0" expanded="true" />
+            <element signature="e#5231#5232#0" expanded="true" />
+            <element signature="e#5283#5284#0" expanded="true" />
             <element signature="e#5524#5525#0" expanded="true" />
             <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#7203#7204#0" expanded="true" />
+            <element signature="e#7267#7268#0" expanded="true" />
             <element signature="e#10377#10378#0" expanded="true" />
             <element signature="e#10440#10441#0" expanded="true" />
             <element signature="e#16200#16201#0" expanded="true" />
             <element signature="e#16269#16270#0" expanded="true" />
             <element signature="e#16373#16374#0" expanded="true" />
             <element signature="e#16430#16431#0" expanded="true" />
-            <element signature="e#18379#18380#0" expanded="true" />
-            <element signature="e#18436#18437#0" expanded="true" />
-            <element signature="e#18696#18697#0" expanded="true" />
-            <element signature="e#18745#18746#0" expanded="true" />
-            <element signature="e#19860#19861#0" expanded="true" />
-            <element signature="e#19918#19919#0" expanded="true" />
-            <element signature="e#20028#20029#0" expanded="true" />
-            <element signature="e#20081#20082#0" expanded="true" />
-            <element signature="e#21396#21397#0" expanded="true" />
-            <element signature="e#21445#21446#0" expanded="true" />
-            <element signature="e#21571#21572#0" expanded="true" />
-            <element signature="e#21635#21636#0" expanded="true" />
-            <element signature="e#22889#22890#0" expanded="true" />
-            <element signature="e#22942#22943#0" expanded="true" />
-            <element signature="e#23040#23041#0" expanded="true" />
-            <element signature="e#23092#23093#0" expanded="true" />
-            <element signature="e#23174#23175#0" expanded="true" />
-            <element signature="e#23226#23227#0" expanded="true" />
-            <element signature="e#23326#23327#0" expanded="true" />
-            <element signature="e#23391#23392#0" expanded="true" />
-            <element signature="e#23671#23672#0" expanded="true" />
-            <element signature="e#23733#23734#0" expanded="true" />
+            <element signature="e#18391#18392#0" expanded="true" />
+            <element signature="e#18459#18460#0" expanded="true" />
+            <element signature="e#18767#18768#0" expanded="true" />
+            <element signature="e#18816#18817#0" expanded="true" />
+            <element signature="e#18921#18922#0" expanded="true" />
+            <element signature="e#18984#18985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="846" column="4" lean-forward="true" selection-start-line="846" selection-start-column="4" selection-end-line="846" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="959" column="1" lean-forward="true" selection-start-line="959" selection-start-column="1" selection-end-line="959" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="20" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
         </state>
       </provider>
     </entry>

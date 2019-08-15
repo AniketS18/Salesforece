@@ -437,9 +437,9 @@ public class SalesforceStepDefinitions {
 
     }
 
-    @And("^I click Opportunities button$")
-    public void i_click_opportunities() {
-        navigateTo.clickOpportunitybutton(driver);
+    @And("^I click the (.*) button$")
+    public void i_click_opportunities(String fieldValue) {
+        navigateTo.clickOpportunitybutton(driver,fieldValue);
     }
 
     @And("^I click on Opportunities name (.*) link$")
@@ -452,6 +452,10 @@ public class SalesforceStepDefinitions {
     @And("^I click on Payment$")
     public void i_click_on_Payment() {
         navigateTo.clickOnPayment(driver);
+    }
+    @And("^I click \"(.*)\" Tab under Payment$")
+    public void  i_click_under_payment(String tabName){
+        navigateTo.clickTabUnderPayment(driver,tabName);
     }
 
     @Then("^I verify Payment Status and Record Type$")
@@ -524,7 +528,7 @@ public class SalesforceStepDefinitions {
         String payment = data.get(0).get("Payment Method");
 
         System.out.println("---------------------");
-        System.out.println(payment);
+        System.out.println(fieldCampaignAppealName);
         System.out.println("-----------------------");
 
         navigateTo.provideDetailsOnce(driver, fieldCampaignAppealName, fieldBatchId, filedChannel, filedReceipting, filedDonationAmount, filedPayment, campaignAppealName, batchId, channel, receipting, donationAmount, payment);
@@ -545,31 +549,35 @@ public class SalesforceStepDefinitions {
         navigateTo.clickDonationLink(driver);
     }
 
-    @And("^I click on (.*) CheckBox$")
-    public void i_click_on_checkbox(String filedCheckbox) {
-        navigateTo.clickOnCheckbox(driver, filedCheckbox);
+    @And("^I click on (.*) CheckBox with click on (.*) option$")
+    public void i_click_on_checkbox(String filedCheckbox,String filedEditPaid) {
+        navigateTo.clickOnCheckbox(driver, filedCheckbox,filedEditPaid);
     }
 
-    @And("^I select (.*) from payment date$")
-    public void i_select_payment_date(String filedPaymentDate) {
-        navigateTo.selectPaymentDate(driver, filedPaymentDate);
+    @And("^I select (.*) from payment date (.*)$")
+    public void i_select_payment_date(String filedPaymentDate,String Date) {
+        navigateTo.selectPaymentDate(driver, filedPaymentDate,Date);
     }
 
-    @And("^I click (.*) radio button$")
+    @And("^I click \"(.*)\" radio button$")
     public void i_click_radio_button(String filedName) {
         navigateTo.clickRadioButton(driver, filedName);
     }
 
-    @And("^I provide values in (.*),(.*) and (.*)$")
-    public void i_provide_values(String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber, DataTable dataTable) throws Throwable {
+    @And("^I provide values in (.*),(.*),(.*),(.*),(.*),(.*) and (.*) fields$")
+    public void i_provide_values(String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber, String filedChargebackResponseBy,String filedChargebackActualResponseDate,String filedChargebackSSTResponse,String filedChargebackBankFinalNotificationDate ,DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String chargebackBankAction = data.get(0).get("Chargeback Bank Action");
         String chargebackReceivedOn = data.get(0).get("Chargeback Received On");
         String chargebackReferenceNumber = data.get(0).get("Chargeback Reference Number");
+        String chargebackResponseBy = data.get(0).get("Chargeback Response By");
+        String chargebackActualResponseDate = data.get(0).get("Chargeback Actual Response Date");
+        String chargebackSSTResponse = data.get(0).get("Chargeback SST Response");
+        String chargebackBankFinalNotificationDate = data.get(0).get("Chargeback Bank Final Notification Date");
 
-        navigateTo.chargebackValues(driver,fieldChargebackBankAction,fieldChargebackReceivedOn,filedChargebackReferenceNumber,chargebackBankAction,chargebackReceivedOn,chargebackReferenceNumber);
+        navigateTo.chargebackValues(driver,fieldChargebackBankAction,fieldChargebackReceivedOn,filedChargebackReferenceNumber,filedChargebackResponseBy,filedChargebackActualResponseDate,filedChargebackSSTResponse,filedChargebackBankFinalNotificationDate,chargebackBankAction,chargebackReceivedOn,chargebackReferenceNumber,chargebackResponseBy,chargebackActualResponseDate,chargebackSSTResponse,chargebackBankFinalNotificationDate);
     }
-    @Then("^I verify Success message \"(.*)\" ganerated$")
+    @Then("^I verify message \"(.*)\" ganerated$")
     public void i_verify_success_message(String filedMassage){
         navigateTo.verifySuccessMessage(driver,filedMassage);
     }
@@ -577,6 +585,30 @@ public class SalesforceStepDefinitions {
     public void i_verify_record(){
         navigateTo.verifyRecord(driver);
     }
+    @And("^I provide details (.*),(.*) and (.*)$")
+    public void i_provide_details_in(String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber ,DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String chargebackBankAction = data.get(0).get("Chargeback Bank Action");
+        String chargebackReceivedOn = data.get(0).get("Chargeback Received On");
+        String chargebackReferenceNumber = data.get(0).get("Chargeback Reference Number");
+
+        navigateTo.ProvideChargebackValues(driver,fieldChargebackBankAction,fieldChargebackReceivedOn,filedChargebackReferenceNumber,chargebackBankAction,chargebackReceivedOn,chargebackReferenceNumber);
+    }
+    @Then("^I verify (.*) option should be visible$")
+    public void i_verify_chargeback_SST_Response(String filedChargebackResponseBy){
+        navigateTo.verifyChargebackSSTResponse(driver,filedChargebackResponseBy);
+    }
+    @And("^I select on Chargeback (.*) button$")
+    public void i_click_chargeback_save(String saveButton){
+        navigateTo.chargebackSave(driver,saveButton);
+    }
+    @And("^I click the required Payment under (.*) option$")
+    public void i_click_required_Payment_under_Payments(String filedPayment){
+        navigateTo.clickRequiredPaymentUnderPayment(driver,filedPayment);
+    }
+    @And("^I edit (.*) from (.*) to (.*) under Chagreback Information$")
+    public void i_edit_chargeback_information(String filedAction,String filedStatus1,String filedStatus2){
+        navigateTo.editChargebackInformation(driver,filedAction,filedStatus1,filedStatus2);
 }
 
 
