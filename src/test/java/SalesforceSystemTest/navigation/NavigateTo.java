@@ -649,13 +649,13 @@ public class NavigateTo {
 
         System.out.println("----------------------------");
         System.out.println(e);
-        System.out.println("----------------------------");
+//        System.out.println("----------------------------");
     }
 
     public void clickOnPayment(WebDriver driver) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,50)");
+        js.executeScript("scrollBy(0,100)");
         driver.findElement(By.xpath("//th//div//a[contains(@class,'textUnderline outputLookupLink')]")).click();
         waitfortheelement();
     }
@@ -867,14 +867,15 @@ public class NavigateTo {
         String msg =driver.findElement(By.xpath("//div[contains(@class,'uiMessage')]//div[@class='bBody']" )).getText();
               //  "[text()='Chargeback has been initiated and is in progress.']")).getText();
         waitfortheelement();
-//       // String str = "GeeksforGeeksforStudents";
-//        String[] arrOfStr = message.split("/n");
-//
-//        for (String a : arrOfStr)
-//            System.out.println(a);
+        String[] tokens= message.split("/n");
+        int i;
+        for ( i = 0; i<tokens.length; i++)
+//            System.out.println(tokens[i]);
 
+//        System.out.println("----------------------");
+        System.out.println(tokens[i]);
         System.out.println("----------------------");
-        System.out.println(message);
+        System.out.println(tokens[i]);
         System.out.println("----------------------");
         System.out.println(msg);
         System.out.println("-----------------------");
@@ -885,7 +886,7 @@ public class NavigateTo {
 //
 //        Assert.assertTrue(contains);
 
-        Assert.assertEquals(message,msg);
+        Assert.assertEquals(tokens[i],msg);
     }
     public void verifyRecord(WebDriver driver){
         String record = driver.findElement(By.xpath("//span[@class='test-id__field-label'][text()='Related Payment Record']/../..//a")).getText();
@@ -956,5 +957,17 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[contains(@class,'slds-form-element slds-hint-parent')]//span[text()='"+ filedAction +"']/../..//div[@class='uiMenu']")).click();
 
         driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='"+ filedStatus2 +"']")).click();
+    }
+    public void verifyRadioButton(WebDriver driver){
+        waitfortheelement();
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,-200)");
+    }
+    public void verifyChargebackNotAllowNew(WebDriver driver){
+        waitfortheelement();
+    }
+    public void verifyChargebacCanCreate(WebDriver driver){
+        waitfortheelement();
+
     }
 }

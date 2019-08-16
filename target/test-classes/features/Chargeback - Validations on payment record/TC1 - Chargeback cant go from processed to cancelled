@@ -15,6 +15,9 @@ Feature: ChargeBack Complete flow
 #    And I click "Chargeback" radio button
     And I click "Related" Tab under Payment
     And I click the required Payment under Payments(Related Payment Record) option
+    And I click "Edit Chargeback Bank Action" button
+    And I edit Chagreback Bank Action from Chargeback processed to Chargeback cancelled under Chagreback Information
+    Then I click on Chargeback Bank Action cannot change from canceled to processed status. button verify message
 
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |

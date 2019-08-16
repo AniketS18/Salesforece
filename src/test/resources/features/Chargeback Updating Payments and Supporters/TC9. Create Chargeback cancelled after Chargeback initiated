@@ -15,11 +15,11 @@ Feature: ChargeBack Complete flow
 #    And I click on Paid CheckBox with click on Edit Paid option
 #    And I select Payment Date from payment date 2019-08-27
 #    And I click on Save button
-    And I click Chargeback radio button
+    And I click "Chargeback" radio button
     And I provide values in Chargeback Bank Action,Chargeback Received On,Chargeback Reference Number,Chargeback Response By,Chargeback Actual Response Date,Chargeback SST Response and Chargeback Bank Final Notification Date fields
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> | <Chargeback Response By> | <Chargeback Actual Response Date> | <Chargeback SST Response> | <Chargeback Bank Final Notification Date> |
-    And I click on Save button
+    And I select on Chargeback Save button
     Then I verify message "Success Chargeback updated successfully." ganerated
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |

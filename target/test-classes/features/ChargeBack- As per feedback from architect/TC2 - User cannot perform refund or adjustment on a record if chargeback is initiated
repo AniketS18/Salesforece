@@ -12,11 +12,15 @@ Feature: ChargeBack Complete flow
     And I click on Opportunities name Samaira Malhotra FR00009 Donation link
     And I click on "Related" Tab
     And I click on Payment
-    And I click "Related" Tab under Payment
-    And I click the required Payment under Payments(Related Payment Record) option
-    And I click "Edit Chargeback Bank Action" button
-    And I edit Chagreback Bank Action from Chargeback cancelled to Chargeback processed under Chagreback Information
-    Then I click on Chargeback Bank Action cannot change from canceled to processed status. button verify message
+#    And I click on Paid CheckBox
+#    And I select Payment Date from payment date
+#    And I click on Save button
+    And I click "Chargeback" radio button
+    And I provide details Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
+      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
+      | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
+    And I click on Save button
+    Then I verify that 'Charegback Bank Action' is initiated and 'Refund','Adjustment' and 'Chargeback' radio button should not be visible and cannot perform 'Refund' or 'Adjustment'.
 
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
