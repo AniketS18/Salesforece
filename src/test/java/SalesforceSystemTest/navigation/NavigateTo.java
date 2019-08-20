@@ -127,9 +127,7 @@ public class NavigateTo {
     }
 
     public void clickOnSave(WebDriver driver, String buttonName) {
-        //waitfortheelement();
-       // driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='"+ buttonName +"']")).click();
-//        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
+
         driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
 
         try {
@@ -204,7 +202,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName) {
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='Related']//span[@class='title'][text()='"+ tagName +"'])[2]"));
+        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='"+ tagName +"']//span[@class='title'][text()='"+ tagName +"'])[2]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -287,7 +285,8 @@ public class NavigateTo {
 
     public void clickOnEditButton(WebDriver driver, String ERMButton) {
         waitfortheelement();
-        waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,300)");
         driver.findElement(By.xpath("//button[@title='" + ERMButton + "']")).click();
         waitfortheelement();
     }
@@ -697,8 +696,8 @@ public class NavigateTo {
 
     public void verifyPaymentRecord(WebDriver driver, String filedPaymentID, String filedrecordType) {
         waitfortheelement();
-        String PaymentId = driver.findElement(By.xpath("//span[text()='Payment Unique Id']/../..//span[@class='uiOutputText']")).getText();
-        String RecordType = driver.findElement(By.xpath("//span[text()='Record Type']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
+        String PaymentId = driver.findElement(By.xpath("//span[text()='"+ filedPaymentID +"']/../..//span[@class='uiOutputText']")).getText();
+        String RecordType = driver.findElement(By.xpath("//span[text()='"+ filedrecordType +"']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
         waitfortheelement();
         System.out.println("*************************");
         System.out.println(PaymentId);
@@ -798,8 +797,8 @@ public class NavigateTo {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,150)");
-        driver.findElement(By.xpath(".//span[text()='"+ filedCheckbox +"']/../..//button[contains(@class,'slds-button test-id')][@title='"+ filedEditPaid +"']")).click();
-        driver.findElement(By.xpath("//label//span[text()='" + filedCheckbox + "']/../..//input[@type='checkbox']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]//span[text()='"+ filedCheckbox +"']/../..//button[contains(@class,'slds-button test-id')][@title='"+ filedEditPaid +"']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]/..//label//span[text()='"+ filedCheckbox +"']/../..//input[@type='checkbox']")).click();
     }
 
     public void selectPaymentDate(WebDriver driver, String filedPaymentDate,String Date) {
@@ -929,7 +928,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackResponseBy +"']/..//input")).click();
 
     }
-    public void chargebackSave(WebDriver driver,String saveButton){
+    public void chargebackSave(WebDriver driver,String saveButton,String filedName){
         waitfortheelement();
          driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='"+ saveButton +"']")).click();
 //        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
@@ -938,9 +937,9 @@ public class NavigateTo {
     public void clickRequiredPaymentUnderPayment(WebDriver driver,String filedPayment ){
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,150)");
-      //  driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='Payments (Related Payment Record)']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]")).click();
-        WebElement e = driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='Payments (Related Payment Record)']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]//tbody"));
+        js.executeScript("scrollBy(0,200)");
+      //  driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+filedPayment+"']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]")).click();
+        WebElement e = driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+ filedPayment +"']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]//tbody"));
 
         waitfortheelement();
 
@@ -954,7 +953,9 @@ public class NavigateTo {
     }
     public void editChargebackInformation(WebDriver driver,String filedAction,String filedStatus1,String filedStatus2){
         waitfortheelement();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-form-element slds-hint-parent')]//span[text()='"+ filedAction +"']/../..//div[@class='uiMenu']")).click();
+//        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']")).click();
+//        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']/..//span[@title='"+ filedStatus2 +"']")).click();
+        driver.findElement(By.xpath(".//div[@class='slds-form-element__control']//span[text()='"+ filedAction +"']/../..//div[@class='uiMenu']")).click();
 
         driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='"+ filedStatus2 +"']")).click();
     }
@@ -968,6 +969,36 @@ public class NavigateTo {
     }
     public void verifyChargebacCanCreate(WebDriver driver){
         waitfortheelement();
+    }
+    public void refundDetails(WebDriver driver,String filedCaseOrigin,String filedRefundType,String Subject,String Status,String filedRefundAmount,String filedRefundInstrument,String filedBankAccountNo,String fieldBankBSB,String caseOrigin,String refundType,String subject,String status,String refundAmount,String refundInstrument,String bankAccountNo,String bankBSB){
+        waitfortheelement();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedCaseOrigin +"']")).click();
+       // driver.findElement(By.xpath("//form[@class='slds-form']//label[text()='"+ filedCaseOrigin +"']/..//div[contains(@class,'slds-combobox slds-dropdown')]//lightning-icon[contains(@class,'slds-icon-utility-down slds-input')]")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ caseOrigin +"']")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundType +"']/..//div[@class='slds-form-element__control']")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ refundType +"']")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ Subject +"']"));
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ Status +"']"));
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']")).click();
+
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,200)");
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundInstrument +"']/..//div[@class='slds-form-element__control']")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ refundInstrument +"']")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedBankAccountNo +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedBankAccountNo +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankAccountNo);
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).click();
+//        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).sendKeys(bankBSB);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(fieldBankBSB);
+
 
     }
 }

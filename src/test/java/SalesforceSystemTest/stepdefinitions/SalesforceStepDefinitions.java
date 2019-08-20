@@ -607,9 +607,9 @@ public class SalesforceStepDefinitions {
         navigateTo.verifyChargebackSSTResponse(driver, filedChargebackResponseBy);
     }
 
-    @And("^I select on Chargeback (.*) button$")
-    public void i_click_chargeback_save(String saveButton) {
-        navigateTo.chargebackSave(driver, saveButton);
+    @And("^I select on (.*) \"(.*)\" button$")
+    public void i_click_chargeback_save(String saveButton,String filedName) {
+        navigateTo.chargebackSave(driver, saveButton, filedName);
     }
 
     @And("^I click the required Payment under (.*) option$")
@@ -632,6 +632,19 @@ public class SalesforceStepDefinitions {
     @Then("I verify that 'Charegback Bank Action' is canceled and 'Refund','Adjustment' and 'Chargeback' radio button should be visible and can create 'New Chargeback','Refund' or 'Adjustment")
     public void i_verify_Chargeback_is_canceled_can_create(){
         navigateTo.verifyChargebacCanCreate(driver);
+    }
+    @And("^I provide the following details (.*),(.*),(.*),(.*),(.*),(.*),(.*) and (.*)$")
+    public void i_provide_following_details(String filedCaseOrigin,String filedRefundType,String Subject,String Status,String filedRefundAmount,String filedRefundInstrument,String filedBankAccountNo,String fieldBankBSB,DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String caseOrigin = data.get(0).get("Case Origin");
+        String refundType = data.get(0).get("Refund Type");
+        String subject = data.get(0).get("Subject");
+        String status = data.get(0).get("Status");
+        String refundAmount = data.get(0).get("Refund Amount");
+        String refundInstrument = data.get(0).get("Refund Instrument");
+        String bankAccountNo = data.get(0).get("Bank Account No");
+        String bankBSB = data.get(0).get("Bank BSB");
+        navigateTo.refundDetails(driver,filedCaseOrigin,filedRefundType,Subject,Status,filedRefundAmount,filedRefundInstrument,filedBankAccountNo,fieldBankBSB,caseOrigin,refundType,subject,status,refundAmount,refundInstrument,bankAccountNo,bankBSB);
     }
 }
 
