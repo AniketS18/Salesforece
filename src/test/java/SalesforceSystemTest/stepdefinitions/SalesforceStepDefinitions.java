@@ -452,7 +452,7 @@ public class SalesforceStepDefinitions {
         navigateTo.clickopportunityname(driver, opportunityName);
     }
 
-    @And("^I click on Payment$")
+    @And("I click on Payment")
     public void i_click_on_Payment() {
         navigateTo.clickOnPayment(driver);
     }
@@ -608,8 +608,8 @@ public class SalesforceStepDefinitions {
     }
 
     @And("^I select on (.*) \"(.*)\" button$")
-    public void i_click_chargeback_save(String saveButton,String filedName) {
-        navigateTo.chargebackSave(driver, saveButton, filedName);
+    public void i_click_chargeback_save(String filedName,String saveButton) {
+        navigateTo.chargebackSave(driver,filedName,saveButton);
     }
 
     @And("^I click the required Payment under (.*) option$")
@@ -645,6 +645,14 @@ public class SalesforceStepDefinitions {
         String bankAccountNo = data.get(0).get("Bank Account No");
         String bankBSB = data.get(0).get("Bank BSB");
         navigateTo.refundDetails(driver,filedCaseOrigin,filedRefundType,Subject,Status,filedRefundAmount,filedRefundInstrument,filedBankAccountNo,fieldBankBSB,caseOrigin,refundType,subject,status,refundAmount,refundInstrument,bankAccountNo,bankBSB);
+    }
+    @And("^I click the required (.*) under Payment$")
+    public void i_click_required_under_payment(String fieldName){
+        navigateTo.clickrequiredTab(driver,fieldName);
+    }
+    @And("^I select (.*) button from Approval Request$")
+    public  void  i_select_reuiest_from_approval_request(String fieldbutton){
+        navigateTo.selectrequiest(driver,fieldbutton);
     }
 }
 

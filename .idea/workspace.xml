@@ -5,50 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/TC 6- Refund case should be created when the payment is paid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/TC 8-Refund instrument can be modified" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/TC3- The user should be able to save the record successfully with incomplete fields" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/TC4- For full refund- User should be able to enter only the original payment amount for refund" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 3- Refund case is between 200$ to 999$ , the Level 1 employee should not be able to approve it" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 4 - Refund cases greater than 1000$ should be approved only by the manager" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 5-  Level 1 employees should not be able to approve refunds above $1000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 6- Level 2 employees should not be able to approve the refunds above $1000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 7- Level 1 reviewer should be able to reassign the case to another Level 1 employee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC2 - Refund cases for 200$- 999$ should be visible and approved by the team lead only" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack Complete Flow/ChargeBack Complete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack- As per feedback from architect/TC2 - User cannot perform refund or adjustment on a record if chargeback is initiated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack- As per feedback from architect/TC4 - User can perform any action refund, adjustment or new chargeback on a record if chargeback is cancelled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC2 - Verify 'Payment status' is Unpaid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC5 - Successful search of a Chargeback payment record on Payment Unique Id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack Complete Flow/ChargeBack Complete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack- As per feedback from architect/TC2 - User cannot perform refund or adjustment on a record if chargeback is initiated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack- As per feedback from architect/TC4 - User can perform any action refund, adjustment or new chargeback on a record if chargeback is cancelled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack/TC2 - Verify 'Payment status' is Unpaid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack/TC5 - Successful search of a Chargeback payment record on Payment Unique Id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback - Validations on payment record/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/TC 5- Create refund case with payment incomplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/TC 6- Refund case should be created when the payment is paid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/TC 8-Refund instrument can be modified" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/TC3- The user should be able to save the record successfully with incomplete fields" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/TC4- For full refund- User should be able to enter only the original payment amount for refund" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/TC 5- Create refund case with payment incomplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/TC 6- Refund case should be created when the payment is paid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/TC 8-Refund instrument can be modified" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/TC3- The user should be able to save the record successfully with incomplete fields" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/TC4- For full refund- User should be able to enter only the original payment amount for refund" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="610" column="16" selection-start-line="610" selection-start-column="16" selection-end-line="610" selection-end-column="16" />
+            <state relative-caret-position="109">
+              <caret line="654" column="26" selection-start-line="654" selection-start-column="26" selection-end-line="654" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4117#4118#0" expanded="true" />
@@ -90,6 +68,8 @@
                 <element signature="e#7267#7268#0" expanded="true" />
                 <element signature="e#10377#10378#0" expanded="true" />
                 <element signature="e#10440#10441#0" expanded="true" />
+                <element signature="e#18780#18781#0" expanded="true" />
+                <element signature="e#18829#18830#0" expanded="true" />
                 <element signature="e#18935#18936#0" expanded="true" />
                 <element signature="e#18999#19000#0" expanded="true" />
                 <element signature="e#21825#21826#0" expanded="true" />
@@ -98,6 +78,8 @@
                 <element signature="e#25868#25869#0" expanded="true" />
                 <element signature="e#28568#28569#0" expanded="true" />
                 <element signature="e#28627#28628#0" expanded="true" />
+                <element signature="e#29898#29899#0" expanded="true" />
+                <element signature="e#29923#29924#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="999" column="191" selection-start-line="999" selection-start-column="191" selection-end-line="999" selection-end-column="191" />
+            <state relative-caret-position="109">
+              <caret line="1005" column="27" selection-start-line="1005" selection-start-column="27" selection-end-line="1005" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#53854#53855#0" expanded="true" />
@@ -120,73 +102,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="208">
+              <caret line="31" selection-end-line="33" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC2 - Refund cases for 200$- 999$ should be visible and approved by the team lead only">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="152">
+              <caret line="26" column="43" selection-end-line="33" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 3- Refund case is between 200$ to 999$ , the Level 1 employee should not be able to approve it">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="144">
+              <caret line="21" column="33" lean-forward="true" selection-end-line="33" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/TC3- The user should be able to save the record successfully with incomplete fields">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 4 - Refund cases greater than 1000$ should be approved only by the manager">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="152">
+              <caret line="26" column="27" selection-end-line="33" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/TC4- For full refund- User should be able to enter only the original payment amount for refund">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 5-  Level 1 employees should not be able to approve refunds above $1000">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="186">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/TC 5- Create refund case with payment incomplete">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 6- Level 2 employees should not be able to approve the refunds above $1000">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/TC 6- Refund case should be created when the payment is paid">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="101">
+              <caret line="23" column="24" selection-end-line="33" selection-end-column="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/TC 8-Refund instrument can be modified">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 7- Level 1 reviewer should be able to reassign the case to another Level 1 employee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -223,6 +205,7 @@
       <find>sc</find>
       <find>radio button</find>
       <find>javas</find>
+      <find>ENTER</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,18 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC5- Assign a supporter with Bequestor Status as Confirmed" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC8- Assign a Bequest Relationship Manager for a supporter with an existing Relationship Manager" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC9- Assign a Bequest Relationship Manager for a supporter without a existing Relationship Manager" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC10- Change a Bequest Relationship Manager for a supporter" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/CRM TESTCTEST-281 ST - Manual - Bequest Life cycleCTEST-310 TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC11- Add Advised Value to a supporter record under bequest program" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Bequest LifeCycle/TC12- Mark a supporter 'Deceased' with Bequestor Status not 'Confirmed'" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack/TC5 - Successful search of a Chargeback payment record on Payment Unique Id" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/HighValue/AssignEngagementPlantoSupporters" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack Complete Flow/ChargeBack Complete" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Chargeback Updating Payments and Supporters/Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiate'" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/Supporters.java" />
         <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
@@ -275,13 +246,25 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack- As per feedback from architect/TC4 - User can perform any action refund, adjustment or new chargeback on a record if chargeback is cancelled" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/TC3- The user should be able to save the record successfully with incomplete fields" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/TC4- For full refund- User should be able to enter only the original payment amount for refund" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/TC 8-Refund instrument can be modified" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/TC 5- Create refund case with payment incomplete" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/TC 6- Refund case should be created when the payment is paid" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4- For full refund- User should be able to enter only the original payment amount for refund" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 5- Create refund case with payment incomplete" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 6- Refund case should be created when the payment is paid" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 8-Refund instrument can be modified" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- The user should be able to save the record successfully with incomplete fields" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC2 - Refund cases for 200$- 999$ should be visible and approved by the team lead only" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 3- Refund case is between 200$ to 999$ , the Level 1 employee should not be able to approve it" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 4 - Refund cases greater than 1000$ should be approved only by the manager" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 5-  Level 1 employees should not be able to approve refunds above $1000" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 6- Level 2 employees should not be able to approve the refunds above $1000" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 7- Level 1 reviewer should be able to reassign the case to another Level 1 employee" />
       </list>
     </option>
   </component>
@@ -363,7 +346,36 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="ChargeBack All" type="462c0819:PsiDirectoryNode" />
-              <item name="ChargeBack - Refund and Adjustments" type="462c0819:PsiDirectoryNode" />
+              <item name="Chargeback - Validations on payment record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Refund" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Refund" type="462c0819:PsiDirectoryNode" />
+              <item name="Refunds &amp; Adjustments - Refund initiation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Refund" type="462c0819:PsiDirectoryNode" />
+              <item name="Refunds &amp; Adjustments - Refund reviewer mechanism" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -421,15 +433,15 @@
     </option>
     <option name="contentProportion" value="0.17310664" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: TC3- The user should be able to save the record successfully with incomplete fields">
-    <configuration name="Feature: TC1 - Chargeback cant go from processed to cancelled" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: The user should be able to save the record successfully with incomplete fields (2)">
+    <configuration name="Feature: TC3- The user should be able to save the record successfully with incomplete fields (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- The user should be able to save the record successfully with incomplete fields" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC1 - Chargeback cant go from processed to cancelled" />
+      <option name="SUGGESTED_NAME" value="Feature: TC3- The user should be able to save the record successfully with incomplete fields" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -448,6 +460,44 @@
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: TC3- The user should be able to save the record successfully with incomplete fields" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- The user should be able to save the record successfully with incomplete fields" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="serenity-cucumber-starter" />
+      <option name="NAME_FILTER" value="^The user should be able to save the record successfully with incomplete fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^The user should be able to save the record successfully with incomplete fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user should be able to save the record successfully with incomplete fields" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="serenity-cucumber-starter" />
+      <option name="NAME_FILTER" value="^The user should be able to save the record successfully with incomplete fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^The user should be able to save the record successfully with incomplete fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user should be able to save the record successfully with incomplete fields" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -477,51 +527,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled" />
-      <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: The user should be able to save the record successfully with incomplete fields (2)" />
+        <item itemvalue="Cucumber java.Scenario: The user should be able to save the record successfully with incomplete fields (1)" />
+        <item itemvalue="Cucumber java.Feature: TC3- The user should be able to save the record successfully with incomplete fields (1)" />
         <item itemvalue="Cucumber java.Feature: TC3- The user should be able to save the record successfully with incomplete fields" />
         <item itemvalue="Cucumber java.Scenario: The user should be able to save the record successfully with incomplete fields" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" />
-        <item itemvalue="Cucumber java.Feature: TC1 - Chargeback cant go from processed to cancelled" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -539,39 +551,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 00m 44s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 13h 01m 50s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 04m 29s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC3-_The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 13h 05m 48s.xml">
+      <configuration name="Feature: TC3- The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 08m 57s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 14h 52m 45s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 13m 56s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 15h 02m 16s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 21m 55s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 15h 05m 04s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 39m 18s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(1) - 2019.08.21 at 15h 12m 32s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 42m 37s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(2) - 2019.08.21 at 15h 15m 34s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 45m 33s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(2) - 2019.08.21 at 16h 10m 50s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 48m 14s.xml">
-      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(2) - 2019.08.21 at 16h 13m 21s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC3-_The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields - 2019.08.20 at 15h 57m 29s.xml">
-      <configuration name="Feature: TC3- The user should be able to save the record successfully with incomplete fields" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__The_user_should_be_able_to_save_the_record_successfully_with_incomplete_fields_(2) - 2019.08.21 at 16h 17m 23s.xml">
+      <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (2)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.26911315" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
@@ -591,7 +604,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.50085473" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.42393163" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24923548" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,86 +629,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC6 - Verify the values under 'Chargeback SST Response'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack Complete Flow/ChargeBack Complete">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC5 - Add gifts to supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC6 - Add feedback and complaints against a supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC7 - Edit a supporter record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC5 - Successful search of a Chargeback payment record on Payment Unique Id">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC2 - Verify 'Payment status' is Unpaid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress.">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/ChargeBack- As per feedback from architect/TC2 - User cannot perform refund or adjustment on a record if chargeback is initiated">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/ChargeBack/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -848,20 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -904,63 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="999" column="191" selection-start-line="999" selection-start-column="191" selection-end-line="999" selection-end-column="191" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#53854#53855#0" expanded="true" />
-            <element signature="e#53889#53890#0" expanded="true" />
-            <element signature="e#53949#53950#0" expanded="true" />
-            <element signature="e#53984#53985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="610" column="16" selection-start-line="610" selection-start-column="16" selection-end-line="610" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-            <element signature="e#4633#4634#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4850#4851#0" expanded="true" />
-            <element signature="e#4910#4911#0" expanded="true" />
-            <element signature="e#5231#5232#0" expanded="true" />
-            <element signature="e#5283#5284#0" expanded="true" />
-            <element signature="e#5524#5525#0" expanded="true" />
-            <element signature="e#5585#5586#0" expanded="true" />
-            <element signature="e#7203#7204#0" expanded="true" />
-            <element signature="e#7267#7268#0" expanded="true" />
-            <element signature="e#10377#10378#0" expanded="true" />
-            <element signature="e#10440#10441#0" expanded="true" />
-            <element signature="e#18935#18936#0" expanded="true" />
-            <element signature="e#18999#19000#0" expanded="true" />
-            <element signature="e#21825#21826#0" expanded="true" />
-            <element signature="e#21889#21890#0" expanded="true" />
-            <element signature="e#25799#25800#0" expanded="true" />
-            <element signature="e#25868#25869#0" expanded="true" />
-            <element signature="e#28568#28569#0" expanded="true" />
-            <element signature="e#28627#28628#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,6 +862,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4- For full refund- User should be able to enter only the original payment amount for refund">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 5- Create refund case with payment incomplete">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 6- Refund case should be created when the payment is paid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- The user should be able to save the record successfully with incomplete fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC 8-Refund instrument can be modified">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC1 - Chargeback cant go from processed to cancelled">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="654" column="26" selection-start-line="654" selection-start-column="26" selection-end-line="654" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4117#4118#0" expanded="true" />
+            <element signature="e#4175#4176#0" expanded="true" />
+            <element signature="e#4633#4634#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4850#4851#0" expanded="true" />
+            <element signature="e#4910#4911#0" expanded="true" />
+            <element signature="e#5231#5232#0" expanded="true" />
+            <element signature="e#5283#5284#0" expanded="true" />
+            <element signature="e#5524#5525#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#7203#7204#0" expanded="true" />
+            <element signature="e#7267#7268#0" expanded="true" />
+            <element signature="e#10377#10378#0" expanded="true" />
+            <element signature="e#10440#10441#0" expanded="true" />
+            <element signature="e#18780#18781#0" expanded="true" />
+            <element signature="e#18829#18830#0" expanded="true" />
+            <element signature="e#18935#18936#0" expanded="true" />
+            <element signature="e#18999#19000#0" expanded="true" />
+            <element signature="e#21825#21826#0" expanded="true" />
+            <element signature="e#21889#21890#0" expanded="true" />
+            <element signature="e#25799#25800#0" expanded="true" />
+            <element signature="e#25868#25869#0" expanded="true" />
+            <element signature="e#28568#28569#0" expanded="true" />
+            <element signature="e#28627#28628#0" expanded="true" />
+            <element signature="e#29898#29899#0" expanded="true" />
+            <element signature="e#29923#29924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="1005" column="27" selection-start-line="1005" selection-start-column="27" selection-end-line="1005" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#53854#53855#0" expanded="true" />
+            <element signature="e#53889#53890#0" expanded="true" />
+            <element signature="e#53949#53950#0" expanded="true" />
+            <element signature="e#53984#53985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="31" selection-end-line="33" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC2 - Refund cases for 200$- 999$ should be visible and approved by the team lead only">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" column="43" selection-end-line="33" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 3- Refund case is between 200$ to 999$ , the Level 1 employee should not be able to approve it">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="33" lean-forward="true" selection-end-line="33" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 4 - Refund cases greater than 1000$ should be approved only by the manager">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" column="27" selection-end-line="33" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 5-  Level 1 employees should not be able to approve refunds above $1000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 6- Level 2 employees should not be able to approve the refunds above $1000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="23" column="24" selection-end-line="33" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 7- Level 1 reviewer should be able to reassign the case to another Level 1 employee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
         </state>
       </provider>
     </entry>

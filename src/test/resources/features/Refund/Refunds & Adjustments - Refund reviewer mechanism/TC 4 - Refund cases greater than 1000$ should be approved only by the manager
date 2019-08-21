@@ -16,14 +16,18 @@ Feature: As a Supporter Services User I need to initiate the refund approval for
 #    And I click on Paid CheckBox with click on Edit Paid option
 #    And I select Payment Date from payment date 2019-08-27
 #    And I click on Save button
-    And I click "Refund" radio button
-    And I provide the following details Case Origin,Refund Type,Subject,Status,Refund Amount,Refund Instrument,Bank Account No and Bank BSB
-      | Case Origin | Refund Type | Subject | Status | Refund Amount | Refund Instrument | Bank Account No | Bank BSB |
-     | <Case Origin> | <Refund Type> | <Subject> | <Status> | <Refund Amount> | <Refund Instrument> | <Bank Account No> | <Bank BSB> |
+#    And I click "Refund" radio button
+#    And I provide the following details Case Origin,Refund Type,Subject,Status,Refund Amount,Refund Instrument,Bank Account No and Bank BSB
+#      | Case Origin | Refund Type | Subject | Status | Refund Amount | Refund Instrument | Bank Account No | Bank BSB |
+#      | <Case Origin> | <Refund Type> | <Subject> | <Status> | <Refund Amount> | <Refund Instrument> | <Bank Account No> | <Bank BSB> |
 
 #    And I select on Refund "Save" button
-    Then I verify message "Refund Case Created" ganerated
+#    Then I verify message "Refund Case Created" ganerated
 
+    And I click "Related" Tab under Payment
+    And I click the required Cases under Payment
+    And I click the required Approval History under Payment
+    And I select Approve button from Approval Request
 
     Examples:
       | Case Origin | Refund Type | Subject | Status | Refund Amount | Refund Instrument | Bank Account No | Bank BSB |

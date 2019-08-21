@@ -654,7 +654,7 @@ public class NavigateTo {
     public void clickOnPayment(WebDriver driver) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,100)");
+        js.executeScript("scrollBy(0,150)");
         driver.findElement(By.xpath("//th//div//a[contains(@class,'textUnderline outputLookupLink')]")).click();
         waitfortheelement();
     }
@@ -928,7 +928,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackResponseBy +"']/..//input")).click();
 
     }
-    public void chargebackSave(WebDriver driver,String saveButton,String filedName){
+    public void chargebackSave(WebDriver driver,String filedName ,String saveButton){
         waitfortheelement();
          driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='"+ saveButton +"']")).click();
 //        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
@@ -985,7 +985,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ Status +"']"));
 
         driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']")).click();
-
+//        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(refundAmount);
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,200)");
 
@@ -997,8 +997,14 @@ public class NavigateTo {
 
         driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).click();
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).sendKeys(bankBSB);
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(fieldBankBSB);
-
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankBSB);
+    }
+    public void clickrequiredTab(WebDriver driver,String fieldName){
+        driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+ fieldName +"']/../../../../../..//div[contains(@class,'outputLookupContainer forceOutputLookupWithPreview')]//a")).click();
+    }
+    public void selectrequiest(WebDriver driver,String fieldbutton){
+       waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-no-flex slds-grid')]//li//a//div[@title='"+ fieldbutton +"']")).click();
 
     }
 }
