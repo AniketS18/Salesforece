@@ -202,14 +202,15 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName) {
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='"+ tagName +"']//span[@class='title'][text()='"+ tagName +"'])[2]"));
+        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='" + tagName + "']//span[@class='title'][text()='" + tagName + "'])[2]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
     }
-    public void clickTabUnderPayment(WebDriver driver, String tabName){
+
+    public void clickTabUnderPayment(WebDriver driver, String tabName) {
         waitfortheelement();
-        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='"+ tabName +"']//span[@class='title'][text()='"+ tabName +"'])[3]"));
+        WebElement elem = driver.findElement(By.xpath("(//a[@class='tabHeader'][@title='" + tabName + "']//span[@class='title'][text()='" + tabName + "'])[3]"));
         elem.click();
     }
 
@@ -541,7 +542,7 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
         //WebElement element =
-        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='"+ Subject +"']")).click();
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='" + Subject + "']")).click();
         waitfortheelement();
         WebElement element = driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']"));
         JavascriptExecutor je = (JavascriptExecutor) driver;
@@ -553,17 +554,18 @@ public class NavigateTo {
 //        driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Status']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
 
-        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='"+ Status +"']")).click();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='" + Status + "']")).click();
         ////div//ul[@class='scrollable']//li//a[@title='In Progress']
         driver.findElement(By.xpath("//span[contains(@class,'label inputLabel')]//span[text()='Priority']/../..//div[@class='uiMenu']//div[@class='uiPopupTrigger']")).click();
         waitfortheelement();
-        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='"+ Priorty +"']")).click();
+        driver.findElement(By.xpath("//div[@class='select-options']//ul[@class='scrollable']//li//a[text()='" + Priorty + "']")).click();
     }
-    public void clickActivityHistory(WebDriver driver){
+
+    public void clickActivityHistory(WebDriver driver) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,150)");
-       // driver.findElement(By.xpath("//table[contains(@class,'forceRecordLayout slds-table')]//tr//th//div//a[@class='textUnderline outputLookupLink slds-truncate forceOutputLookup']")).click();
+        // driver.findElement(By.xpath("//table[contains(@class,'forceRecordLayout slds-table')]//tr//th//div//a[@class='textUnderline outputLookupLink slds-truncate forceOutputLookup']")).click();
         driver.findElement(By.xpath("(//tr//th//div[@class='outputLookupContainer forceOutputLookupWithPreview']//a)[1]")).click();
 
     }
@@ -634,16 +636,16 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[contains(@class,'undefined lookup__menu uiAbstractList')]//div//div[contains(@class,'primaryLabel slds')][text()='Suma Srinivasaiah']")).click();
     }
 
-    public void clickOpportunitybutton(WebDriver driver,String fieldValue) {
+    public void clickOpportunitybutton(WebDriver driver, String fieldValue) {
         waitfortheelement();
-        driver.findElement(By.xpath("//div//a[@class='rlql-relatedListLink']//span[@title='"+ fieldValue +"']")).click();
+        driver.findElement(By.xpath("//div//a[@class='rlql-relatedListLink']//span[@title='" + fieldValue + "']")).click();
         waitfortheelement();
     }
 
     public void clickopportunityname(WebDriver driver, String opportunityName) {
         waitfortheelement();
-        String e = driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='"+ opportunityName +"']")).getText();
-        driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='"+ opportunityName +"']")).click();
+        String e = driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='" + opportunityName + "']")).getText();
+        driver.findElement(By.xpath("//th//span[@class='slds-grid slds-grid--align-spread']//a[@title='" + opportunityName + "']")).click();
         waitfortheelement();
 
         System.out.println("----------------------------");
@@ -696,8 +698,8 @@ public class NavigateTo {
 
     public void verifyPaymentRecord(WebDriver driver, String filedPaymentID, String filedrecordType) {
         waitfortheelement();
-        String PaymentId = driver.findElement(By.xpath("//span[text()='"+ filedPaymentID +"']/../..//span[@class='uiOutputText']")).getText();
-        String RecordType = driver.findElement(By.xpath("//span[text()='"+ filedrecordType +"']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
+        String PaymentId = driver.findElement(By.xpath("//span[text()='" + filedPaymentID + "']/../..//span[@class='uiOutputText']")).getText();
+        String RecordType = driver.findElement(By.xpath("//span[text()='" + filedrecordType + "']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
         waitfortheelement();
         System.out.println("*************************");
         System.out.println(PaymentId);
@@ -797,82 +799,85 @@ public class NavigateTo {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,150)");
-        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]//span[text()='"+ filedCheckbox +"']/../..//button[contains(@class,'slds-button test-id')][@title='"+ filedEditPaid +"']")).click();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]/..//label//span[text()='"+ filedCheckbox +"']/../..//input[@type='checkbox']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]//span[text()='" + filedCheckbox + "']/../..//button[contains(@class,'slds-button test-id')][@title='" + filedEditPaid + "']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has-flexi')]/..//label//span[text()='" + filedCheckbox + "']/../..//input[@type='checkbox']")).click();
     }
 
-    public void selectPaymentDate(WebDriver driver, String filedPaymentDate,String Date) {
-        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='"+ filedPaymentDate +"']/../..//a[contains(@class, 'datePicker-openIcon')]")).click();
+    public void selectPaymentDate(WebDriver driver, String filedPaymentDate, String Date) {
+        driver.findElement(By.xpath("//label[contains(@class,'label inputLabel')]//span[text()='" + filedPaymentDate + "']/../..//a[contains(@class, 'datePicker-openIcon')]")).click();
         waitfortheelement();
 //        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        Date date = new Date();
 //        String strDate =dateFormat.format(date);
 
-        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='"+ Date +"']")).click();
+        driver.findElement(By.xpath("//td[@class='uiDayInMonthCell'][@data-datevalue='" + Date + "']")).click();
 
     }
-    public void clickRadioButton(WebDriver driver, String filedName){
-        waitfortheelement();
-        driver.findElement(By.xpath("//div//span[@class='slds-radio']//input[@value='"+filedName+"']/..//label[@class='slds-radio__label']")).click();
-    }
-    public void chargebackValues(WebDriver driver, String fieldChargebackBankAction,String fieldChargebackReceivedOn,String filedChargebackReferenceNumber,String filedChargebackResponseBy,String filedChargebackActualResponseDate,String filedChargebackSSTResponse,String filedChargebackBankFinalNotificationDate,String chargebackBankAction,String chargebackReceivedOn,String chargebackReferenceNumber, String chargebackResponseBy, String chargebackActualResponseDate,String chargebackSSTResponse,String chargebackBankFinalNotificationDate){
-        waitfortheelement();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackBankAction +"']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackReceivedOn +"']/..//input")).click();
+    public void clickRadioButton(WebDriver driver, String filedName) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div//span[@class='slds-radio']//input[@value='" + filedName + "']/..//label[@class='slds-radio__label']")).click();
+    }
+
+    public void chargebackValues(WebDriver driver, String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber, String filedChargebackResponseBy, String filedChargebackActualResponseDate, String filedChargebackSSTResponse, String filedChargebackBankFinalNotificationDate, String chargebackBankAction, String chargebackReceivedOn, String chargebackReferenceNumber, String chargebackResponseBy, String chargebackActualResponseDate, String chargebackSSTResponse, String chargebackBankFinalNotificationDate) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackBankAction + "']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackBankAction + "']/..//span[@title='" + chargebackBankAction + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackReceivedOn + "']/..//input")).click();
 //        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        Date date = new Date();
 //        String strDate =dateFormat.format(date);
 
         driver.findElement(By.xpath("//div[@class='slds-card__body']//td[@data-value='" + chargebackReceivedOn + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackReferenceNumber +"']/..//input")).sendKeys(chargebackReferenceNumber);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackReferenceNumber + "']/..//input")).sendKeys(chargebackReferenceNumber);
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,200)");
 
-       // driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
+        // driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 
 
 //
 //        driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 //        System.out.println("----------------------------------------------------------------------------------");
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackResponseBy +"']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackResponseBy + "']/..//input")).click();
 //        DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd");
 //        Date date2 = new Date();
 //        String strDate2 =dateFormat.format(date);
 
         driver.findElement(By.xpath("//div[@class='slds-card__body']//td[@data-value='" + chargebackResponseBy + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackActualResponseDate +"']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackActualResponseDate + "']/..//input")).click();
 //        DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd");
 //        Date date2 = new Date();
 //        String strDate2 =dateFormat.format(date);
 
         driver.findElement(By.xpath("//td[@data-value='" + chargebackActualResponseDate + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackSSTResponse +"']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackSSTResponse +"']/..//span[@title='"+ chargebackSSTResponse +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackSSTResponse + "']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackSSTResponse + "']/..//span[@title='" + chargebackSSTResponse + "']")).click();
 
 //        JavascriptExecutor js = (JavascriptExecutor) driver;
 //        js.executeScript("scrollBy(0,300)");
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackBankFinalNotificationDate +"']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackBankFinalNotificationDate + "']/..//input")).click();
         driver.findElement(By.xpath("//td[@data-value='" + chargebackBankFinalNotificationDate + "']")).click();
 
     }
-    public void verifySuccessMessage(WebDriver driver,String message){
+
+    public void verifySuccessMessage(WebDriver driver, String message) {
         waitfortheelement();
-        String msg =driver.findElement(By.xpath("//div[contains(@class,'uiMessage')]//div[@class='bBody']" )).getText();
-              //  "[text()='Chargeback has been initiated and is in progress.']")).getText();
+        String msg = driver.findElement(By.xpath("//div[contains(@class,'uiMessage')]//div[@class='bBody']")).getText();
+        //  "[text()='Chargeback has been initiated and is in progress.']")).getText();
         waitfortheelement();
-        String[] tokens= message.split("/n");
+        String[] tokens = message.split("/n");
         int i;
-        for ( i = 0; i<tokens.length; i++)
+        for (i = 0; i < tokens.length; i++)
 //            System.out.println(tokens[i]);
 
 //        System.out.println("----------------------");
-        System.out.println(tokens[i]);
+            System.out.println(tokens[i]);
         System.out.println("----------------------");
         System.out.println(tokens[i]);
         System.out.println("----------------------");
@@ -885,61 +890,67 @@ public class NavigateTo {
 //
 //        Assert.assertTrue(contains);
 
-        Assert.assertEquals(tokens[i],msg);
+        Assert.assertEquals(tokens[i], msg);
     }
-    public void verifyRecord(WebDriver driver){
+
+    public void verifyRecord(WebDriver driver) {
         String record = driver.findElement(By.xpath("//span[@class='test-id__field-label'][text()='Related Payment Record']/../..//a")).getText();
 
         System.out.println(record);
     }
-    public void verifyTaskDetails(WebDriver driver,String assignedto,String subject,String status,String priority){
+
+    public void verifyTaskDetails(WebDriver driver, String assignedto, String subject, String status, String priority) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,150)");
         String Assigned_To = driver.findElement(By.xpath("//div//span[text()='Assigned To']/../..//div[@class='ownerName']//a")).getText();
         String Sub = driver.findElement(By.xpath("//div//span[text()='Subject']/../..//span[@class='uiOutputText']")).getText();
-        String Stat = driver.findElement(By.xpath("//div//span[text()='Status']/../..//span[text()='"+ status +"']")).getText();
-        String Prio = driver.findElement(By.xpath("//div//span[text()='Priority']/../..//span[text()='"+ priority +"']")).getText();
+        String Stat = driver.findElement(By.xpath("//div//span[text()='Status']/../..//span[text()='" + status + "']")).getText();
+        String Prio = driver.findElement(By.xpath("//div//span[text()='Priority']/../..//span[text()='" + priority + "']")).getText();
 
-        Assert.assertEquals(assignedto,Assigned_To);
-        Assert.assertEquals(subject,Sub);
-        Assert.assertEquals(status,Stat);
-        Assert.assertEquals(priority,Prio);
+        Assert.assertEquals(assignedto, Assigned_To);
+        Assert.assertEquals(subject, Sub);
+        Assert.assertEquals(status, Stat);
+        Assert.assertEquals(priority, Prio);
     }
-    public void ProvideChargebackValues(WebDriver driver, String fieldChargebackBankAction,String fieldChargebackReceivedOn,String filedChargebackReferenceNumber,String chargebackBankAction,String chargebackReceivedOn,String chargebackReferenceNumber){
-        waitfortheelement();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackBankAction +"']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldChargebackReceivedOn +"']/..//input")).click();
+    public void ProvideChargebackValues(WebDriver driver, String fieldChargebackBankAction, String fieldChargebackReceivedOn, String filedChargebackReferenceNumber, String chargebackBankAction, String chargebackReceivedOn, String chargebackReferenceNumber) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackBankAction + "']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackBankAction + "']/..//span[@title='" + chargebackBankAction + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldChargebackReceivedOn + "']/..//input")).click();
 //        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        Date date = new Date();
 //        String strDate =dateFormat.format(date);
 
         driver.findElement(By.xpath("//div[@class='slds-card__body']//td[@data-value='" + chargebackReceivedOn + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackReferenceNumber +"']/..//input")).sendKeys(chargebackReferenceNumber);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackReferenceNumber + "']/..//input")).sendKeys(chargebackReferenceNumber);
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,200)");
     }
-    public void verifyChargebackSSTResponse(WebDriver driver, String filedChargebackResponseBy){
-       // driver.findElement(By.xpath("//div[@class='slds-card__body']//td[@data-value='" + chargebackResponseBy + "']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedChargebackResponseBy +"']/..//input")).click();
+
+    public void verifyChargebackSSTResponse(WebDriver driver, String filedChargebackResponseBy) {
+        // driver.findElement(By.xpath("//div[@class='slds-card__body']//td[@data-value='" + chargebackResponseBy + "']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedChargebackResponseBy + "']/..//input")).click();
 
     }
-    public void chargebackSave(WebDriver driver,String filedName ,String saveButton){
+
+    public void chargebackSave(WebDriver driver, String filedName, String saveButton) {
         waitfortheelement();
-         driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='"+ saveButton +"']")).click();
+        driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='" + saveButton + "']")).click();
 //        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
 
     }
-    public void clickRequiredPaymentUnderPayment(WebDriver driver,String filedPayment ){
+
+    public void clickRequiredPaymentUnderPayment(WebDriver driver, String filedPayment) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,200)");
-      //  driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+filedPayment+"']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]")).click();
-        WebElement e = driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+ filedPayment +"']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]//tbody"));
+        //  driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+filedPayment+"']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]")).click();
+        WebElement e = driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='" + filedPayment + "']/../../../../../..//table[contains(@class,'forceRecordLayout slds')]//tbody"));
 
         waitfortheelement();
 
@@ -951,60 +962,84 @@ public class NavigateTo {
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,200)");
     }
-    public void editChargebackInformation(WebDriver driver,String filedAction,String filedStatus1,String filedStatus2){
+
+    public void editChargebackInformation(WebDriver driver, String filedAction, String filedStatus1, String filedStatus2) {
         waitfortheelement();
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']")).click();
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']/..//span[@title='"+ filedStatus2 +"']")).click();
-        driver.findElement(By.xpath(".//div[@class='slds-form-element__control']//span[text()='"+ filedAction +"']/../..//div[@class='uiMenu']")).click();
+        driver.findElement(By.xpath(".//div[@class='slds-form-element__control']//span[text()='" + filedAction + "']/../..//div[@class='uiMenu']")).click();
 
-        driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='"+ filedStatus2 +"']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='" + filedStatus2 + "']")).click();
     }
-    public void verifyRadioButton(WebDriver driver){
+
+    public void verifyRadioButton(WebDriver driver) {
         waitfortheelement();
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,-200)");
     }
-    public void verifyChargebackNotAllowNew(WebDriver driver){
+
+    public void verifyChargebackNotAllowNew(WebDriver driver) {
         waitfortheelement();
     }
-    public void verifyChargebacCanCreate(WebDriver driver){
+
+    public void verifyChargebacCanCreate(WebDriver driver) {
         waitfortheelement();
     }
-    public void refundDetails(WebDriver driver,String filedCaseOrigin,String filedRefundType,String Subject,String Status,String filedRefundAmount,String filedRefundInstrument,String filedBankAccountNo,String fieldBankBSB,String caseOrigin,String refundType,String subject,String status,String refundAmount,String refundInstrument,String bankAccountNo,String bankBSB){
+
+    public void refundDetails(WebDriver driver, String filedCaseOrigin, String filedRefundType, String Subject, String Status, String filedRefundAmount, String filedRefundInstrument, String filedBankAccountNo, String fieldBankBSB, String caseOrigin, String refundType, String subject, String status, String refundAmount, String refundInstrument, String bankAccountNo, String bankBSB) {
         waitfortheelement();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedCaseOrigin +"']")).click();
-       // driver.findElement(By.xpath("//form[@class='slds-form']//label[text()='"+ filedCaseOrigin +"']/..//div[contains(@class,'slds-combobox slds-dropdown')]//lightning-icon[contains(@class,'slds-icon-utility-down slds-input')]")).click();
-        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ caseOrigin +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedCaseOrigin + "']")).click();
+        // driver.findElement(By.xpath("//form[@class='slds-form']//label[text()='"+ filedCaseOrigin +"']/..//div[contains(@class,'slds-combobox slds-dropdown')]//lightning-icon[contains(@class,'slds-icon-utility-down slds-input')]")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='" + caseOrigin + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundType +"']/..//div[@class='slds-form-element__control']")).click();
-        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ refundType +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedRefundType + "']/..//div[@class='slds-form-element__control']")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='" + refundType + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ Subject +"']"));
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + Subject + "']"));
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ Status +"']"));
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + Status + "']"));
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']")).click();
-//        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(refundAmount);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedRefundAmount + "']")).click();
+        String st = driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedRefundAmount + "']")).getText();
+
+        if (st.equals("Partial")) {
+            driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedRefundAmount + "']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(refundAmount);
+        }
+        // driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundAmount +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(refundAmount);
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,200)");
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedRefundInstrument +"']/..//div[@class='slds-form-element__control']")).click();
-        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='"+ refundInstrument +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedRefundInstrument + "']/..//div[@class='slds-form-element__control']")).click();
+        driver.findElement(By.xpath("//lightning-base-combobox-item[contains(@class,'slds-media slds-listbox')]//span[@title='" + refundInstrument + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedBankAccountNo +"']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedBankAccountNo +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankAccountNo);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedBankAccountNo + "']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + filedBankAccountNo + "']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankAccountNo);
 
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldBankBSB + "']")).click();
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']")).sendKeys(bankBSB);
-        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ fieldBankBSB +"']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankBSB);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='" + fieldBankBSB + "']/..//div[@class='slds-form-element__control slds-grow']//input")).sendKeys(bankBSB);
     }
-    public void clickrequiredTab(WebDriver driver,String fieldName){
-        driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='"+ fieldName +"']/../../../../../..//div[contains(@class,'outputLookupContainer forceOutputLookupWithPreview')]//a")).click();
-    }
-    public void selectrequiest(WebDriver driver,String fieldbutton){
-       waitfortheelement();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-no-flex slds-grid')]//li//a//div[@title='"+ fieldbutton +"']")).click();
 
+    public void clickrequiredTab(WebDriver driver, String fieldName) {
+        driver.findElement(By.xpath("//div[@class='slds-card__header slds-grid']//span[@title='" + fieldName + "']/../../../../../..//div[contains(@class,'outputLookupContainer forceOutputLookupWithPreview')]//a")).click();
+    }
+
+    public void selectrequiest(WebDriver driver, String fieldbutton) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-no-flex slds-grid')]//li//a//div[@title='" + fieldbutton + "']")).click();
+
+    }
+
+    public void clickOnCase(WebDriver driver, String fieldbutton) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'forceModalActionContainer')]//button[contains(@class,'slds-button slds-button')]//span[text()='" + fieldbutton + "']")).click();
+
+    }
+    public void verifyCaseApproval(WebDriver driver,String tagName,String status){
+        waitfortheelement();
+       String st= driver.findElement(By.xpath("//div[contains(@class,'slds-form-element slds')]//span[text()='"+ tagName +"']/../..//span[text()='"+ status +"']")).getText();
+
+        Assert.assertEquals(status,st);
     }
 }

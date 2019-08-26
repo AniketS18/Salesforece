@@ -608,8 +608,8 @@ public class SalesforceStepDefinitions {
     }
 
     @And("^I select on (.*) \"(.*)\" button$")
-    public void i_click_chargeback_save(String filedName,String saveButton) {
-        navigateTo.chargebackSave(driver,filedName,saveButton);
+    public void i_click_chargeback_save(String filedName, String saveButton) {
+        navigateTo.chargebackSave(driver, filedName, saveButton);
     }
 
     @And("^I click the required Payment under (.*) option$")
@@ -621,20 +621,24 @@ public class SalesforceStepDefinitions {
     public void i_edit_chargeback_information(String filedAction, String filedStatus1, String filedStatus2) {
         navigateTo.editChargebackInformation(driver, filedAction, filedStatus1, filedStatus2);
     }
+
     @Then("^I verify that 'Charegback Bank Action' is initiated and 'Refund','Adjustment' and 'Chargeback' radio button should not be visible and cannot perform 'Refund' or 'Adjustment'.$")
-    public void i_verify_radio_button_should_not_be_visible(){
+    public void i_verify_radio_button_should_not_be_visible() {
         navigateTo.verifyRadioButton(driver);
     }
+
     @Then("I verify Chargeback is created successfully and should not allow to create Refund, Adjustment and new Chargeback")
-    public void i_verify_Chargeback_is_created_successfully_and_should_not_allow(){
+    public void i_verify_Chargeback_is_created_successfully_and_should_not_allow() {
         navigateTo.verifyChargebackNotAllowNew(driver);
     }
+
     @Then("I verify that 'Charegback Bank Action' is canceled and 'Refund','Adjustment' and 'Chargeback' radio button should be visible and can create 'New Chargeback','Refund' or 'Adjustment")
-    public void i_verify_Chargeback_is_canceled_can_create(){
+    public void i_verify_Chargeback_is_canceled_can_create() {
         navigateTo.verifyChargebacCanCreate(driver);
     }
+
     @And("^I provide the following details (.*),(.*),(.*),(.*),(.*),(.*),(.*) and (.*)$")
-    public void i_provide_following_details(String filedCaseOrigin,String filedRefundType,String Subject,String Status,String filedRefundAmount,String filedRefundInstrument,String filedBankAccountNo,String fieldBankBSB,DataTable dataTable){
+    public void i_provide_following_details(String filedCaseOrigin, String filedRefundType, String Subject, String Status, String filedRefundAmount, String filedRefundInstrument, String filedBankAccountNo, String fieldBankBSB, DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         String caseOrigin = data.get(0).get("Case Origin");
         String refundType = data.get(0).get("Refund Type");
@@ -644,15 +648,26 @@ public class SalesforceStepDefinitions {
         String refundInstrument = data.get(0).get("Refund Instrument");
         String bankAccountNo = data.get(0).get("Bank Account No");
         String bankBSB = data.get(0).get("Bank BSB");
-        navigateTo.refundDetails(driver,filedCaseOrigin,filedRefundType,Subject,Status,filedRefundAmount,filedRefundInstrument,filedBankAccountNo,fieldBankBSB,caseOrigin,refundType,subject,status,refundAmount,refundInstrument,bankAccountNo,bankBSB);
+        navigateTo.refundDetails(driver, filedCaseOrigin, filedRefundType, Subject, Status, filedRefundAmount, filedRefundInstrument, filedBankAccountNo, fieldBankBSB, caseOrigin, refundType, subject, status, refundAmount, refundInstrument, bankAccountNo, bankBSB);
     }
+
     @And("^I click the required (.*) under Payment$")
-    public void i_click_required_under_payment(String fieldName){
-        navigateTo.clickrequiredTab(driver,fieldName);
+    public void i_click_required_under_payment(String fieldName) {
+        navigateTo.clickrequiredTab(driver, fieldName);
     }
+
     @And("^I select (.*) button from Approval Request$")
-    public  void  i_select_reuiest_from_approval_request(String fieldbutton){
-        navigateTo.selectrequiest(driver,fieldbutton);
+    public void i_select_reuiest_from_approval_request(String fieldbutton) {
+        navigateTo.selectrequiest(driver, fieldbutton);
+    }
+
+    @And("^I click (.*) from Approve Case$")
+    public void i_click_on_approve_case(String fieldbutton) {
+        navigateTo.clickOnCase(driver, fieldbutton);
+    }
+    @Then("^I verify (.*) is (.*) under Case Approval$")
+    public void i_verify_under_case_approval(String tagName,String status){
+        navigateTo.verifyCaseApproval(driver,tagName,status);
     }
 }
 
