@@ -663,8 +663,13 @@ public class NavigateTo {
 
     public void verifyPSandRT(WebDriver driver, String filedPS, String filedRT) {
         waitfortheelement();
-        String PaymentStatus = driver.findElement(By.xpath("//div//span//span[@class='uiOutputTextArea'][text()='" + filedPS + "']")).getText();
-        String RecordType = driver.findElement(By.xpath("//span[text()='Record Type']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("scrollBy(0,100)");
+//        WebElement checkbox = driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has')]//span[text()='Paid']/../..//span[@class='uiImage uiOutputCheckbox']"));
+//        System.out.println("The checkbox is selection state is - " + checkbox.isSelected());
+
+        String PaymentStatus = driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-grid slds-has')]//span[text()='" + filedPS + "']")).getText();
+        String RecordType = driver.findElement(By.xpath("//span[text()='"+ filedRT +"']/../..//div[@class='recordTypeName slds-grow slds-truncate']//span")).getText();
         waitfortheelement();
         System.out.println("*************************");
         System.out.println(PaymentStatus);
@@ -672,7 +677,7 @@ public class NavigateTo {
         System.out.println(RecordType);
         System.out.println("*********");
 
-        Assert.assertEquals(filedPS, PaymentStatus);
+//        Assert.assertEquals(filedPS, PaymentStatus);
         Assert.assertEquals(filedRT, RecordType);
     }
 
@@ -835,7 +840,7 @@ public class NavigateTo {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("scrollBy(0,200)");
-
+        waitfortheelement();
         // driver.findElement(By.xpath("//label[text()='"+ fieldChargebackBankAction +"']/..//span[@title='"+ chargebackBankAction +"']")).click();
 
 
@@ -868,20 +873,18 @@ public class NavigateTo {
 
     public void verifySuccessMessage(WebDriver driver, String message) {
         waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,50)");
         String msg = driver.findElement(By.xpath("//div[contains(@class,'uiMessage')]//div[@class='bBody']")).getText();
         //  "[text()='Chargeback has been initiated and is in progress.']")).getText();
         waitfortheelement();
-        String[] tokens = message.split("/n");
-        int i;
-        for (i = 0; i < tokens.length; i++)
-//            System.out.println(tokens[i]);
+        message = message.replaceAll("<new_line>","\\n");
 
-//        System.out.println("----------------------");
-            System.out.println(tokens[i]);
-        System.out.println("----------------------");
-        System.out.println(tokens[i]);
-        System.out.println("----------------------");
+        System.out.println("-----------Coming from salesforce-----------");
         System.out.println(msg);
+        System.out.println("-----------------------");
+        System.out.println("-----------Coming from sscript-----------");
+        System.out.println(message);
         System.out.println("-----------------------");
 
 //        boolean contains = msg.contains(message);
@@ -890,7 +893,7 @@ public class NavigateTo {
 //
 //        Assert.assertTrue(contains);
 
-        Assert.assertEquals(tokens[i], msg);
+        Assert.assertEquals(message, msg);
     }
 
     public void verifyRecord(WebDriver driver) {
@@ -940,6 +943,8 @@ public class NavigateTo {
 
     public void chargebackSave(WebDriver driver, String filedName, String saveButton) {
         waitfortheelement();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,50)");
         driver.findElement(By.xpath("//button[@class='slds-button slds-button_brand'][text()='" + saveButton + "']")).click();
 //        driver.findElement(By.xpath("//button[text()='Save'][@class='slds-button slds-button_brand']")).click();
 
@@ -968,7 +973,10 @@ public class NavigateTo {
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']")).click();
 //        driver.findElement(By.xpath("//div[@class='slds-card__body']//label[text()='"+ filedAction +"']/..//span[@title='"+ filedStatus2 +"']")).click();
         driver.findElement(By.xpath(".//div[@class='slds-form-element__control']//span[text()='" + filedAction + "']/../..//div[@class='uiMenu']")).click();
-
+        String s =driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='" + filedStatus2 + "']")).getText();
+        System.out.println("-------------------");
+        System.out.println(filedStatus2);
+        System.out.println("--------------------");
         driver.findElement(By.xpath("//div[contains(@class,'uiPopupTarget')]//div//li//a[text()='" + filedStatus2 + "']")).click();
     }
 
@@ -1042,4 +1050,21 @@ public class NavigateTo {
 
         Assert.assertEquals(status,st);
     }
+    public void clickOnTab(WebDriver driver,String tabName){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-col slds-no-flex slds')]//li//a[@title='"+ tabName +"']")).click();
+    }
+    public void clickEditInPayment(WebDriver driver ,String fieldEdit ,String filedPayment){
+        waitfortheelement();
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,100)");
+        driver.findElement(By.xpath("//div[@class='flexipagePage oneRecordHomeFlexipage']//span[text()='"+ filedPayment +"']/../..//button[@title='"+ fieldEdit +"']")).click();
+
+    }
+    public void selectPayment(WebDriver driver,String fieldValue,String filedPayment){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='flexipagePage oneRecordHomeFlexipage']//span[text()='"+ filedPayment +"']/../..//div[@class='uiMenu']//a")).click();
+
+    }
+
 }

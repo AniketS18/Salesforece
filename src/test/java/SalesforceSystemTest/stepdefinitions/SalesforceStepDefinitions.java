@@ -488,8 +488,8 @@ public class SalesforceStepDefinitions {
         navigateTo.searchSalesforceTextbox(driver);
     }
 
-    @And("^I click on Payment Number on the searched record$")
-    public void i_click_on_payment_number() {
+    @And("^I click (.*) on the searched record$")
+    public void i_click_payment_number_on_searched_record(String payment) {
         navigateTo.clickPaymentNumber(driver);
     }
 
@@ -582,8 +582,14 @@ public class SalesforceStepDefinitions {
         navigateTo.chargebackValues(driver, fieldChargebackBankAction, fieldChargebackReceivedOn, filedChargebackReferenceNumber, filedChargebackResponseBy, filedChargebackActualResponseDate, filedChargebackSSTResponse, filedChargebackBankFinalNotificationDate, chargebackBankAction, chargebackReceivedOn, chargebackReferenceNumber, chargebackResponseBy, chargebackActualResponseDate, chargebackSSTResponse, chargebackBankFinalNotificationDate);
     }
 
-    @Then("^I verify message \"(.*)\" ganerated$")
+    @Then("^I verify message \"(.*)\" generated$")
     public void i_verify_success_message(String filedMassage) {
+        System.out.println("...............................................................");
+
+        filedMassage = filedMassage.replaceAll("<new_line>","\n");
+        System.out.println(filedMassage);
+        System.out.println("...............................................................");
+
         navigateTo.verifySuccessMessage(driver, filedMassage);
     }
 
@@ -622,7 +628,7 @@ public class SalesforceStepDefinitions {
         navigateTo.editChargebackInformation(driver, filedAction, filedStatus1, filedStatus2);
     }
 
-    @Then("^I verify that 'Charegback Bank Action' is initiated and 'Refund','Adjustment' and 'Chargeback' radio button should not be visible and cannot perform 'Refund' or 'Adjustment'.$")
+    @Then("^I verify that 'Charegback Bank Action' is initiated and 'Refund','Adjustment' and 'Chargeback' radio button should not be visible and cannot perform 'Refund' or 'Adjustment'$")
     public void i_verify_radio_button_should_not_be_visible() {
         navigateTo.verifyRadioButton(driver);
     }
@@ -632,8 +638,8 @@ public class SalesforceStepDefinitions {
         navigateTo.verifyChargebackNotAllowNew(driver);
     }
 
-    @Then("I verify that 'Charegback Bank Action' is canceled and 'Refund','Adjustment' and 'Chargeback' radio button should be visible and can create 'New Chargeback','Refund' or 'Adjustment")
-    public void i_verify_Chargeback_is_canceled_can_create() {
+    @Then("I verify that 'Charegback Bank Action' is (.*) and 'Refund','Adjustment' and 'Chargeback' radio button should be visible and can create 'New Chargeback','Refund' or 'Adjustment")
+    public void i_verify_Chargeback_is_canceled_can_create(String option) {
         navigateTo.verifyChargebacCanCreate(driver);
     }
 
@@ -668,6 +674,18 @@ public class SalesforceStepDefinitions {
     @Then("^I verify (.*) is (.*) under Case Approval$")
     public void i_verify_under_case_approval(String tagName,String status){
         navigateTo.verifyCaseApproval(driver,tagName,status);
+    }
+    @And("^I click (.*) tab$")
+    public void i_click_Email_Payment_Receipt_tab(String tabName){
+        navigateTo.clickOnTab(driver,tabName);
+    }
+    @And("^I click (.*) in (.*)$")
+    public void i_click_in(String fieldEdit,String filedPayment){
+        navigateTo.clickEditInPayment(driver,fieldEdit,filedPayment);
+    }
+    @And("^I select the (.*) from (.*)$")
+    public void i_select_from(String fieldValue,String filedPayment){
+        navigateTo.selectPayment(driver,fieldValue,filedPayment);
     }
 }
 
