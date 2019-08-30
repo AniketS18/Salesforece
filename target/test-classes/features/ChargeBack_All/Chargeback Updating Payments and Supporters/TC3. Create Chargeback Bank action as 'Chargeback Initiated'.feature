@@ -12,8 +12,8 @@ Feature: ChargeBack Complete flow
     And I click on Opportunities name test active opportunity link
     And I click on "Related" Tab
     And I click on Payment
-#    And I click on Paid CheckBox
-#    And I select Payment Date from payment date
+#    And I click on Paid CheckBox with click on Edit Paid option
+#    And I select Payment Date from payment date 2019-08-27
 #    And I click on Save button
     And I click "Chargeback" radio button
     And I provide details Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
