@@ -290,7 +290,7 @@ public class NavigateTo {
     public void clickOnEditButton(WebDriver driver, String ERMButton) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,300)");
+        js.executeScript("scrollBy(0,350)");
         driver.findElement(By.xpath("//button[@title='" + ERMButton + "']")).click();
         waitfortheelement();
     }
@@ -631,7 +631,7 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("//div[@class='autocompleteWrapper slds-grow']//input[contains(@class,' default input uiInpu')][@title='Search Accounts']")).click();
         waitfortheelement();
-        String e = driver.findElement(By.xpath("//div[contains(@class,'undefined lookup__menu uiAbstractList')]//div//div[contains(@class,'primaryLabel slds')][text()='Suma Srinivasaiah']")).getText();
+        String e = driver.findElement(By.xpath("//div[contains(@class,'undefined lookup__menu uiAbstractList')]//div//div[contains(@class,'primaryLabel slds')][text()='"+ filedManager +"']")).getText();
 
         System.out.println("----------------------------");
         System.out.println(e);
@@ -662,6 +662,8 @@ public class NavigateTo {
         js.executeScript("scrollBy(0,150)");
         driver.findElement(By.xpath("//th//div//a[contains(@class,'textUnderline outputLookupLink')]")).click();
         waitfortheelement();
+//        driver.findElement(By.xpath("//div[@class='showPreview forceRelatedListQuickLinksContainer']//span[@class='rlql-label'][text()='"+Payclick+"']")).click();
+
     }
 
 //    public void verifyPSandRT(WebDriver driver, String filedPS, String filedRT) {
@@ -877,7 +879,7 @@ public class NavigateTo {
     public void verifySuccessMessage(WebDriver driver, String message) {
         waitfortheelement();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("scrollBy(0,50)");
+        js.executeScript("scrollBy(0,100)");
         String msg = driver.findElement(By.xpath("//div[contains(@class,'uiMessage')]//div[@class='bBody']")).getText();
         //  "[text()='Chargeback has been initiated and is in progress.']")).getText();
         waitfortheelement();
@@ -2337,7 +2339,6 @@ public class NavigateTo {
         waitfortheelement();
         waitfortheelement();
 
-
-
     }
+
  }

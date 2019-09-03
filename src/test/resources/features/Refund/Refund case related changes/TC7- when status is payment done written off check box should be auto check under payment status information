@@ -1,0 +1,7 @@
+Feature: As a Supporter Services User I need to initiate the refund approval for a supporter
+  So that the appropriate donation/gifts are refunded or sent for further approval
+
+
+  Scenario Outline: The user should be able to save the record successfully with incomplete fields
+    Given I login to Salesforce URL
+    When I click on Cases tag

@@ -23,5 +23,5 @@ Feature: ChargeBack Complete flow
 
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
-      | Chargeback cancelled   | 2019-08-27             | CN100102                    | 2019-08-07             | 2019-08-20                      | Evidence provided       | 2019-08-27                              |
+      | Chargeback cancelled   | 2019-09-27             | CN100102                    | 2019-09-07             | 2019-09-20                      | Evidence provided       | 2019-09-27                              |
 

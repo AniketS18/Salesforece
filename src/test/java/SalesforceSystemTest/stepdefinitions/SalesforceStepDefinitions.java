@@ -490,7 +490,7 @@ public class SalesforceStepDefinitions {
         navigateTo.searchSalesforceTextbox(driver);
     }
 
-    @And("^I click (.*) on the searched record$")
+    @And("^I clicked (.*) on the searched record$")
     public void i_click_payment_number_on_searched_record(String payment) {
         navigateTo.clickPaymentNumber(driver);
     }
@@ -901,8 +901,8 @@ public class SalesforceStepDefinitions {
 //    }
 
 
-    @And("^I click on Opportunity Name (.*) under Details tab$")
-    public void iClickOnOpportunityNameLancySwagFRDonationUnderDetailsTab(String oppoName) {
+    @And("^I clicked Opportunity (.*) under Details tab$")
+    public void iClickOnOpportunityNameLancySwagFRDonationUnder(String oppoName) {
         navigateTo.clickOpportunitybutton(driver, oppoName);
 
     }
@@ -954,7 +954,7 @@ public class SalesforceStepDefinitions {
 //        //   Assert.assertEquals(chargebackBankAction, rec);
 //    }
 
-    @And("^I click on Payment Number$")
+    @And("^I click Payment Number$")
     public void iClickOnPaymentNumber() {
         navigateTo.clickOnPaymentNumber(driver);
 
@@ -1142,17 +1142,17 @@ public class SalesforceStepDefinitions {
     }
 
 
-    @Then("^I verify (.*) displayed$")
-    public void iVerifyRefundCompletionDateDisplayed(String CompletionDate,DataTable dataTable) throws ParseException {
-
-        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-        String refundRefundCompletionDate = data.get(0).get("Refund Completion Date");
-        String dateCompare = navigateTo.refundDateDislayed(driver,CompletionDate,refundRefundCompletionDate);
-
-        //String d= formattedTime;
-        //   Assert.assertEquals(refundRefundCompletionDate,dateCompare);
-
-    }
+//    @Then("^I verify (.*) displayed$")
+//    public void iVerifyRefundCompletionDateDisplayed(String CompletionDate,DataTable dataTable) throws ParseException {
+//
+//        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+//        String refundRefundCompletionDate = data.get(0).get("Refund Completion Date");
+//        String dateCompare = navigateTo.refundDateDislayed(driver,CompletionDate,refundRefundCompletionDate);
+//
+//        //String d= formattedTime;
+//        //   Assert.assertEquals(refundRefundCompletionDate,dateCompare);
+//
+//    }
 
     @Then("^I verify (.*) is display$")
     public void iVerifyRefundDecisionDateIsDisplay(String fieldDecisionDate,DataTable dataTable) throws ParseException {
@@ -1434,9 +1434,6 @@ public class SalesforceStepDefinitions {
         {
             System.out.println(exp);
         }
-
-
-
     }
 
     @And("^I provide information as (.*),(.*),(.*),(.*),(.*) and (.*)$")
@@ -1451,6 +1448,10 @@ public class SalesforceStepDefinitions {
 
         navigateTo.informationRefund(driver,fieldCaseOrigin,fieldRefundType,fieldRefundAmount,fieldRefundInstrument,fieldBankAccountNo,fieldBankBSB,refundCaseOrigin,refundRefundType,refundRefundAmount,refundRefundInstrument,refundBankAccountNo,refundBankBSB);
 
+    }
+    @And("^I clicked (.*) link$")
+    public void i_click_on_Payment(String Payclick){
+        navigateTo.clickPayments(driver,Payclick);
     }
 }
 
