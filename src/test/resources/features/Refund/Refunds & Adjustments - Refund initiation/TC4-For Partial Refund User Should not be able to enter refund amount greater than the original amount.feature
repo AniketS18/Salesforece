@@ -19,7 +19,7 @@ Feature: As a Supporter Services User I need to initiate the refund approval for
       | <Case Origin> | <Refund Type> | <Subject> | <Status> | <Refund Amount> | <Refund Instrument> | <Bank Account No> | <Bank BSB> |
 
 #    And I select on Refund "Save" button
-    Then I verify message "Please Enter Refund Amount which should be less than Payment Amount." ganerated
+    Then I verify message "Please Enter Refund Amount which should be less than Payment Amount." generated
 
 
     Examples:

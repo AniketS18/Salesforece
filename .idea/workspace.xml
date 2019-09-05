@@ -5,29 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC2.Successful search of a payment record on masked Credit Card Number.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC9. Create Chargeback cancelled after Chargeback initiated.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC9. Create Chargeback cancelled after Chargeback initiated.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC9. Create Chargeback cancelled after Chargeback initiated.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita_2/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita_2/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC1 - Chargeback payment's record type is called chargeback.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/serenity.conf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,19 +85,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="51">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -69,40 +96,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="43">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 9 - Level 3 reviewer should be able to reassign the case to another Level 3 employee.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="34" column="142" lean-forward="true" selection-start-line="34" selection-start-column="142" selection-end-line="34" selection-end-column="142" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 11 - Level2 reviewer should be able to reassign the case to any higher level employee.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund communication/TC1- Refund Acknowledgement receipt auto forwarded to supporter.feature">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="25" column="90" selection-end-line="29" />
+            <state relative-caret-position="117">
+              <caret line="569" column="27" lean-forward="true" selection-start-line="569" selection-start-column="27" selection-end-line="569" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4175#4176#0" expanded="true" />
+                <element signature="e#4233#4234#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4749#4750#0" expanded="true" />
+                <element signature="e#4908#4909#0" expanded="true" />
+                <element signature="e#4968#4969#0" expanded="true" />
+                <element signature="e#5289#5290#0" expanded="true" />
+                <element signature="e#5341#5342#0" expanded="true" />
+                <element signature="e#5582#5583#0" expanded="true" />
+                <element signature="e#5643#5644#0" expanded="true" />
+                <element signature="e#6734#6735#0" expanded="true" />
+                <element signature="e#6779#6780#0" expanded="true" />
+                <element signature="e#7261#7262#0" expanded="true" />
+                <element signature="e#7325#7326#0" expanded="true" />
+                <element signature="e#18833#18834#0" expanded="true" />
+                <element signature="e#18882#18883#0" expanded="true" />
+                <element signature="e#23533#23534#0" expanded="true" />
+                <element signature="e#23585#23586#0" expanded="true" />
+                <element signature="e#24127#24128#0" expanded="true" />
+                <element signature="e#24189#24190#0" expanded="true" />
+                <element signature="e#69675#69676#0" expanded="true" />
+                <element signature="e#69732#69733#0" expanded="true" />
+                <element signature="e#69849#69850#0" expanded="true" />
+                <element signature="e#69874#69875#0" expanded="true" />
+                <element signature="e#70028#70029#0" expanded="true" />
+                <element signature="e#70053#70054#0" expanded="true" />
+                <element signature="e#70194#70195#0" expanded="true" />
+                <element signature="e#70219#70220#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,26 +145,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="119">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 10 - Level 1 reviewer should be able to reassign the case to any higher level employee..feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="194">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is.feature">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="836" column="135" selection-start-line="836" selection-start-column="135" selection-end-line="836" selection-end-column="135" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -145,7 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>I click Payments link</find>
       <find>clickPayments</find>
       <find>I verify Payment records successfully created under Opportunity after Chargeback cancelled which are</find>
       <find>verifyPayRecord</find>
@@ -175,6 +235,7 @@
       <find>i_verify_the_payment_for_chargeback_record(D</find>
       <find>i_verify_Payment_Status_and_Record_Type(D</find>
       <find>I click on Paid CheckBox</find>
+      <find>checkbox</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,57 +244,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card." />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit." />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC2 - Chargeback cant go from cancelled to processed" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack All/Chargeback - Validations on payment record/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/CucumberTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC5 - Successful search of a Chargeback payment record on Payment Unique Id.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC6 - Verify the values under 'Chargeback SST Response'.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC2 - User cannot perform refund or adjustment on a record if chargeback is initiated.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC4 - User can perform any action refund, adjustment or new chargeback on a record if chargeback is cancelled.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC9. Create Chargeback cancelled after Chargeback initiated.feature" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC1 - Chargeback payment's record type is called chargeback" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC2.Successful search of a payment record on masked Credit Card Number.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC1 - Chargeback payment's record type is called chargeback.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC1 - Chargeback payment's record type is called chargeback.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC9. Create Chargeback cancelled after Chargeback initiated.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" />
       </list>
     </option>
   </component>
@@ -253,7 +314,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -305,7 +366,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="Refund" type="462c0819:PsiDirectoryNode" />
+              <item name="Refunds &amp; Adjustments - Creating a Payment Adjustment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -314,8 +375,27 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="Refund" type="462c0819:PsiDirectoryNode" />
-              <item name="Refund case related changes" type="462c0819:PsiDirectoryNode" />
+              <item name="ChargeBack_All" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="ChargeBack_All" type="462c0819:PsiDirectoryNode" />
+              <item name="ChargeBack Complete Flow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="ChargeBack_All" type="462c0819:PsiDirectoryNode" />
+              <item name="Chargeback Updating Payments and Supporters" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,18 +413,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_Updating_Payment" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_Ankita_2" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\Chargeback Updating Payments and Supporters" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_2nd" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_Ankita" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\webdriver\windows" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\Adjustment" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_Updating_Payment" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_Ankita_2" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\Chargeback Updating Payments and Supporters" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,15 +446,15 @@
     </option>
     <option name="contentProportion" value="0.11399371" />
   </component>
-  <component name="RunManager" selected="Cucumber java.All Features in: ChargeBack_Ankita_2">
-    <configuration name="All Features in: ChargeBack_2nd" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Create an Adjustment to change Campaign/Appeal details">
+    <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="All Features in: ChargeBack_2nd" />
+      <option name="SUGGESTED_NAME" value="Feature: TC1-Create an Adjustment to change Campaign Appeal details" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -385,14 +465,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All Features in: ChargeBack_Ankita" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC7- when status is payment done written off check box should be auto check under payment status information" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="All Features in: ChargeBack_Ankita" />
+      <option name="SUGGESTED_NAME" value="Feature: TC7- when status is payment done written off check box should be auto check under payment status information" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -403,14 +483,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All Features in: ChargeBack_Ankita_2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="All Features in: ChargeBack_Ankita_2" />
+      <option name="NAME_FILTER" value="^Create an Adjustment to change Campaign\/Appeal details$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create an Adjustment to change Campaign\/Appeal details$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create an Adjustment to change Campaign/Appeal details" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -421,14 +502,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All Features in: Chargeback_Validations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The user should be able to save the record successfully with incomplete fields (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="All Features in: Chargeback_Validations" />
+      <option name="NAME_FILTER" value="^The user should be able to save the record successfully with incomplete fields$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^The user should be able to save the record successfully with incomplete fields$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user should be able to save the record successfully with incomplete fields" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -439,14 +521,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: TC2.Successful search of a payment record on masked Credit Card Number" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC2.Successful search of a payment record on masked Credit Card Number.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC2.Successful search of a payment record on masked Credit Card Number" />
+      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -459,11 +542,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.All Features in: ChargeBack_Ankita_2" />
-        <item itemvalue="Cucumber java.All Features in: ChargeBack_Ankita" />
-        <item itemvalue="Cucumber java.Feature: TC2.Successful search of a payment record on masked Credit Card Number" />
-        <item itemvalue="Cucumber java.All Features in: ChargeBack_2nd" />
-        <item itemvalue="Cucumber java.All Features in: Chargeback_Validations" />
+        <item itemvalue="Cucumber java.Scenario: Create an Adjustment to change Campaign/Appeal details" />
+        <item itemvalue="Cucumber java.Feature: TC1-Create an Adjustment to change Campaign Appeal details" />
+        <item itemvalue="Cucumber java.Feature: TC7- when status is payment done written off check box should be auto check under payment status information" />
+        <item itemvalue="Cucumber java.Scenario: The user should be able to save the record successfully with incomplete fields (1)" />
+        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
       </list>
     </recent_temporary>
   </component>
@@ -481,42 +564,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Features_in__Chargeback_Validations - 2019.09.03 at 11h 08m 23s.xml">
-      <configuration name="All Features in: Chargeback_Validations" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC7-_when_status_is_payment_done_written_off_check_box_should_be_auto_check_under_payment_status_information - 2019.09.05 at 14h 54m 19s.xml">
+      <configuration name="Feature: TC7- when status is payment done written off check box should be auto check under payment status information" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_2nd - 2019.09.03 at 11h 12m 43s.xml">
-      <configuration name="All Features in: ChargeBack_2nd" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC7-_when_status_is_payment_done_written_off_check_box_should_be_auto_check_under_payment_status_information - 2019.09.05 at 14h 59m 34s.xml">
+      <configuration name="Feature: TC7- when status is payment done written off check box should be auto check under payment status information" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_2nd - 2019.09.03 at 11h 17m 18s.xml">
-      <configuration name="All Features in: ChargeBack_2nd" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 04m 59s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_2nd - 2019.09.03 at 11h 24m 46s.xml">
-      <configuration name="All Features in: ChargeBack_2nd" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 06m 50s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_2nd - 2019.09.03 at 11h 27m 47s.xml">
-      <configuration name="All Features in: ChargeBack_2nd" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 08m 37s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC2_Successful_search_of_a_payment_record_on_masked_Credit_Card_Number - 2019.09.03 at 14h 51m 45s.xml">
-      <configuration name="Feature: TC2.Successful search of a payment record on masked Credit Card Number" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 12m 47s.xml">
+      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC2_Successful_search_of_a_payment_record_on_masked_Credit_Card_Number - 2019.09.03 at 14h 59m 00s.xml">
-      <configuration name="Feature: TC2.Successful search of a payment record on masked Credit Card Number" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 14m 07s.xml">
+      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__TC2_Successful_search_of_a_payment_record_on_masked_Credit_Card_Number - 2019.09.03 at 17h 27m 50s.xml">
-      <configuration name="Feature: TC2.Successful search of a payment record on masked Credit Card Number" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 16m 32s.xml">
+      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_Ankita - 2019.09.03 at 17h 35m 54s.xml">
-      <configuration name="All Features in: ChargeBack_Ankita" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 16h 18m 52s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_Features_in__ChargeBack_Ankita_2 - 2019.09.03 at 17h 49m 24s.xml">
-      <configuration name="All Features in: ChargeBack_Ankita_2" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.05 at 17h 35m 52s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.3180428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.25458714" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -534,7 +616,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.36239317" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.3846154" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24923548" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -559,110 +641,110 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack 2nd/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack 2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack 2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/TC4 - Create Anonymous supporter record.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 9 - Level 3 reviewer should be able to reassign the case to another Level 3 employee.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="142" selection-start-line="34" selection-start-column="142" selection-end-line="34" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 11 - Level2 reviewer should be able to reassign the case to any higher level employee.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund communication/TC1- Refund Acknowledgement receipt auto forwarded to supporter.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 10 - Level 1 reviewer should be able to reassign the case to any higher level employee..feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC2 - User cannot perform refund or adjustment on a record if chargeback is initiated.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="22" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC3 - User cannot perform refund or adjustment on a record if chargeback is in progress.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="181">
           <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack- As per feedback from architect/TC4 - User can perform any action refund, adjustment or new chargeback on a record if chargeback is cancelled.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="298">
+          <caret line="30" column="114" lean-forward="true" selection-start-line="30" selection-start-column="114" selection-end-line="30" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC9. Create Chargeback cancelled after Chargeback initiated.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+        <state relative-caret-position="255">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/SalesforceHomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC1 - Chargeback cant go from processed to cancelled.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty" />
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" />
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC13. Verify Payment records under Opportunities.feature" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0-sources.jar!/cucumber/runtime/RuntimeGlue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 4 - Refund cases greater than 1000$ should be approved only by the manager.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 5-  Level 1 employees should not be able to approve refunds above $1000.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 7- Level 1 reviewer should be able to reassign the case to another Level 1 employee.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
-    <entry file="file://$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC5 - Successful search of a Chargeback payment record on Payment Unique Id.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="145">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC2 - Chargeback cant go from cancelled to processed.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="163">
           <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
         </state>
       </provider>
@@ -674,201 +756,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC1 - Chargeback cant go from processed to cancelled.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="269">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC3- For Full Refund User should not be able to enter partial amount for refund.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="286">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC4-For Partial Refund User Should not be able to enter refund amount greater than the original amount.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="303">
+          <caret line="21" column="99" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC6- User should not be able to enter 0 in the refund amount.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC7- User should not be able create a refund case if payment is not paid.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC8- create refund case with payment method is direct debit.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC9- create refund case with payment method is cash and refund instrument is cash.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC11- create refund case with payment method is Credit card and refund instrument is Credit card.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC12- Create refund case with payment method is Personal Cheque and refund instrument is Cheque.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC13- Create refund case with payment method is Personal Cheque and refund instrument is Bank Deposit.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC14- Create refund case with payment method is Business Cheque and refund instrument is Cheque.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC15- Create refund case with payment method is Business Cheque and refund instrument is Bank Deposit.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC16- Create refund case with payment method is Money Order and refund instrument is Bank deposit.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack Complete">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC3 - 'Chargeback Response By' date should always be greater or equal to 'Chargeback Received On' date.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="155">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC6 - Verify the values under 'Chargeback SST Response'.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="128">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="22" column="141" selection-start-line="22" selection-start-column="141" selection-end-line="22" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC8. Create 'Chargeback Processed' after 'Chargeback Initiated'.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC1 - Chargeback payment's record type is called chargeback">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="1551" column="16" selection-start-line="1551" selection-start-column="16" selection-end-line="1551" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="113">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="218">
+          <caret line="31" column="214" selection-start-line="29" selection-end-line="31" selection-end-column="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC1- Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign/TC2-Create an Adjustment to change Campaign/Appeal details">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign/TC1-Create an Adjustment to change Campaign/Appeal details.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign/Appeal details">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC3. Create Chargeback Bank action as 'Chargeback Initiated'.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="703" column="16" selection-start-line="703" selection-start-column="16" selection-end-line="703" selection-end-column="16" />
+        <state relative-caret-position="117">
+          <caret line="569" column="27" lean-forward="true" selection-start-line="569" selection-start-column="27" selection-end-line="569" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4175#4176#0" expanded="true" />
             <element signature="e#4233#4234#0" expanded="true" />
             <element signature="e#4691#4692#0" expanded="true" />
             <element signature="e#4749#4750#0" expanded="true" />
+            <element signature="e#4908#4909#0" expanded="true" />
+            <element signature="e#4968#4969#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#5341#5342#0" expanded="true" />
+            <element signature="e#5582#5583#0" expanded="true" />
+            <element signature="e#5643#5644#0" expanded="true" />
             <element signature="e#6734#6735#0" expanded="true" />
             <element signature="e#6779#6780#0" expanded="true" />
             <element signature="e#7261#7262#0" expanded="true" />
             <element signature="e#7325#7326#0" expanded="true" />
             <element signature="e#18833#18834#0" expanded="true" />
             <element signature="e#18882#18883#0" expanded="true" />
-            <element signature="e#20338#20339#0" expanded="true" />
-            <element signature="e#20391#20392#0" expanded="true" />
-            <element signature="e#24125#24126#0" expanded="true" />
-            <element signature="e#24187#24188#0" expanded="true" />
-            <element signature="e#31080#31081#0" expanded="true" />
-            <element signature="e#31134#31135#0" expanded="true" />
-            <element signature="e#69665#69666#0" expanded="true" />
-            <element signature="e#69722#69723#0" expanded="true" />
+            <element signature="e#23533#23534#0" expanded="true" />
+            <element signature="e#23585#23586#0" expanded="true" />
+            <element signature="e#24127#24128#0" expanded="true" />
+            <element signature="e#24189#24190#0" expanded="true" />
+            <element signature="e#69675#69676#0" expanded="true" />
+            <element signature="e#69732#69733#0" expanded="true" />
+            <element signature="e#69849#69850#0" expanded="true" />
+            <element signature="e#69874#69875#0" expanded="true" />
+            <element signature="e#70028#70029#0" expanded="true" />
+            <element signature="e#70053#70054#0" expanded="true" />
+            <element signature="e#70194#70195#0" expanded="true" />
+            <element signature="e#70219#70220#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC2.Successful search of a payment record on masked Credit Card Number.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="134">
+          <caret line="836" column="135" selection-start-line="836" selection-start-column="135" selection-end-line="836" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC10. Verify Payment records under Opportunity after Chargeback processed.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 10 - Level 1 reviewer should be able to reassign the case to any higher level employee..feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 9 - Level 3 reviewer should be able to reassign the case to another Level 3 employee.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="34" column="142" lean-forward="true" selection-start-line="34" selection-start-column="142" selection-end-line="34" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 11 - Level2 reviewer should be able to reassign the case to any higher level employee.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund communication/TC1- Refund Acknowledgement receipt auto forwarded to supporter.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC5- Partial Refund- User should be able to enter any value between 1 to original amount.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="25" column="90" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC5- When Status Payment Done refund record should be updated to completed.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refund case related changes/TC7- when status is payment done written off check box should be auto check under payment status information">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -14,11 +14,11 @@ Feature: Verify Payment records under Opportunity chargeback cancelled
     And I click on Payment
     #And I click Chargeback radio button
     And I provide details Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
-      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
+      | Chargeback Bank Action   | Chargeback Received On   | Chargeback Reference Number   |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
     And I select on Chargeback's "Save" button
     And I click on Opportunity Name Amy Baker RC-00001 Donation under Details tab
-    And I click Payments link
+    And I clicked Payments link
     And I click on Payment Number
     And I scroll down to page
     Then I verify Payment records successfully created under Opportunity after Chargeback cancelled which are Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
@@ -28,4 +28,4 @@ Feature: Verify Payment records under Opportunity chargeback cancelled
 
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
-      | Chargeback cancelled  | 2019-08-30              | CN100103                    |
+      | Chargeback cancelled   | 2019-08-30             | CN100103                    |

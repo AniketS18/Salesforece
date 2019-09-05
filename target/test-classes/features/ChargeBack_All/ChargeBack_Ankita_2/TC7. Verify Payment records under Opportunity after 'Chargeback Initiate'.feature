@@ -21,7 +21,7 @@ Feature: Verify Payment records under Opportunity chargeback initiated
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
     And I select on Chargeback's "Save" button
     And I clicked Opportunity Name Alannah Matheson RC-00001 Donation under Details tab
-    And I click Payments link
+    And I clicked Payments link
     And I click on Payment Number
     And I scroll down to page
     Then I verify Payment records successfully created under Chargeback Information which are Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number

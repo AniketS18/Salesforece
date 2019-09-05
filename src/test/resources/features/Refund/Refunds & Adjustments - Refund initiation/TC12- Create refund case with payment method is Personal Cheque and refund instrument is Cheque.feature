@@ -21,7 +21,7 @@ Feature: As a Supporter Services User I need to initiate the refund approval for
       | <Case Origin> | <Refund Type> | <Subject> | <Status> | <Refund Amount> | <Refund Instrument> | <Bank Account No> | <Bank BSB> |
 
 #    And I select on Refund "Save" button
-    Then I verify message "Success /n Refund process initiated." ganerated
+    Then I verify message "Success<new_line>Refund process initiated." generated
 
 
     Examples:

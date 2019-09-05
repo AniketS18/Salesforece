@@ -20,7 +20,7 @@ Feature: ChargeBack Complete flow
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> | <Chargeback Response By> | <Chargeback Actual Response Date> | <Chargeback SST Response> | <Chargeback Bank Final Notification Date> |
     And I select on Chargeback "Save" button
-    Then I verify message "Error /n Chargeback request can be marked as 'Chargeback processed' only if they are marked as initiated earlier." generated
+    Then I verify message "Error<new_line>Chargeback request can be marked as 'Chargeback processed' only if they are marked as initiated earlier." generated
     Examples:
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
       | Chargeback processed | 2019-08-27 | CN100102 | 2019-08-27 | 2019-08-27 |  Evidence provided | 2019-08-27 |

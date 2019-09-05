@@ -12,6 +12,8 @@ Feature: ChargeBack Complete flow
     And I click on Opportunities name new oppy for rd link
     And I click on "Related" Tab
     And I click on Payment
+    And I click on Paid CheckBox with click on Edit Paid option
+    And I select Payment Date from payment date 2019-08-27
     And I click "Chargeback" radio button
     And I provide values in Chargeback Bank Action,Chargeback Received On,Chargeback Reference Number,Chargeback Response By,Chargeback Actual Response Date,Chargeback SST Response and Chargeback Bank Final Notification Date fields
       | Chargeback Bank Action   | Chargeback Received On   | Chargeback Reference Number   | Chargeback Response By   | Chargeback Actual Response Date   | Chargeback SST Response   | Chargeback Bank Final Notification Date   |

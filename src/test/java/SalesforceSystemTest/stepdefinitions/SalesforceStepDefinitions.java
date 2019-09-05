@@ -133,9 +133,9 @@ public class SalesforceStepDefinitions {
 //        navigateTo.contactNameInSearch(driver);
 //    }
 
-    @And("I click on the searched contact name")
-    public void searched_contact_name() {
-        navigateTo.searchContactName(driver);
+    @And("I click on the searched (.*)")
+    public void searched_contact_name(String fieldName) {
+        navigateTo.searchContactName(driver,fieldName);
     }
 
 //    @And("^I click on (.*) Tab$")
@@ -518,9 +518,9 @@ public class SalesforceStepDefinitions {
         navigateTo.selectCheckbox(driver);
     }
 
-    @And("^I provide \"(.*)\" Contact Name under Once Off page$")
-    public void i_provide_contact_name_once(String filedName) {
-        navigateTo.provideContactName(driver, filedName);
+    @And("^I provide \"(.*)\" in (.*) under Once Off page$")
+    public void i_provide_contact_name_once(String ContactName,String filedName) {
+        navigateTo.provideContactName(driver,ContactName,filedName);
     }
 
     @And("^I provide the details (.*),(.*),(.*),(.*),(.*) and (.*) under Once Off page$")
@@ -1122,11 +1122,11 @@ public class SalesforceStepDefinitions {
         navigateTo.paymentRefund(driver);
     }
 
-    @And("^I click on the searched case number$")
-    public void iClickOnTheSearchedCaseNumber() {
-
-        navigateTo.searchCaseNumber(driver);
-    }
+//    @And("^I click on the searched case number$")
+//    public void iClickOnTheSearchedCaseNumber() {
+//
+//        navigateTo.searchCaseNumber(driver);
+//    }
 
     @Then("^I verifed (.*) is displayed$")
     public void iVerifyRefundCompletionDateIsDisplayed(String fieldRefundStatus,DataTable dataTable) {
@@ -1452,6 +1452,18 @@ public class SalesforceStepDefinitions {
     @And("^I clicked (.*) link$")
     public void i_click_on_Payment(String Payclick){
         navigateTo.clickPayments(driver,Payclick);
+    }
+    @And("^I provide case number (.*) to the search box$")
+    public void i_provide_case_number(String caseNumber){
+        navigateTo.provideCaseNumber(driver,caseNumber);
+    }
+    @And("^I clicked on (.*) number$")
+    public void i_clicked_number(String Payment){
+        navigateTo.clickRefundPayment(driver ,Payment);
+    }
+    @Then("I verify Written Off in Payment Status is checked")
+    public void i_verify_written_off(){
+        navigateTo.verifyWrittenOff(driver);
     }
 }
 

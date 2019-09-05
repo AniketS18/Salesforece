@@ -12,15 +12,15 @@ Feature: ChargeBack Complete flow
     And I click on Opportunities name test active opportunity link
     And I click on "Related" Tab
     And I click on Payment
-#    And I click on Paid CheckBox with click on Edit Paid option
-#    And I select Payment Date from payment date 2019-08-27
-#    And I click on Save button
+    And I click on Paid CheckBox with click on Edit Paid option
+    And I select Payment Date from payment date 2019-08-27
+    And I click on Save button
     And I click "Chargeback" radio button
     And I provide details Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
       | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> |
     And I select on Chargeback's "Save" button
-    Then I verify message "Success /n Chargeback has been initiated and is in progress." generated
+    Then I verify message "Success<new_line>Chargeback has been initiated and is in progress." generated
     Then I Verify Related Payment Record generated
 
   Examples:
