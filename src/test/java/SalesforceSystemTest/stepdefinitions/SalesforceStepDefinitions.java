@@ -1095,11 +1095,11 @@ public class SalesforceStepDefinitions {
 //    }
 
 
-    @And("^I (.*) details$")
-    public void iSaveDetails(String btn) {
-
-        navigateTo.resave(driver,btn);
-    }
+//    @And("^I (.*) details$")
+//    public void iSaveDetails(String btn) {
+//
+//        navigateTo.resave(driver,btn);
+//    }
 
 
     @When("^I clicked on (.*) Tab$")
@@ -1464,6 +1464,22 @@ public class SalesforceStepDefinitions {
     @Then("I verify Written Off in Payment Status is checked")
     public void i_verify_written_off(){
         navigateTo.verifyWrittenOff(driver);
+    }
+    @And("^I Provide the (.*),(.*) and (.*) following details$")
+    public void i_provide_details(String fieldCampaignAppealName,String fieldAmount, String fieldReason,DataTable dataTable){
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String campaignName = data.get(0).get("Campaign Name");
+        String amount = data.get(0).get("Amount");
+        String reason = data.get(0).get("Reason");
+        navigateTo.provideDetailsAdj(driver,fieldCampaignAppealName,fieldAmount,fieldReason,campaignName,amount,reason);
+    }
+    @And("^I click add button$")
+    public void i_click_add(){
+        navigateTo.clickAdd(driver);
+    }
+    @And("^I provide Primary Contact Name (.*)$")
+     public void i_provide_primary(String contact){
+        navigateTo.primaryContact(driver,contact);
     }
 }
 

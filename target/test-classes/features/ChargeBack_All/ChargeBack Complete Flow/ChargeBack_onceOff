@@ -3,20 +3,20 @@ Feature: ChargeBack Complete flow
   Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
     Given I login to Salesforce URL
     And I click on Once Off tag
-    And I provide "Matthew Coghlan" in Contact Name under Once Off page
+    And I provide "Carl NULL Travis" in Contact Name under Once Off page
 #    And I select Donation Supporter radio button
     And I provide the details Campaign/Appeal Name,Batch Id,Channel,Receipting,Donation Amount and Payment Method under Once Off page
       | Campaign/Appeal Name   | Batch Id   | Channel   | Receipting   | Donation Amount   | Payment Method   |
       | <Campaign/Appeal Name> | <Batch Id> | <Channel> | <Receipting> | <Donation Amount> | <Payment Method> |
-#    And I click Create Payment button
-#    And I click on Donation Link
-#    And I click on "Related" Tab
-#    And I click on Payment
+    And I click Create Payment button
+    And I click on Donation Link
+    And I click on "Related" Tab
+    And I click on Payment
     And I click on Paid CheckBox with click on Edit Paid option
     And I select Payment Date from payment date 2019-09-27
     And I click on Save button
     And I scroll up to page
-    And I click "Chargeback" radio button
+#    And I click "Chargeback" radio button
     And I provide values in Chargeback Bank Action,Chargeback Received On,Chargeback Reference Number,Chargeback Response By,Chargeback Actual Response Date,Chargeback SST Response and Chargeback Bank Final Notification Date fields
       | Chargeback Bank Action   | Chargeback Received On   | Chargeback Reference Number   | Chargeback Response By   | Chargeback Actual Response Date   | Chargeback SST Response   | Chargeback Bank Final Notification Date   |
       | <Chargeback Bank Action> | <Chargeback Received On> | <Chargeback Reference Number> | <Chargeback Response By> | <Chargeback Actual Response Date> | <Chargeback SST Response> | <Chargeback Bank Final Notification Date> |
@@ -26,6 +26,6 @@ Feature: ChargeBack Complete flow
       | Campaign/Appeal Name | Batch Id     | Channel | Receipting | Donation Amount | Payment Method |
       | Campaign Finish Line | QA Batch 7   | Phone   | Emailed    | 50              | Cash           |
 
-#    Examples:
-#      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
-#      | Chargeback initiated   | 2019-08-30             | CN100102                    | 2019-08-30             | 2019-08-30                      | Proceed with chargeback | 2019-08-30                              |
+    Examples:
+      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
+      | Chargeback initiated   | 2019-08-30             | CN100102                    | 2019-08-30             | 2019-08-30                      | Proceed with chargeback | 2019-08-30                              |
