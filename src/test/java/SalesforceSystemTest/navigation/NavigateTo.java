@@ -2374,7 +2374,7 @@ public class NavigateTo {
         System.out.println("The checkbox is selection state is - " + checkbox.isSelected());
     }
 
-    public void provideDetailsAdj(WebDriver driver, String fieldCampaignAppealName,String fieldAmount, String fieldReason, String campaignName,String amount, String reason) {
+    public void provideDetailsAdj(WebDriver driver, String fieldCampaignAppealName, String fieldAmount, String fieldReason, String campaignName, String amount, String reason) {
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,50)");
         driver.findElement(By.xpath("(//table[contains(@class,'slds-table slds')]//tr//span[@class='slds-pill__label']/../..//lightning-primitive-icon/../..//button)[1]")).click();
@@ -2399,10 +2399,14 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-float_right slds-p-bottom_small']//button[@class='slds-button']")).click();
     }
 
-    public void primaryContact(WebDriver driver,String contact){
+    public void primaryContact(WebDriver driver, String contact) {
         waitfortheelement();
-        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).click();
-        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).clear();
-        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).sendKeys(contact);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//button[@title='Clear Selection']")).click();
+//        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).click();
+//        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).clear();
+//        driver.findElement(By.xpath("  //div[@class='slds-card__body']//label[text()='Primary Contact']/..//div[contains(@class,'slds-combobox slds-dropdown')]//input")).sendKeys(contact);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//div[@class='slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right']")).sendKeys(contact);
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//lightning-base-combobox-item[@class='slds-media slds-listbox__option slds-media_center slds-listbox__option_entity']//span[@title='" + contact + "']")).click();
+
     }
 }

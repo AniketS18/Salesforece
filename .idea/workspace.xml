@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC2-Create an Adjustment to split payment between multiple campaigns with status Posted.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="1481" column="26" selection-start-line="1481" selection-start-column="26" selection-end-line="1481" selection-end-column="26" />
+            <state relative-caret-position="151">
+              <caret line="590" column="57" selection-start-line="590" selection-start-column="49" selection-end-line="590" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4175#4176#0" expanded="true" />
@@ -100,15 +93,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="2403" column="178" selection-start-line="2403" selection-start-column="178" selection-end-line="2403" selection-end-column="178" />
+            <state relative-caret-position="182">
+              <caret line="2408" column="230" selection-start-line="2408" selection-start-column="230" selection-end-line="2408" selection-end-column="230" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147" />
           </provider>
         </entry>
       </file>
@@ -124,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC2-Create an Adjustment to split payment between multiple campaigns with status Posted.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="58" />
+            <state relative-caret-position="116">
+              <caret line="25" column="47" lean-forward="true" selection-end-line="36" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -133,8 +133,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="288">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -144,24 +153,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 1- Refund case for $1- $199 should be visible and approved by any SST member.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="35" column="122" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -215,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
         <option value="$PROJECT_DIR$/Salesforece/src/test/resources/features/ChargeBack/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
@@ -264,8 +254,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC2-Create an Adjustment to split payment between multiple campaigns with status Posted.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns" />
       </list>
     </option>
   </component>
@@ -462,9 +453,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC1-Create an Adjustment to change Campaign Appeal details.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
@@ -484,10 +475,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber java.Feature: TC4 - Create an Adjustment to change Donor (Supporter) details" />
+        <item itemvalue="Cucumber java.Scenario: Create an Adjustment to change Campaign/Appeal details (2)" />
         <item itemvalue="Cucumber java.Scenario: Create an Adjustment to change Campaign/Appeal details (1)" />
         <item itemvalue="Cucumber java.Feature: TC2-Create an Adjustment to split payment between multiple campaigns with status Posted" />
         <item itemvalue="Cucumber java.Feature: TC1-Create an Adjustment to change Campaign Appeal details" />
-        <item itemvalue="Cucumber java.Scenario: Create an Adjustment to change Campaign/Appeal details" />
       </list>
     </recent_temporary>
   </component>
@@ -505,21 +496,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.06 at 15h 33m 53s.xml">
-      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.06 at 15h 38m 08s.xml">
-      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC1-Create_an_Adjustment_to_change_Campaign_Appeal_details - 2019.09.06 at 15h 54m 03s.xml">
-      <configuration name="Feature: TC1-Create an Adjustment to change Campaign Appeal details" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC2-Create_an_Adjustment_to_split_payment_between_multiple_campaigns_with_status_Posted - 2019.09.06 at 15h 56m 00s.xml">
-      <configuration name="Feature: TC2-Create an Adjustment to split payment between multiple campaigns with status Posted" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__TC2-Create_an_Adjustment_to_split_payment_between_multiple_campaigns_with_status_Posted - 2019.09.06 at 15h 57m 50s.xml">
-      <configuration name="Feature: TC2-Create an Adjustment to split payment between multiple campaigns with status Posted" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details_(1) - 2019.09.06 at 16h 02m 01s.xml">
       <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -535,12 +511,27 @@
     <history-entry file="Feature__TC4_-_Create_an_Adjustment_to_change_Donor_(Supporter)_details - 2019.09.07 at 23h 39m 01s.xml">
       <configuration name="Feature: TC4 - Create an Adjustment to change Donor (Supporter) details" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Feature__TC4_-_Create_an_Adjustment_to_change_Donor_(Supporter)_details - 2019.09.09 at 10h 25m 24s.xml">
+      <configuration name="Feature: TC4 - Create an Adjustment to change Donor (Supporter) details" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC4_-_Create_an_Adjustment_to_change_Donor_(Supporter)_details - 2019.09.09 at 10h 28m 23s.xml">
+      <configuration name="Feature: TC4 - Create an Adjustment to change Donor (Supporter) details" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details_(2) - 2019.09.09 at 10h 29m 36s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details (2)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Create_an_Adjustment_to_change_Campaign_Appeal_details_(2) - 2019.09.09 at 10h 35m 24s.xml">
+      <configuration name="Scenario: Create an Adjustment to change Campaign/Appeal details (2)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC4_-_Create_an_Adjustment_to_change_Donor_(Supporter)_details - 2019.09.09 at 10h 48m 43s.xml">
+      <configuration name="Feature: TC4 - Create an Adjustment to change Donor (Supporter) details" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.25458714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.25458714" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -558,7 +549,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.3846154" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.3846154" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24923548" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -583,20 +574,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund reviewer mechanism/TC 10 - Level 1 reviewer should be able to reassign the case to any higher level employee..feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC5. Verify 'Chargeback cancelled' is not be allowed before 'Chargeback Initiated'.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -896,24 +873,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC2-Create an Adjustment to split payment between multiple campaigns with status Posted.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="182">
+          <caret line="2408" column="230" selection-start-line="2408" selection-start-column="230" selection-end-line="2408" selection-end-column="230" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1481" column="26" selection-start-line="1481" selection-start-column="26" selection-end-line="1481" selection-end-column="26" />
+        <state relative-caret-position="151">
+          <caret line="590" column="57" selection-start-line="590" selection-start-column="49" selection-end-line="590" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4175#4176#0" expanded="true" />
@@ -952,13 +925,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="2403" column="178" selection-start-line="2403" selection-start-column="178" selection-end-line="2403" selection-end-column="178" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-147" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC2-Create an Adjustment to split payment between multiple campaigns with status Posted.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="25" column="47" lean-forward="true" selection-end-line="36" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
         </state>
       </provider>
     </entry>

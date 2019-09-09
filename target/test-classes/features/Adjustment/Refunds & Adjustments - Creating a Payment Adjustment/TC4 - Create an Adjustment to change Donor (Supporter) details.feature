@@ -18,7 +18,7 @@ Feature: Adjustments flow
     And I click "Adjustment" radio button
     And I click "Adjust Contact" radio button
     And I provide Primary Contact Name Abc
-    And I select on Adjustment's "Adjust Contact" button
+#    And I select on Adjustment's "Adjust Contact" button
 
 
     Examples:
