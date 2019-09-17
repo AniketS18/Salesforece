@@ -18,8 +18,15 @@ Feature: Adjustments flow
     And I click "Adjustment" radio button
     And I click "Adjust Contact" radio button
     And I provide Primary Contact Name Abc
-#    And I select on Adjustment's "Adjust Contact" button
-
+    And I select on Adjustment's "Adjust Contact" button
+    Then I verify message "Success<new_line>Supporter has been changed on the Donation" generated
+    When I click on Contacts tag
+    And I click on Recently Viewed dropdown Select List View
+    And I select "All Contacts" from the list view
+    And I type the contact "Sandy B Pulsford" in the Search box and press Enter to view the particular contact detail
+    And I click on the searched contact name
+    And I click on "Related" Tab
+    And I click the Opportunities button
 
     Examples:
       | Campaign Name        | Amount | Reason |

@@ -1,0 +1,17 @@
+Feature: ChargeBack Complete flow
+
+  Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
+    Given I login to Salesforce URL
+    And I provide "Sanjay Singhania" in Contact Name under Once Off page
+    And I Enter all details Campaign/Appeal Name,Channel,RD Frequency,RD Start Date,Donation Amount and Payment Method under RD Sing Up page
+      | Campaign/Appeal Name   | Channel   | RD Frequency   | RD Start Date   | Donation Amount   | Payment Method   |
+      | <Campaign/Appeal Name> | <Channel> | <RD Frequency> | <RD Start Date> | <Donation Amount> | <Payment Method> |
+
+
+
+#    And I provide the details Campaign/Appeal Name,Batch Id,Channel,Receipting,Donation Amount and Payment Method under Once Off page
+
+
+    Examples:
+      | Campaign/Appeal Name | Channel | RD Frequency | RD Start Date | Donation Amount | Payment Method |
+      | Flood Relief         | Phone   | Monthly      | Today         | 100             | Credit Card    |

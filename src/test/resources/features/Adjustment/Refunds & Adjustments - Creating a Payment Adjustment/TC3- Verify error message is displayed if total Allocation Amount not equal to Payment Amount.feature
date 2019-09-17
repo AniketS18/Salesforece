@@ -18,8 +18,8 @@ Feature: Adjustments flow
     And I click "Adjustment" radio button
     And I click "Adjust Campaign/Product" radio button
     And I Provide the Campaign Name,Amount and Reason following details
-      | Campaign Name  | Reason |
-      | <Campaign Name> | <Reason> |
+      | Campaign Name   | Amount   | Reason   |
+      | <Campaign Name> | <Amount> | <Reason> |
 
 #    And I provide details Chargeback Bank Action,Chargeback Received On and Chargeback Reference Number
 #      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number |
@@ -28,5 +28,5 @@ Feature: Adjustments flow
 
     Then I verify message "Error<new_line>Total Allocation Amount should be equal to Payment Amount' is displayed." generated
     Examples:
-      | Campaign Name  | Reason |
-      | Campaign Finish Line | Other |
+      | Campaign Name        | Amount | Reason |
+      | Campaign Finish Line | 100    | Other  |

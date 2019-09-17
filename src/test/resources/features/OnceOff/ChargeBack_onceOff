@@ -3,7 +3,7 @@ Feature: ChargeBack Complete flow
   Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
     Given I login to Salesforce URL
     And I click on Once Off tag
-    And I provide "Carl NULL Travis" in Contact Name under Once Off page
+    And I provide "Sanjay" in Contact Name under Once Off page
 #    And I select Donation Supporter radio button
     And I provide the details Campaign/Appeal Name,Batch Id,Channel,Receipting,Donation Amount and Payment Method under Once Off page
       | Campaign/Appeal Name   | Batch Id   | Channel   | Receipting   | Donation Amount   | Payment Method   |
@@ -23,9 +23,9 @@ Feature: ChargeBack Complete flow
 
 #    Then I Verify Related Payment Record generated
     Examples:
-      | Campaign/Appeal Name | Batch Id     | Channel | Receipting | Donation Amount | Payment Method |
-      | Campaign Finish Line | QA Batch 7   | Phone   | Emailed    | 50              | Cash           |
+      | Campaign/Appeal Name | Batch Id   | Channel | Receipting | Donation Amount | Payment Method | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
+      | Campaign Finish Line | QA Batch 7 | Phone   | Emailed    | 50              | Credit Card    | Chargeback initiated   | 2019-08-30             | CN100102                    | 2019-08-30             | 2019-08-30                      | Proceed with chargeback | 2019-08-30                              |
 
-    Examples:
-      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
-      | Chargeback initiated   | 2019-08-30             | CN100102                    | 2019-08-30             | 2019-08-30                      | Proceed with chargeback | 2019-08-30                              |
+#    Examples:
+#      | Chargeback Bank Action | Chargeback Received On | Chargeback Reference Number | Chargeback Response By | Chargeback Actual Response Date | Chargeback SST Response | Chargeback Bank Final Notification Date |
+#      | Chargeback initiated   | 2019-08-30             | CN100102                    | 2019-08-30             | 2019-08-30                      | Proceed with chargeback | 2019-08-30                              |

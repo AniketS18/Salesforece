@@ -132,7 +132,8 @@ public class NavigateTo {
 
     public void clickOnSave(WebDriver driver, String buttonName) {
 
-        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
+//        driver.findElement(By.xpath("//button[text()='" + buttonName + "']//span[@class=' label bBody']")).click();
 
         try {
             String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
@@ -755,7 +756,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//label[text()='" + filedName + "']/..//input[contains(@class,'slds-lookup__search-input')]")).click();
         driver.findElement(By.xpath("//label[text()='" + filedName + "']/..//input[contains(@class,'slds-lookup__search-input')]")).sendKeys(ContactName);
         waitfortheelement();
-        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[contains(@class,'slds-listbox__option-text')][text()='" + ContactName + "']")).click();
+        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[contains(@class,'slds-listbox__option-text')][contains(text(),'" + ContactName + "')]")).click();
 //        driver.findElement(By.xpath("//span[@class='slds-media__body']//span[@class='slds-listbox__option-text slds-listbox__option-text_entity'][text()='"+ filedName +"']")).click();
 //        waitfortheelement();
     }
@@ -811,6 +812,15 @@ public class NavigateTo {
         for (String curWindow : allWindows) {
             driver.switchTo().window(curWindow);
         }
+    }
+    public void clicksplitPayment(WebDriver driver,String filedValue){
+        waitfortheelement();
+
+        driver.findElement(By.xpath("//div[@class='slds-card__body']//button[@class='slds-button'][text()='"+ filedValue +"']")).click();
+
+    }
+    public void addAction(WebDriver driver){
+        driver.findElement(By.xpath("//lightning-icon[@class='slds-icon-utility-add slds-icon_container']//lightning-primitive-icon")).click();
     }
 
     public void clickOnCheckbox(WebDriver driver, String filedCheckbox, String filedEditPaid) {
@@ -1291,7 +1301,7 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + fieldCampaignAppealName + "']/..//input[contains(@class,'slds-lookup__search-input slds')]")).click();
         driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + fieldCampaignAppealName + "']/..//input[contains(@class,'slds-lookup__search-input slds')]")).sendKeys(campaignAppealName);
         // driver.findElement(By.xpath("//li//span[@class='slds-media__body']//span[text()='" + campaignAppealName + "']")).sendKeys(campaignAppealName);
-        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[contains(@class,'slds-listbox__option-text')][text()='" + campaignAppealName + "']")).click();
+        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']//span[contains(@class,'slds-listbox__option-text')][text()='" + campaignAppealName + "']")).click();
 
         driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + fieldBatchId + "']/..//input[contains(@class,'slds-lookup__search-input slds')]")).click();
         driver.findElement(By.xpath("//span[@class='slds-media__body']//span[text()='" + batchId + "']")).click();
@@ -1316,7 +1326,11 @@ public class NavigateTo {
         Select dropdown3 = new Select(testDropDown3);
         dropdown3.selectByVisibleText(payment);
         waitfortheelement();
-    }
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,250)");
+        waitfortheelement();
+
+           }
 
     public void clickCreatePayment(WebDriver driver) {
         waitfortheelement();
@@ -2382,15 +2396,13 @@ public class NavigateTo {
         waitfortheelement();
         driver.findElement(By.xpath("(//table[contains(@class,'slds-table slds')]//tr//input[contains(@class,'slds-lookup__search-input slds-input')])[1]")).sendKeys(campaignName);
         waitfortheelement();
-        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']")).click();
-        driver.findElement(By.xpath("//div[@class='slds-float_right slds-p-bottom_small']//button[@class='slds-button']//lightning-primitive-icon")).click();
 
-        driver.findElement(By.xpath("(//table[contains(@class,'slds-table slds')]//tr//input[contains(@class,'slds-input')])[3]")).clear();
-        driver.findElement(By.xpath("(//table[contains(@class,'slds-table slds')]//tr//input[contains(@class,'slds-input')])[3]")).sendKeys(amount);
+        driver.findElement(By.xpath("//div[contains(@class,'container-fluid')]//th//div[@title='"+ fieldAmount +"']/../../../..//tr//input[@name='allAmount']")).clear();
+        driver.findElement(By.xpath("//div[contains(@class,'container-fluid')]//th//div[@title='"+ fieldAmount +"']/../../../..//tr//input[@name='allAmount']")).sendKeys(amount);
 
-        driver.findElement(By.xpath("//label[text()='" + fieldReason + "']/..//div[contains(@class,'slds-combobox slds-dropdown')]")).click();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-listbox slds-listbox')]//span[@title='" + reason + "']")).click();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        driver.findElement(By.xpath("//label[text()='" + fieldReason + "']/..//div[contains(@class,'slds-combobox slds-dropdown')]")).click();
+//        driver.findElement(By.xpath("//div[contains(@class,'slds-listbox slds-listbox')]//span[@title='" + reason + "']")).click();
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
 //        js.executeScript("scrollBy(0,150)");
     }
 
@@ -2408,5 +2420,42 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='slds-card__body']//div[@class='slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right']")).sendKeys(contact);
         driver.findElement(By.xpath("//div[@class='slds-card__body']//lightning-base-combobox-item[@class='slds-media slds-listbox__option slds-media_center slds-listbox__option_entity']//span[@title='" + contact + "']")).click();
 
+    }
+    public void enterspiltdetails(WebDriver driver,String appeal,String amount){
+        waitfortheelement();
+
+    }
+    public void enterRDDetails(WebDriver driver, String fieldCampaignAppealName, String filedChannel,String fieldRDFrequency,String filedRDStartDate, String filedDonationAmount, String filedPayment, String campaignAppealName, String channel,String rdFrequency, String RDStartDate, String donationAmount, String payment){
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + fieldCampaignAppealName + "']/..//input[contains(@class,'slds-lookup__search-input slds')]")).click();
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + fieldCampaignAppealName + "']/..//input[contains(@class,'slds-lookup__search-input slds')]")).sendKeys(campaignAppealName);
+        driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']//span[contains(@class,'slds-listbox__option-text')][contains(text(),'" + campaignAppealName + "')]")).click();
+
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label//span[text()='" + filedChannel + "']/../..//div[@class='slds-select_container']")).click();
+        WebElement testDropDown = driver.findElement(By.xpath("//label//span[text()='"+ filedChannel +"']/../..//select[@class='slds-select']"));
+        Select dropdown = new Select(testDropDown);
+        dropdown.selectByVisibleText(channel);
+
+        driver.findElement(By.xpath("//div[@class='paymentBlock']//div[contains(@class,'slds-size_1-of-2 slds-max')]//label//span[text()='"+ fieldRDFrequency +"']/../..//div[@class='slds-select_container']//select[@class='slds-select']")).click();
+        WebElement testDropDown1 = driver.findElement(By.xpath("//label//span[text()='"+ fieldRDFrequency +"']/../..//div[@class='slds-select_container']//select[@class='slds-select']"));
+        Select dropdown1 = new Select(testDropDown1);
+        dropdown1.selectByVisibleText(rdFrequency);
+
+        driver.findElement(By.xpath("//div[@class='paymentBlock']//div[contains(@class,'slds-size_1-of-2 slds-max')]//label[text()='"+ filedRDStartDate +"']/..//input[@name='RDSdate']")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-datepicker slds-drop')]//button[text()='"+ RDStartDate +"']")).click();
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("scrollBy(0,150)");
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + filedDonationAmount + "']/..//input[@name='expenseclient']")).click();
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + filedDonationAmount + "']/..//input[@name='expenseclient']")).sendKeys(donationAmount);
+
+        driver.findElement(By.xpath("//label//span[text()='" + filedPayment + "']/../..//div[@class='slds-select_container']")).click();
+        WebElement testDropDown3 = driver.findElement(By.xpath("//label//span[text()='" + filedPayment + "']/../..//select[@class='slds-select']"));
+        Select dropdown3 = new Select(testDropDown3);
+        dropdown3.selectByVisibleText(payment);
+        waitfortheelement();
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,250)");
+        waitfortheelement();
     }
 }
