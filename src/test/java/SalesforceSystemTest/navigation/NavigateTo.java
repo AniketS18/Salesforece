@@ -129,11 +129,17 @@ public class NavigateTo {
 
 
     }
+    public void iProvideRM(WebDriver driver,String filedName, String ManagerName, String Page){
+        waitfortheelement();
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-grid slds-col slds-is-editing')]//div[@class='slds-form-element__control']//span[text()='"+ filedName +"']/../..//input")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-m-left--smalllabels slds')]//div[text()='"+ ManagerName +"']")).click();
+    }
 
     public void clickOnSave(WebDriver driver, String buttonName) {
 
-        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
-//        driver.findElement(By.xpath("//button[text()='" + buttonName + "']//span[@class=' label bBody']")).click();
+//        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
+        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
 
         try {
             String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
@@ -2432,12 +2438,12 @@ public class NavigateTo {
         driver.findElement(By.xpath("//li[@class='slds-listbox__item']//span[@class='slds-media__body']//span[contains(@class,'slds-listbox__option-text')][contains(text(),'" + campaignAppealName + "')]")).click();
 
         driver.findElement(By.xpath("//div[@class='slds-grid']//label//span[text()='" + filedChannel + "']/../..//div[@class='slds-select_container']")).click();
-        WebElement testDropDown = driver.findElement(By.xpath("//label//span[text()='"+ filedChannel +"']/../..//select[@class='slds-select']"));
+        WebElement testDropDown = driver.findElement(By.xpath("//div[@class='slds-grid']//label//span[text()='"+ filedChannel +"']/../..//select[@class='slds-select']"));
         Select dropdown = new Select(testDropDown);
         dropdown.selectByVisibleText(channel);
 
         driver.findElement(By.xpath("//div[@class='paymentBlock']//div[contains(@class,'slds-size_1-of-2 slds-max')]//label//span[text()='"+ fieldRDFrequency +"']/../..//div[@class='slds-select_container']//select[@class='slds-select']")).click();
-        WebElement testDropDown1 = driver.findElement(By.xpath("//label//span[text()='"+ fieldRDFrequency +"']/../..//div[@class='slds-select_container']//select[@class='slds-select']"));
+        WebElement testDropDown1 = driver.findElement(By.xpath("//div[@class='paymentBlock']//div[contains(@class,'slds-size_1-of-2 slds-max')]//label//span[text()='"+ fieldRDFrequency +"']/../..//div[@class='slds-select_container']//select[@class='slds-select']"));
         Select dropdown1 = new Select(testDropDown1);
         dropdown1.selectByVisibleText(rdFrequency);
 

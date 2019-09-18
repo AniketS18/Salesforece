@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" line="193" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" line="198" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/OnceOff/SplitPayment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/OnceOff/ChargeBack_onceOff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC3- Verify error message is displayed if total Allocation Amount not equal to Payment Amount.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC4 - Create an Adjustment to change Donor (Supporter) details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Manage Duplicates/TC1- Create a new supporter record with the same attributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Manage Duplicates/TC2- Create new supporter with same attributes(duplicate)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Manage Duplicates/TC3-Create duplicate record based upon combinations of attributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/serenity.conf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="1509" column="25" lean-forward="true" selection-start-line="1509" selection-start-column="25" selection-end-line="1509" selection-end-column="25" />
+            <state relative-caret-position="115">
+              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4175#4176#0" expanded="true" />
@@ -65,31 +48,22 @@
                 <element signature="e#23337#23338#0" expanded="true" />
                 <element signature="e#23576#23577#0" expanded="true" />
                 <element signature="e#23628#23629#0" expanded="true" />
-                <element signature="e#23902#23903#0" expanded="true" />
-                <element signature="e#71343#71344#0" expanded="true" />
-                <element signature="e#71504#71505#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2436" column="46" lean-forward="true" selection-start-line="2436" selection-start-column="46" selection-end-line="2436" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#24106#24107#0" expanded="true" />
+                <element signature="e#71547#71548#0" expanded="true" />
+                <element signature="e#71708#71709#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/WebDriver.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+            <state relative-caret-position="166">
+              <caret line="135" column="121" selection-start-line="135" selection-start-column="121" selection-end-line="135" selection-end-column="121" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+            <state relative-caret-position="34">
+              <caret line="2" column="80" lean-forward="true" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -151,8 +125,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="85">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -206,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC10. Verify Payment records under Opportunity after Chargeback processed.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC13. Verify Payment records under Opportunities.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita/TC1 - Chargeback payment's record type is called chargeback" />
@@ -253,10 +235,11 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC18 - Verify user cannot submit Adjust CampaignProduct form without any changes in details.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack_onceOff" />
         <option value="$PROJECT_DIR$/src/test/resources/features/OnceOff/SplitPayment" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" />
         <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" />
       </list>
     </option>
   </component>
@@ -328,7 +311,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="OnceOff" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateSupporter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -337,7 +320,8 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="RD_SingUP" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateSupporter" type="462c0819:PsiDirectoryNode" />
+              <item name="Manage Duplicates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +340,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_Ankita" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/RelationShip Manager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -396,7 +380,7 @@
     </option>
     <option name="contentProportion" value="0.11399371" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)">
+  <component name="RunManager" selected="Cucumber java.Scenario: Create a new supporter record with the same attributes (1)">
     <configuration name="Feature: RD_sing_Up" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" />
@@ -415,14 +399,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: SplitPayment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC1- Create a new supporter record with the same attributes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/OnceOff/SplitPayment" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: SplitPayment" />
+      <option name="SUGGESTED_NAME" value="Feature: TC1- Create a new supporter record with the same attributes" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -433,14 +417,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: TC5- Create an Adjustment to change the allocation amount between different campaigns" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create a new supporter record with the same attributes (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Adjustment/Refunds &amp; Adjustments - Creating a Payment Adjustment/TC5- Create an Adjustment to change the allocation amount between different campaigns" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RelationShip Manager/TC1- Create a new supporter record with the same attributes" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: TC5- Create an Adjustment to change the allocation amount between different campaigns" />
+      <option name="NAME_FILTER" value="^Create a new supporter record with the same attributes$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create a new supporter record with the same attributes$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a new supporter record with the same attributes" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -451,15 +436,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create a new supporter record with the same attributes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/OnceOff/SplitPayment" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
+      <option name="NAME_FILTER" value="^Create a new supporter record with the same attributes$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create a new supporter record with the same attributes$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a new supporter record with the same attributes" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -491,11 +476,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: Create a new supporter record with the same attributes (1)" />
+        <item itemvalue="Cucumber java.Scenario: Create a new supporter record with the same attributes" />
+        <item itemvalue="Cucumber java.Feature: TC1- Create a new supporter record with the same attributes" />
         <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" />
         <item itemvalue="Cucumber java.Feature: RD_sing_Up" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" />
-        <item itemvalue="Cucumber java.Feature: TC5- Create an Adjustment to change the allocation amount between different campaigns" />
-        <item itemvalue="Cucumber java.Feature: SplitPayment" />
       </list>
     </recent_temporary>
   </component>
@@ -513,35 +498,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.17 at 16h 17m 51s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 29m 22s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.17 at 16h 21m 17s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 34m 40s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.17 at 16h 22m 28s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 37m 36s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RD_sing_Up - 2019.09.17 at 16h 30m 04s.xml">
-      <configuration name="Feature: RD_sing_Up" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 39m 53s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.17 at 16h 31m 47s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 41m 57s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RD_sing_Up - 2019.09.17 at 16h 36m 49s.xml">
-      <configuration name="Feature: RD_sing_Up" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 43m 34s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RD_sing_Up - 2019.09.17 at 16h 43m 15s.xml">
-      <configuration name="Feature: RD_sing_Up" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 45m 06s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RD_sing_Up - 2019.09.17 at 16h 47m 09s.xml">
-      <configuration name="Feature: RD_sing_Up" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 10h 46m 50s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RD_sing_Up - 2019.09.17 at 17h 01m 38s.xml">
-      <configuration name="Feature: RD_sing_Up" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 11h 09m 16s.xml">
+      <configuration name="Scenario: Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.17 at 17h 02m 55s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__TC1-_Create_a_new_supporter_record_with_the_same_attributes - 2019.09.18 at 12h 13m 12s.xml">
+      <configuration name="Feature: TC1- Create a new supporter record with the same attributes" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -591,13 +576,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC2 - Chargeback cant go from cancelled to processed.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback_Validations/TC5 - 'Chargeback Bank Final Notification Date' should always be greater or equal to other dates.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -858,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -881,15 +852,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="80" lean-forward="true" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1509" column="25" lean-forward="true" selection-start-line="1509" selection-start-column="25" selection-end-line="1509" selection-end-column="25" />
+        <state relative-caret-position="115">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4175#4176#0" expanded="true" />
@@ -904,20 +882,27 @@
             <element signature="e#23337#23338#0" expanded="true" />
             <element signature="e#23576#23577#0" expanded="true" />
             <element signature="e#23628#23629#0" expanded="true" />
-            <element signature="e#23902#23903#0" expanded="true" />
-            <element signature="e#71343#71344#0" expanded="true" />
-            <element signature="e#71504#71505#0" expanded="true" />
+            <element signature="e#24106#24107#0" expanded="true" />
+            <element signature="e#71547#71548#0" expanded="true" />
+            <element signature="e#71708#71709#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2436" column="46" lean-forward="true" selection-start-line="2436" selection-start-column="46" selection-end-line="2436" selection-end-column="46" />
+        <state relative-caret-position="166">
+          <caret line="135" column="121" selection-start-line="135" selection-start-column="121" selection-end-line="135" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CreateSupporter/Manage Duplicates/TC1- Create a new supporter record with the same attributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>

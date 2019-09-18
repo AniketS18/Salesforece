@@ -95,6 +95,11 @@ public class SalesforceStepDefinitions {
         Phone = data.get(0).get("Phone");
         navigateTo.insertRecords(driver, fieldSalutation, fieldFirstName, fieldLastName, fieldPhone, firstName, lastName, Salutation, Phone);
     }
+    @And("^I Provide (.*) as (.*) on (.*)$")
+    public void i_provide_RM_on_new_contact(String filed,String ManagerName,String page){
+        navigateTo.iProvideRM(driver,filed,ManagerName,page);
+
+    }
 
     @When("^I select (.*) under (.*)$")
     public void i_select(String supporterLevel, String supporterfieldName) throws Throwable {
