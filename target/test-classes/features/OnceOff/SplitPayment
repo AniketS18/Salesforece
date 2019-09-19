@@ -13,16 +13,19 @@ Feature: ChargeBack Complete flow
       | Appeal   | Amount   |
       | <Appeal> | <Amount> |
     And I click add action
-    And I Provide the Campaign Name,Amount and Reason following details
-      | Campaign Name   | Amount   | Reason   |
-      | <Campaign Name> | <Amount> | <Reason> |
-#    And I click on Save Split button
+    And I Entered Appeal and Amount on split payment
+      | Appeal1   | Amount1   |
+      | <Appeal1> | <Amount1> |
+#    And I Provide the Campaign Name,Amount and Reason following details
+#      | Campaign Name   | Amount   | Reason   |
+#      | <Campaign Name> | <Amount> | <Reason> |
+    And I click on Save Split button
 
 
-    #    And I click Create Payment button
+        And I click Create Payment button
 
 #    And I click on Donation Link
 
     Examples:
-      | Campaign/Appeal Name | Batch Id   | Channel | Receipting | Donation Amount | Payment Method | Appeal        | Amount | Campaign Name | Amount | Reason |
-      | Flood Relief         | QA Batch 7 | Phone   | Emailed    | 50              | Cash           | Campaign Finish Line | 10     |  Flood Relief  | 40     | Other  |
+      | Campaign/Appeal Name | Batch Id   | Channel | Receipting | Donation Amount | Payment Method | Appeal   | Amount | Appeal1      | Amount1 | Reason |
+      | Flood Relief         | QA Batch 7 | Phone   | Emailed    | 50              | Cash           | Clothing | 10     | Flood Relief | 40      | Other  |

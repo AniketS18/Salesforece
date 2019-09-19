@@ -95,9 +95,10 @@ public class SalesforceStepDefinitions {
         Phone = data.get(0).get("Phone");
         navigateTo.insertRecords(driver, fieldSalutation, fieldFirstName, fieldLastName, fieldPhone, firstName, lastName, Salutation, Phone);
     }
+
     @And("^I Provide (.*) as (.*) on (.*)$")
-    public void i_provide_RM_on_new_contact(String filed,String ManagerName,String page){
-        navigateTo.iProvideRM(driver,filed,ManagerName,page);
+    public void i_provide_RM_on_new_contact(String filed, String ManagerName, String page) {
+        navigateTo.iProvideRM(driver, filed, ManagerName, page);
 
     }
 
@@ -1498,8 +1499,12 @@ public class SalesforceStepDefinitions {
     }
 
     @And("^I Enter (.*) and (.*) on split payment$")
-    public void i_enter_detail_on_split_payment(String filedAppeal, String filedAmount) {
-        navigateTo.enterspiltdetails(driver, filedAppeal, filedAmount);
+    public void i_enter_detail_on_split_payment(String filedAppeal, String filedAmount, DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String appeal = data.get(0).get("Appeal");
+        String amount = data.get(0).get("Amount");
+
+        navigateTo.enterspiltdetails(driver, filedAppeal, filedAmount, appeal, amount);
     }
 
     @And("^I Enter all details (.*),(.*),(.*),(.*),(.*) and (.*) under RD Sing Up page$")
@@ -1512,7 +1517,16 @@ public class SalesforceStepDefinitions {
         String donationAmount = data.get(0).get("Donation Amount");
         String payment = data.get(0).get("Payment Method");
 
-        navigateTo.enterRDDetails(driver,fieldCampaignAppealName,filedChannel ,filedRDFrequency,filedRDStartDate,filedDonationAmount,filedPayment,campaignAppealName,channel,rdFrequency,RDStartDate,donationAmount,payment);
+        navigateTo.enterRDDetails(driver, fieldCampaignAppealName, filedChannel, filedRDFrequency, filedRDStartDate, filedDonationAmount, filedPayment, campaignAppealName, channel, rdFrequency, RDStartDate, donationAmount, payment);
     }
-}
 
+    @And("^I Entered (.*) and (.*) on split payment$")
+    public void i_entered_detail_on_split_payment(String filedAppeal, String filedAmount, DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String appeal = data.get(0).get("Appeal1");
+        String amount = data.get(0).get("Amount1");
+
+        navigateTo.enteredspiltdetails(driver, filedAppeal, filedAmount, appeal, amount);
+    }
+
+}
