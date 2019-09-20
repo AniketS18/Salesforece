@@ -363,7 +363,7 @@ public class SalesforceStepDefinitions {
         navigateTo.verifyAnonymousSupporter(driver, filedPhone, fullName);
     }
 
-    @And("^I click on (.*) tab$")
+    @And("^I clicked on (.*) tab$")
     public void i_click_newTask(String filedTask) {
         navigateTo.clickNewTask(driver, filedTask);
     }
@@ -378,7 +378,15 @@ public class SalesforceStepDefinitions {
         navigateTo.newTaskDetails(driver, Assignedto, Subject, Status, Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
-
+    @And("^I Provide the following details (.*),(.*),(.*) and (.*) under New Event Page$")
+    public void i_provide_under_new_event(String filedAssigne,String filedSubject,String filedPeople,String filedRelated,DataTable dataTable) throws Throwable {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        Assignedto = data.get(0).get("Assigned to");
+        Subject = data.get(0).get("Subject");
+        String people = data.get(0).get("People");
+        String related = data.get(0).get("Related To");
+        navigateTo.newEventDetails(driver,filedAssigne,filedSubject,filedPeople,filedRelated,Assignedto, Subject, people,related);
+    }
     @And("^I click on Activity History subject$")
     public void i_click_on_activity_history() {
         navigateTo.clickActivityHistory(driver);

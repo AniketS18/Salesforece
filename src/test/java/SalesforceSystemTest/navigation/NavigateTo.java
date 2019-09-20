@@ -139,8 +139,8 @@ public class NavigateTo {
 
     public void clickOnSave(WebDriver driver, String buttonName) {
 
-        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
-//        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+//        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
+        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
 
         try {
             String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
@@ -213,7 +213,7 @@ public class NavigateTo {
     public void clickTabName(WebDriver driver, String tagName) {
         waitfortheelement();
         //String filedTagName =TagName;
-        WebElement elem = driver.findElement(By.xpath("(//div[@class='uiTabBar']//a[@class='tabHeader'][@title='" + tagName + "']//span[@class='title'][text()='" + tagName + "'])[2]"));
+        WebElement elem = driver.findElement(By.xpath("(//div[@class='uiTabBar']//a[@class='tabHeader'][@title='" + tagName + "']//span[@class='title'][text()='" + tagName + "'])[1]"));
         elem.click();
         waitfortheelement();
         waitfortheelement();
@@ -2494,5 +2494,20 @@ public class NavigateTo {
         driver.findElement(By.xpath("(//div[@class='container-fluid cSplitPayment']//label[text()='" + filedAmount + "']/..//input)[2]")).sendKeys(amount);
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("scrollBy(0,150)");
+    }
+
+    public void newEventDetails(WebDriver driver,String filedAssigne,String filedSubject,String filedPeople,String filedRelated, String Assignedto, String Subject, String People, String Related) {
+        waitfortheelement();
+//        driver.findElement(By.xpath("//lightning-icon[contains(@class,'lightning-primitive-icon')]")).click();
+        driver.findElement(By.xpath("//li[@class='pillContainerListItem']//a//span[@class='pillText']")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
+        //WebElement element =
+        driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='" + Subject + "']")).click();
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='"+ filedRelated +"']/../..//input")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='"+ filedRelated +"']/../..//input")).sendKeys(Related);
+        waitfortheelement();
+        driver.findElement(By.xpath("//li[contains(@class,'lookup__item  default uiAutocomplete')]//div[@title='"+ Related +"']")).click();
     }
 }
