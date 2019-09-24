@@ -14,4 +14,4 @@ Feature: ChargeBack Complete flow
 
     Examples:
       | Campaign/Appeal Name | Channel | RD Frequency | RD Start Date | Donation Amount | Payment Method |
-      | Flood Relief         | Phone   | Monthly      | Today         | 100             | Credit Card    |
+      | Flood Relief         | Phone   | Monthly      | Today         | 100             | Direct Debit    |

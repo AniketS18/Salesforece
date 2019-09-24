@@ -139,8 +139,8 @@ public class NavigateTo {
 
     public void clickOnSave(WebDriver driver, String buttonName) {
 
-//        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
-        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
+        driver.findElement(By.xpath("//button[text()='" + buttonName + "']")).click();
+//        driver.findElement(By.xpath("//button[@title='" + buttonName + "']//span[@class=' label bBody']")).click();
 
         try {
             String duplicateMessage = driver.findElement(By.xpath("//div[@class ='slds-col slds-align-middle']")).getText();
@@ -2496,18 +2496,92 @@ public class NavigateTo {
         js1.executeScript("scrollBy(0,150)");
     }
 
-    public void newEventDetails(WebDriver driver,String filedAssigne,String filedSubject,String filedPeople,String filedRelated, String Assignedto, String Subject, String People, String Related) {
+    public void newEventDetails(WebDriver driver, String filedAssigne, String filedSubject, String filedPeople, String filedRelated, String Assignedto, String Subject, String People, String Related) {
         waitfortheelement();
 //        driver.findElement(By.xpath("//lightning-icon[contains(@class,'lightning-primitive-icon')]")).click();
-        driver.findElement(By.xpath("//li[@class='pillContainerListItem']//a//span[@class='pillText']")).click();
         waitfortheelement();
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']")).click();
         //WebElement element =
         driver.findElement(By.xpath("//label[text()='Subject']/..//div//input[@class='slds-input slds-combobox__input']/../..//span[@title='" + Subject + "']")).click();
         waitfortheelement();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='"+ filedRelated +"']/../..//input")).click();
-        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='"+ filedRelated +"']/../..//input")).sendKeys(Related);
+        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='" + filedRelated + "']/../..//input")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-form slds-form_stac')]//div[contains(@class,'uiInput forceSearchInputLookupDesktop')]//label//span[text()='" + filedRelated + "']/../..//input")).sendKeys(Related);
         waitfortheelement();
-        driver.findElement(By.xpath("//li[contains(@class,'lookup__item  default uiAutocomplete')]//div[@title='"+ Related +"']")).click();
+        driver.findElement(By.xpath("//li[contains(@class,'lookup__item  default uiAutocomplete')]//div[@title='" + Related + "']")).click();
+        driver.findElement(By.xpath("//li[@class='pillContainerListItem']//a//span[@class='pillText']")).click();
+
+    }
+
+    public void clickOnAllFolder(WebDriver driver, String fieldAllFolder, String Folder) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[contains(@class,'slds-nav-vertical__section navItems')]//h2[text()='" + Folder + "']/..//a[text()='" + fieldAllFolder + "']")).click();
+    }
+
+    public void clickOnFolder(WebDriver driver, String Name) {
+        waitfortheelement();
+        driver.findElement(By.xpath(".//div[@class='slds-scrollable_y']/../..//div[contains(@class,'slds-table_header-fixed_container')]//table//tbody//div[@class='slds-truncate']//a[text()='Key Supporter Reports']")).click();
+    }
+
+    public void provideRDSkipdetails(WebDriver driver, String SkipSource, String SkipReason, String StopRD, String RestartRD, String skipSource, String skipReason, String stopRD, String restartRD) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + SkipSource + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + SkipSource + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + skipSource + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + SkipReason + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + SkipReason + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + skipReason + "']")).click();
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,200)");
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + StopRD + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + stopRD + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + RestartRD + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + restartRD + "']")).click();
+    }
+
+    public void provideRDCanceldetails(WebDriver driver, String CancellationDate, String CancellationSource, String CancellationReason, String StopRD, String cancellationDate, String cancellationSource, String cancellationReason, String stopRD) {
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + CancellationDate + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + cancellationDate + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + CancellationSource + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + CancellationSource + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + cancellationSource + "']")).click();
+
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,200)");
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + CancellationReason + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + CancellationReason + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + cancellationReason + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + StopRD + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + stopRD + "']")).click();
+    }
+
+    public void provideRDUpgradedetails(WebDriver driver, String Campaign, String DateStart, String DateEnd, String Amount, String Reason, String Source, String campaign, String dateStart, String dateEnd, String amount, String reason, String source) {
+        waitfortheelement();
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + Campaign + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='slds-grid']//label[text()='" + Campaign + "']/..//input")).sendKeys(campaign);
+        driver.findElement(By.xpath("//div[contains(@class,'slds-listbox slds-listbox_vertical')]//span[@class='slds-media__body']//span//strong[text()='" + campaign + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + DateStart + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + dateStart + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + DateEnd + "']/..//input")).click();
+        driver.findElement(By.xpath("//td[@data-value = '" + dateEnd + "']")).click();
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Amount + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Amount + "']/..//input")).sendKeys(amount);
+
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("scrollBy(0,250)");
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Reason + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Reason + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + reason + "']")).click();
+
+
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Source + "']/..//input")).click();
+        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Source + "']/..//input/../..//lightning-base-combobox-item[@data-value='" + source + "']")).click();
+
     }
 }
+

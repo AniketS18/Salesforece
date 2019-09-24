@@ -15,9 +15,16 @@ Feature: KS Manage Event invite List
       | <Assigned to> | <Subject> | <People> | <Related To> |
     And I click on Save button
     When I click on Reports tag
+    And I click on All Folders under Folders section
+    And I click on Key Supporter Reports folder
+    And I click on New Events with Invitees Report folder
+    And I click on Edit button
+    filter button
+  //div[@class='slds-grid']//div[@class='action-bars']//button//span[text()='Filters']
+
 
 
 
     Examples:
-      | Assigned to    | Subject | People         | Related To          |
+      | Assigned to    | Subject | People         | Related To         |
       | Bheem Kattikar | Email   | Bheem Kattikar | McKnight Household |

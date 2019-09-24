@@ -378,15 +378,17 @@ public class SalesforceStepDefinitions {
         navigateTo.newTaskDetails(driver, Assignedto, Subject, Status, Priorty);
         //navigateTo.newTaskDetails(driver); ////div//input[contains(@class,'default input uiInput uiInputTextForAutocomplet')][@title ='Search People']
     }
+
     @And("^I Provide the following details (.*),(.*),(.*) and (.*) under New Event Page$")
-    public void i_provide_under_new_event(String filedAssigne,String filedSubject,String filedPeople,String filedRelated,DataTable dataTable) throws Throwable {
+    public void i_provide_under_new_event(String filedAssigne, String filedSubject, String filedPeople, String filedRelated, DataTable dataTable) throws Throwable {
         List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
         Assignedto = data.get(0).get("Assigned to");
         Subject = data.get(0).get("Subject");
         String people = data.get(0).get("People");
         String related = data.get(0).get("Related To");
-        navigateTo.newEventDetails(driver,filedAssigne,filedSubject,filedPeople,filedRelated,Assignedto, Subject, people,related);
+        navigateTo.newEventDetails(driver, filedAssigne, filedSubject, filedPeople, filedRelated, Assignedto, Subject, people, related);
     }
+
     @And("^I click on Activity History subject$")
     public void i_click_on_activity_history() {
         navigateTo.clickActivityHistory(driver);
@@ -1537,4 +1539,49 @@ public class SalesforceStepDefinitions {
         navigateTo.enteredspiltdetails(driver, filedAppeal, filedAmount, appeal, amount);
     }
 
+    @And("^I click on (.*) under (.*) section$")
+    public void i_click_on_all_folder(String fieldAllFolder, String Folder) {
+        navigateTo.clickOnAllFolder(driver, fieldAllFolder, Folder);
+    }
+
+    @And("^I click on (.*) folder$")
+    public void i_click_on_folder(String fieldName) {
+        navigateTo.clickOnFolder(driver, fieldName);
+    }
+
+    @And("^I provide Recurring Donation Skip (.*),(.*),(.*) and (.*) details$")
+    public void i_provide_RDSkip_details(String SkipSource, String SkipReason, String StopRD, String RestartRD, DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String skipSource = data.get(0).get("Skip Source");
+        String skipReason = data.get(0).get("Skip Reason");
+        String stopRD = data.get(0).get("Stop RD (date)");
+        String restartRD = data.get(0).get("Restart RD (date)");
+
+        navigateTo.provideRDSkipdetails(driver, SkipSource, SkipReason, StopRD, RestartRD, skipSource, skipReason, stopRD, restartRD);
+    }
+
+    @And("^I provide Recurring Donation Cancel (.*),(.*),(.*) and (.*) details$")
+    public void i_provide_RDCancel_details(String CancellationDate, String CancellationSource, String CancellationReason, String StopRD, DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String cancellationDate = data.get(0).get("Cancellation Date");
+        String cancellationSource = data.get(0).get("Cancellation Source");
+        String cancellationReason = data.get(0).get("Cancellation Reason");
+        String stopRD = data.get(0).get("Stop RD (date)");
+
+        navigateTo.provideRDCanceldetails(driver, CancellationDate, CancellationSource, CancellationReason, StopRD, cancellationDate, cancellationSource, cancellationReason, stopRD);
+    }
+
+    @And("^I Provide Recurring Donations Upgrade (.*),(.*),(.*),(.*),(.*) and (.*) details$")
+    public void i_provide_RDUpgrade_details(String Campaign, String DateStart, String DateEnd, String Amount,String Reason,String Source, DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        String campaign = data.get(0).get("Campaign");
+        String dateStart = data.get(0).get("Date Start (RDA)");
+        String dateEnd = data.get(0).get("Date End (RDA)");
+        String amount  = data.get(0).get("Amount (RDA)");
+        String reason = data.get(0).get("Reason");
+        String source = data.get(0).get("Source");
+
+        navigateTo.provideRDUpgradedetails(driver, Campaign, DateStart, DateEnd, Amount, Reason, Source, campaign, dateStart,dateEnd,amount,reason,source);
+
+    }
 }

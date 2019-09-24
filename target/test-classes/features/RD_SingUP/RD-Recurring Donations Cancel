@@ -1,0 +1,15 @@
+Feature: ChargeBack Complete flow
+
+  Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
+    Given I login to Salesforce URL
+#    And I provide "Sanjay Singhania" in Contact Name under Once Off page
+    And I click "Cancel" radio button
+    And I provide Recurring Donation Cancel Cancellation Date,Cancellation Source,Cancellation Reason and Stop RD (date) details
+      | Cancellation Date   | Cancellation Source   | Cancellation Reason   | Stop RD (date)   |
+      | <Cancellation Date> | <Cancellation Source> | <Cancellation Reason> | <Stop RD (date)> |
+
+    And I click on Confirm button
+    Examples:
+      | Cancellation Date | Cancellation Source | Cancellation Reason                   | Stop RD (date) |
+      | 2019-09-27        | Phone               | Charity – Donating to another charity | 2019-09-29     |
+

@@ -1,0 +1,16 @@
+Feature: ChargeBack Complete flow
+
+  Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
+    Given I login to Salesforce URL
+#    And I provide "Sanjay Singhania" in Contact Name under Once Off page
+    And I click "Skip" radio button
+    And I provide Recurring Donation Skip Skip Source,Skip Reason,Stop RD (date) and Restart RD (date) details
+      | Skip Source   | Skip Reason   | Stop RD (date)   | Restart RD (date)   |
+      | <Skip Source> | <Skip Reason> | <Stop RD (date)> | <Restart RD (date)> |
+    
+    And I click on Confirm button
+    Examples:
+      | Skip Source | Skip Reason                                  | Stop RD (date) | Restart RD (date) |
+      | Phone       | Personal - change in financial circumstances | 2019-09-27     | 2019-09-29        |
+
+      
