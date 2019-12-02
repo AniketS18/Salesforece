@@ -1584,4 +1584,7 @@ public class SalesforceStepDefinitions {
         navigateTo.provideRDUpgradedetails(driver, Campaign, DateStart, DateEnd, Amount, Reason, Source, campaign, dateStart,dateEnd,amount,reason,source);
 
     }
+    @And("^I provide Direct Debit (.*),(.*) and (.*) details$")
+        public void i_provide_direct_debit(String BSBnumber,String AccountNumber,String Source){
+    }
 }

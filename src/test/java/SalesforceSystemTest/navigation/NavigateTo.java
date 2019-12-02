@@ -2566,8 +2566,8 @@ public class NavigateTo {
         driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + DateStart + "']/..//input")).click();
         driver.findElement(By.xpath("//td[@data-value = '" + dateStart + "']")).click();
 
-        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + DateEnd + "']/..//input")).click();
-        driver.findElement(By.xpath("//td[@data-value = '" + dateEnd + "']")).click();
+//        driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + DateEnd + "']/..//input")).click();
+//        driver.findElement(By.xpath("//td[@data-value = '" + dateEnd + "']")).click();
 
         driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Amount + "']/..//input")).click();
         driver.findElement(By.xpath("//div[@class='mainBlock']//div[@class='slds-grid']//label[text()='" + Amount + "']/..//input")).sendKeys(amount);

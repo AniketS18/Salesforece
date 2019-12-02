@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dc6b93-4eab-4c92-894c-08839e9e2f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Cancel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Payment Method" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/KS Manage/TC1- filter event invite list.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/KS Manage/TC1- filter event invite list.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/navigation/NavigateTo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/KS Manage/TC1- filter event invite list.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/KS Manage/TC1- filter event invite list.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/RD_SingUP/RD_sing_Up" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/RD_SingUP/RD_sing_Up" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/RD_SingUP/RD-Recurring Donations Upgrade" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/RD_SingUP/RD-Recurring Donations Upgrade" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,64 +36,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="1583" column="25" lean-forward="true" selection-start-line="1583" selection-start-column="25" selection-end-line="1583" selection-end-column="25" />
+            <state relative-caret-position="78">
+              <caret line="1583" column="24" lean-forward="true" selection-start-line="1583" selection-start-column="24" selection-end-line="1583" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4386#4387#0" expanded="true" />
                 <element signature="e#4444#4445#0" expanded="true" />
-                <element signature="e#16466#16467#0" expanded="true" />
-                <element signature="e#16521#16522#0" expanded="true" />
-                <element signature="e#17178#17179#0" expanded="true" />
-                <element signature="e#17247#17248#0" expanded="true" />
-                <element signature="e#17351#17352#0" expanded="true" />
-                <element signature="e#17408#17409#0" expanded="true" />
-                <element signature="e#19369#19370#0" expanded="true" />
-                <element signature="e#19438#19439#0" expanded="true" />
-                <element signature="e#19746#19747#0" expanded="true" />
-                <element signature="e#19795#19796#0" expanded="true" />
-                <element signature="e#19901#19902#0" expanded="true" />
-                <element signature="e#19965#19966#0" expanded="true" />
-                <element signature="e#21066#21067#0" expanded="true" />
-                <element signature="e#21124#21125#0" expanded="true" />
-                <element signature="e#21253#21254#0" expanded="true" />
-                <element signature="e#21306#21307#0" expanded="true" />
-                <element signature="e#22637#22638#0" expanded="true" />
-                <element signature="e#22686#22687#0" expanded="true" />
-                <element signature="e#24182#24183#0" expanded="true" />
-                <element signature="e#24235#24236#0" expanded="true" />
-                <element signature="e#24337#24338#0" expanded="true" />
-                <element signature="e#24389#24390#0" expanded="true" />
-                <element signature="e#24474#24475#0" expanded="true" />
-                <element signature="e#24526#24527#0" expanded="true" />
-                <element signature="e#24616#24617#0" expanded="true" />
-                <element signature="e#24681#24682#0" expanded="true" />
-                <element signature="e#24752#24753#0" expanded="true" />
-                <element signature="e#24796#24797#0" expanded="true" />
-                <element signature="e#25338#25339#0" expanded="true" />
-                <element signature="e#25400#25401#0" expanded="true" />
-                <element signature="e#27578#27579#0" expanded="true" />
-                <element signature="e#27625#27626#0" expanded="true" />
-                <element signature="e#29606#29607#0" expanded="true" />
-                <element signature="e#29658#29659#0" expanded="true" />
-                <element signature="e#31561#31562#0" expanded="true" />
-                <element signature="e#31623#31624#0" expanded="true" />
-                <element signature="e#31928#31929#0" expanded="true" />
-                <element signature="e#31987#31988#0" expanded="true" />
-                <element signature="e#32293#32294#0" expanded="true" />
-                <element signature="e#32347#32348#0" expanded="true" />
-                <element signature="e#70997#70998#0" expanded="true" />
-                <element signature="e#71055#71056#0" expanded="true" />
-                <element signature="e#71174#71175#0" expanded="true" />
-                <element signature="e#71238#71239#0" expanded="true" />
-                <element signature="e#71329#71330#0" expanded="true" />
-                <element signature="e#71391#71392#0" expanded="true" />
-                <element signature="e#71496#71497#0" expanded="true" />
-                <element signature="e#71547#71548#0" expanded="true" />
-                <element signature="e#72194#72195#0" expanded="true" />
-                <element signature="e#72237#72238#0" expanded="true" />
-                <element signature="e#72340#72341#0" expanded="true" />
-                <element signature="e#72398#72399#0" expanded="true" />
+                <element signature="e#74639#74640#0" expanded="true" />
                 <element signature="e#74698#74699#0" expanded="true" />
               </folding>
             </state>
@@ -109,16 +53,25 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Cancel">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Payment Method">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -126,17 +79,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Skip">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="119">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="8" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="2575" column="40" selection-start-line="2575" selection-start-column="40" selection-end-line="2575" selection-end-column="40" />
+            <state relative-caret-position="266">
+              <caret line="2559" column="16" selection-start-line="2559" selection-start-column="16" selection-end-line="2559" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="255">
               <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
@@ -165,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack Complete">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="663">
               <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
             </state>
           </provider>
@@ -174,17 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="306">
               <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/serenity.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -238,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC1 - Chargeback payment's record type is called chargeback.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita_2/TC7. Verify Payment records under Opportunity after 'Chargeback Initiate'.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC12. Verify 'Chargeback Processed' is not allowed if 'Chargeback SST Response' field is empty.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Ankita/TC11. Verify Payment records under Opportunity after Chargeback cancelled.feature" />
@@ -286,9 +229,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Manage Recurring Donations" />
         <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Skip" />
         <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Cancel" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade" />
+        <option value="$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Payment Method" />
       </list>
     </option>
   </component>
@@ -319,8 +263,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,31 +290,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="RD_SingUP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Salesforce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Salesforce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -379,26 +298,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/RelationShip Manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\RelationShip Manager" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_Ankita" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\webdriver\windows" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources" />
-      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\OnceOff" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\CreateSupporter" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\Adjustment" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All\ChargeBack_Updating_Payment" />
       <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_All" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\RD_SingUP" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\RelationShip Manager" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\features\ChargeBack_Ankita" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources\webdriver\windows" />
+      <recent name="C:\Users\Aniket\Documents\Salesforce\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -418,9 +337,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.11399371" />
+    <option name="contentProportion" value="0.19889937" />
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)">
+  <component name="RunManager" selected="Cucumber java.Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund">
     <configuration name="Feature: RD-Recurring Donations Upgrade" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade" />
@@ -439,15 +358,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC1- Refund Acknowledgement receipt auto forwarded to supporter" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD_sing_Up" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund communication/TC1- Refund Acknowledgement receipt auto forwarded to supporter.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: TC1- Refund Acknowledgement receipt auto forwarded to supporter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -458,15 +376,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Cancel" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Refund/Refunds &amp; Adjustments - Refund initiation/TC2- For Full Refun- System should auto populate full amount if refund type is full refund.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
-      <option name="NAME_FILTER" value="^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Verify \'Payment Status\' is Paid and \'Record Type\' is Payment then \'Adjustment\'\,\'Chargeback\' and \'Refund\' button is visible$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -496,9 +413,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (4)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Manage Recurring Donations" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Payment Method" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors SalesforceSystemTest.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="serenity-cucumber-starter" />
@@ -517,11 +434,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund" />
+        <item itemvalue="Cucumber java.Feature: TC1- Refund Acknowledgement receipt auto forwarded to supporter" />
+        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (4)" />
         <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" />
         <item itemvalue="Cucumber java.Feature: RD-Recurring Donations Upgrade" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" />
-        <item itemvalue="Cucumber java.Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -539,42 +456,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible - 2019.09.24 at 15h 25m 12s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(2) - 2019.09.24 at 16h 08m 52s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (2)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 16h 44m 47s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 16h 46m 41s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 18h 46m 03s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__RD-Recurring_Donations_Upgrade - 2019.09.24 at 18h 54m 35s.xml">
-      <configuration name="Feature: RD-Recurring Donations Upgrade" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 19h 10m 28s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 19h 26m 10s.xml">
-      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 19h 33m 26s.xml">
       <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.24 at 19h 38m 38s.xml">
       <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.25 at 10h 22m 28s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.25 at 10h 25m 12s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.25 at 10h 27m 04s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(3) - 2019.09.25 at 10h 28m 30s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (3)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Verify_'Payment_Status'_is_Paid_and_'Record_Type'_is_Payment_then_'Adjustment','Chargeback'_and_'Refund'_button_is_visible_(4) - 2019.09.25 at 10h 39m 59s.xml">
+      <configuration name="Scenario: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible (4)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC1-_Refund_Acknowledgement_receipt_auto_forwarded_to_supporter - 2019.09.30 at 17h 54m 25s.xml">
+      <configuration name="Feature: TC1- Refund Acknowledgement receipt auto forwarded to supporter" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC2-_For_Full_Refun-_System_should_auto_populate_full_amount_if_refund_type_is_full_refund - 2019.09.30 at 17h 55m 18s.xml">
+      <configuration name="Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__TC2-_For_Full_Refun-_System_should_auto_populate_full_amount_if_refund_type_is_full_refund - 2019.09.30 at 17h 55m 52s.xml">
+      <configuration name="Feature: TC2- For Full Refun- System should auto populate full amount if refund type is full refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.25152904" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49173555" visible="true" weight="0.25688073" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.18835099" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -588,11 +504,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17264958" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17264958" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32820514" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="11" visible="true" weight="0.3863248" />
+      <window_info anchor="bottom" id="Run Dashboard" order="11" weight="0.191453" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24923548" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -617,13 +533,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_2nd/TC7 - Negative - Verify Chargeback Received On Date cannot be less than Payment Date.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack_Updating_Payment/TC1 - Chargeback payment's record type is called chargeback.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -840,38 +749,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack Complete">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Manage Recurring Donations">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="true" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Manage Recurring Donations" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Cancel">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -882,92 +771,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack - Refund and Adjustments/TC2 - Verify 'Payment status' is Unpaid.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/ChargeBack Complete Flow/ChargeBack Complete">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ChargeBack_All/Chargeback Updating Payments and Supporters/TC4. Verify 'Chargeback processed' is not allowed before 'Chargeback initiate'.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Payment Method">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/stepdefinitions/SalesforceStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="1583" column="25" lean-forward="true" selection-start-line="1583" selection-start-column="25" selection-end-line="1583" selection-end-column="25" />
+        <state relative-caret-position="78">
+          <caret line="1583" column="24" lean-forward="true" selection-start-line="1583" selection-start-column="24" selection-end-line="1583" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4386#4387#0" expanded="true" />
             <element signature="e#4444#4445#0" expanded="true" />
-            <element signature="e#16466#16467#0" expanded="true" />
-            <element signature="e#16521#16522#0" expanded="true" />
-            <element signature="e#17178#17179#0" expanded="true" />
-            <element signature="e#17247#17248#0" expanded="true" />
-            <element signature="e#17351#17352#0" expanded="true" />
-            <element signature="e#17408#17409#0" expanded="true" />
-            <element signature="e#19369#19370#0" expanded="true" />
-            <element signature="e#19438#19439#0" expanded="true" />
-            <element signature="e#19746#19747#0" expanded="true" />
-            <element signature="e#19795#19796#0" expanded="true" />
-            <element signature="e#19901#19902#0" expanded="true" />
-            <element signature="e#19965#19966#0" expanded="true" />
-            <element signature="e#21066#21067#0" expanded="true" />
-            <element signature="e#21124#21125#0" expanded="true" />
-            <element signature="e#21253#21254#0" expanded="true" />
-            <element signature="e#21306#21307#0" expanded="true" />
-            <element signature="e#22637#22638#0" expanded="true" />
-            <element signature="e#22686#22687#0" expanded="true" />
-            <element signature="e#24182#24183#0" expanded="true" />
-            <element signature="e#24235#24236#0" expanded="true" />
-            <element signature="e#24337#24338#0" expanded="true" />
-            <element signature="e#24389#24390#0" expanded="true" />
-            <element signature="e#24474#24475#0" expanded="true" />
-            <element signature="e#24526#24527#0" expanded="true" />
-            <element signature="e#24616#24617#0" expanded="true" />
-            <element signature="e#24681#24682#0" expanded="true" />
-            <element signature="e#24752#24753#0" expanded="true" />
-            <element signature="e#24796#24797#0" expanded="true" />
-            <element signature="e#25338#25339#0" expanded="true" />
-            <element signature="e#25400#25401#0" expanded="true" />
-            <element signature="e#27578#27579#0" expanded="true" />
-            <element signature="e#27625#27626#0" expanded="true" />
-            <element signature="e#29606#29607#0" expanded="true" />
-            <element signature="e#29658#29659#0" expanded="true" />
-            <element signature="e#31561#31562#0" expanded="true" />
-            <element signature="e#31623#31624#0" expanded="true" />
-            <element signature="e#31928#31929#0" expanded="true" />
-            <element signature="e#31987#31988#0" expanded="true" />
-            <element signature="e#32293#32294#0" expanded="true" />
-            <element signature="e#32347#32348#0" expanded="true" />
-            <element signature="e#70997#70998#0" expanded="true" />
-            <element signature="e#71055#71056#0" expanded="true" />
-            <element signature="e#71174#71175#0" expanded="true" />
-            <element signature="e#71238#71239#0" expanded="true" />
-            <element signature="e#71329#71330#0" expanded="true" />
-            <element signature="e#71391#71392#0" expanded="true" />
-            <element signature="e#71496#71497#0" expanded="true" />
-            <element signature="e#71547#71548#0" expanded="true" />
-            <element signature="e#72194#72195#0" expanded="true" />
-            <element signature="e#72237#72238#0" expanded="true" />
-            <element signature="e#72340#72341#0" expanded="true" />
-            <element signature="e#72398#72399#0" expanded="true" />
+            <element signature="e#74639#74640#0" expanded="true" />
             <element signature="e#74698#74699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="2575" column="40" selection-start-line="2575" selection-start-column="40" selection-end-line="2575" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Skip">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="8" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/RD_SingUP/RD-Recurring Donations Upgrade">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SalesforceSystemTest/navigation/NavigateTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="266">
+          <caret line="2559" column="16" selection-start-line="2559" selection-start-column="16" selection-end-line="2559" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

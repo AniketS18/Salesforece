@@ -3,13 +3,13 @@ Feature: RD Flow
   Scenario Outline: Verify 'Payment Status' is Paid and 'Record Type' is Payment then 'Adjustment','Chargeback' and 'Refund' button is visible
     Given I login to Salesforce URL
 #    And I provide "Sanjay Singhania" in Contact Name under Once Off page
-    And I click "Upgrade" radio button
-    And I click "Permanent Upgrade" radio button
-    And I Provide Recurring Donations Upgrade Campaign,Date Start (RDA),Date End (RDA),Amount (RDA),Reason and Source details
-      | Campaign   | Date Start (RDA)   | Date End (RDA)   | Amount (RDA)   | Reason   | Source   |
-      | <Campaign> | <Date Start (RDA)> | <Date End (RDA)> | <Amount (RDA)> | <Reason> | <Source> |
+    And I click "Payment Method" radio button
+    And I click "Add" radio button
+    And I click "Direct Debit" radio button
+    And I provide Direct Debit BSB Number,Account Number and Source details
+      | BSB Number   | Account Number   | Source   |
+      | <BSB Number> | <Account Number> | <Source> |
 
-#    And I click on Temporary Upgrade button
     Examples:
       | Campaign | Date Start (RDA) | Date End (RDA) | Amount (RDA) | Reason              | Source |
       | Clothing | 2019-09-27       | 2019-09-27     | 100          | Supporter Requested | Phone  |
